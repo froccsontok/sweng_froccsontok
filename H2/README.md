@@ -21,6 +21,8 @@ Hogy minden játékos számára elérhetőek legyenek az esetleg utólag hozzáa
 
 Feltételezzük, hogy a játékos rendelkezik a minimális hardverkövetelményekkel. Abban az esetben, ha nincs inkompatibilitás, csak lassabb hardverrel rendelkezik a felhasználó, a játék megpróbál majd elindulni, de a megfelelő játékélményt nem tudjuk garantálni.
 
+A játékszabályok ismeretét is feltételezzük, a szabályok elérhetőek lesznek a menüben.
+
 ## 5. A végtermék jellemzői, biztosított szolgáltatások
 
 ## 6. Korlátozások
