@@ -2,21 +2,9 @@
 
 <p> <h1> Projekt terv: </h1> </p>
 <p>
-    A játék egy kezdőképernyővel fog indulni, ahol lehetőségünk lesz a játékosnév megadására, beállítások módosítására, mint például hangerő és felbontás. 
-    Továbbá egy rangsor megnyitására ,amely játékosnév alapján és akár karakterenként összesít és az alapján is rangsorolja a játékosokat.
-    Továbbá még látható lesz egy szint jelző is, amely a játék során az elért helyezések függvényében fog változni.  
-    Ezt követően választhatunk botok elleni és játékosok elleni játékmódok közül. 
+    A játék egy kezdőképernyővel fog indulni, ahol lehetőségünk lesz a játékosnév megadására, beállítások módosítására, mint például hangerő és felbontás. Továbbá egy rangsor megnyitására ,amely játékosnév alapján és akár karakterenként összesít és az alapján is rangsorolja a játékosokat. Továbbá még látható lesz egy szint jelző is, amely a játék során az elért helyezések függvényében fog változni. Ezt követően választhatunk botok elleni és játékosok elleni játékmódok közül. 
 
-    A játékmenet röviden: minden játékosnak a feladata, hogy fröccsöket készítsen és adjon el, ezzel minél több pénzt összegyűjtve. 
-    Minden játékos 2 pohárral és 5 lappal kezd. Körönként minden játékosnak 2 akciója van. 
-    Akciónak számít: fröccsöt eladni (kizárólag első akció lehet), poharat venni, lapot letenni (2 lap/akció), lap hot húzni (2 lap/akció). 
-    A cél a szivatós kártyák taktikus kijátszásával a lehető legtöbb pénzt gyűjteni. 
-    A felkész vagy kész de nem eladott fröccsök is pénzt érnek a játék végén. 
-    A játéknak akkor van vége, amikor az utolsó lap is elfogy a húzópakliból, és az ezt követően megkezdődő utolsó kör véget ér. 
-    A győztes akinek a legtöbb pénze van. 
-    A lapok húzását, lerakását, fröccsök feltöltését és eladását animációk illusztrálják majd.
-    A játék végén kiosztásra kerül a helyezetteknek járó megfelelő xp mennyiség és rangsor pontok. 
-    Végül válaszhatunk, hogy a főmenübe szeretnénk visszatérni, visszavágót szeretnénk játszani vagy új játékot kezdenénk. 
+    A játékmenet röviden: minden játékosnak a feladata, hogy fröccsöket készítsen és adjon el, ezzel minél több pénzt összegyűjtve. Minden játékos 2 pohárral és 5 lappal kezd. Körönként minden játékosnak 2 akciója van. Akciónak számít: fröccsöt eladni (kizárólag első akció lehet), poharat venni, lapot letenni (2 lap/akció), lap hot húzni (2 lap/akció). A cél a szivatós kártyák taktikus kijátszásával a lehető legtöbb pénzt gyűjteni. A felkész vagy kész de nem eladott fröccsök is pénzt érnek a játék végén. A játéknak akkor van vége, amikor az utolsó lap is elfogy a húzópakliból, és az ezt követően megkezdődő utolsó kör véget ér. A győztes akinek a legtöbb pénze van. A lapok húzását, lerakását, fröccsök feltöltését és eladását animációk illusztrálják majd. A játék végén kiosztásra kerül a helyezetteknek járó megfelelő xp mennyiség és rangsor pontok. Végül válaszhatunk, hogy a főmenübe szeretnénk visszatérni, visszavágót szeretnénk játszani vagy új játékot kezdenénk. 
 </p>
 
 <p> <h1> Programozási nyelv: </h1> </p>
