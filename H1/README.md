@@ -1,6 +1,6 @@
 # H1
 
-<p> Projekt terv: </p>
+<p> <h1> Projekt terv: </h1> </p>
 <p>
     A játék egy kezdőképernyővel fog indulni, ahol lehetőségünk lesz a játékosnév megadására, beállítások módosítására, mint például hangerő és felbontás. 
     Továbbá egy rangsor megnyitására ,amely játékosnév alapján és akár karakterenként összesít és az alapján is rangsorolja a játékosokat.
@@ -19,12 +19,12 @@
     Végül válaszhatunk, hogy a főmenübe szeretnénk visszatérni, visszavágót szeretnénk játszani vagy új játékot kezdenénk. 
 </p>
 
-<p> Programozási nyelv: </p>
+<p> <h1> Programozási nyelv: </h1> </p>
 <p>
     A csapatunk arra az álláspontra jutott, hogy a feladathoz a számunkra legmegfelelőbb nyelv a Java, mivel az előző évek során abban szereztük a legtöbb tapasztalatot, így abban fogjuk megtervezni a játékot.
 </p>
 
-<p> Fejlesztői eszközök: </p>
+<p> <h1> Fejlesztői eszközök: </h1> </p>
 <p>
     <ul>
         <li>Eclipse</li>
@@ -35,12 +35,12 @@
     </ul>
 </p>
 
-<p> Tervezett szoftverfejlesztési módszer: </p>
+<p> <h1> Tervezett szoftverfejlesztési módszer: </h1> </p>
 <p>
      Az evolúciós modell mentén tervezünk haladni. A kezdeti implementációt követően, a csapat tesztelőinek véleményeit meghallgatva, folyamatosan finomítjuk majd a játékot.
 </p>
 
-<p> Mérföldkövek, eredmények: </p>
+<p> <h1> Mérföldkövek, eredmények: </h1> </p>
 <p>
     <ul>
         <li>
@@ -71,7 +71,7 @@
     </ul>
 </p>
 
-<p> Tervezett gépigény: </p>
+<p> <h1> Tervezett gépigény: </h1> </p>
 <p>
     <ul>
         <li> Operációs rendszer: Windows 10 </li>
@@ -84,12 +84,12 @@
     </ul>
 </p>
 
-<p> Megjelenés: </p>
+<p> <h1> Megjelenés: </h1> </p>
 <p>
     2022.Január.15 Steam
 </p>
 
-<p> Források: </p>
+<p> <h1> Források: </h1> </p>
 <p>
     <ul>
         <li> http://jatekdij.hu/tartalom/tarsasjatek/Froccs.pdf </li>
