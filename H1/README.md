@@ -14,7 +14,7 @@
 <p>
     <ul>
         <li>Eclipse</li>
-        <li>Notepad++</li>
+        <li>Notepad++ v8.1.5.</li>
         <li>VisualStudio code</li>
         <li>Photoshop</li>
         <li>Ableton Live 10 lite</li>
