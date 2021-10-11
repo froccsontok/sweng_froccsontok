@@ -17,7 +17,7 @@
         <li>Notepad++</li>
         <li>VisualStudio code</li>
         <li>Photoshop</li>
-        <li>Ableton Live 9 lite</li>
+        <li>Ableton Live 10 lite</li>
     </ul>
 </p>
 
