@@ -131,3 +131,29 @@ Az elkészült szoftvernél:
 7. Ha a végtermék iránt a vártnál nagyobb az érdeklődés, akkor annak van kockázata, hogy nem tud minden játékos csatlakozni a játékhoz (pl. a szerver leterheltsége miatt), vagy ha igen, akkor minden játékos játékminősége romolhat (pl. nagyobb várakozási idő, késleltetés a kapcsolatban a játék közben, "akadozás"). Ennek megoldása nem feltétlenül ütközik problémába (pl. a játék elég bevételt termel további szerverek beüzemeléséhez), de nem mindig triviális (pl. több szerver esetén magukat a szervereket is össze kell kapcsolni; meg kell oldani, hogy a játékosok ugyanazon a szerveren legyenek egy-egy játékmenet alatt). A 5. és a 6. pont kiküszöbölése is tervezést igényel (felmérés, bővítési terv), de az igény felmérése a rengeteg változó és szerencse-faktor miatt sosem oldható meg teljes mértékben.
 
 ## 10. Szótár
+
+Eclipse: Egy programozást segítő fejlesztőkörnyezet. Leggyakrabban JAVA-hoz használt fejlesztői környezet. Részei többek között: Java IDE, a Java Development Toolkit (JDT) és fordító (ECJ).
+
+Notepad++: Egy alapvetően windowsra tervezett. Szöveg- illetve forráskódszerkesztő program. Az alkalmazás többek között támogat: Java, C, C++, C#, Python nyelveket is.
+
+VisualStudio code: Egy Microsoft által fejlesztett kódszerkesztő. 
+
+Adobe Photoshop: Az Adobe Systems által kifejlesztett rasztergrafika alapú képszerkesztő program. 
+
+Ableton Live 9 lite: Zene és hangtechnikai szerkesztő program. Szerkesztés mellett hang- és zenefelvételt is támogat.
+
+Software/szoftver: A  szoftver alatt a legszűkebb értelemben elektronikus adatfeldolgozó berendezések memóriájában elhelyezkedő, azokat működtető programokat értünk.
+
+Steam: Egy felhő alapú online számítógépes szoftverek (túlnyomórészt játékok) részére készített könyvtár illetve áruház.
+
+Implementálás: Kivitelezés vagy megvalósítás.
+
+Offline: Hálózathoz nem kapcsolódó. Leggyakrabban az internethez való kapcsolódásra értik.
+
+Online: Hálózathoz kapcsolódó. Leggyakrabban az internethez való kapcsolódásra értik.
+
+Kliens, szerver: A kliens olyan számítógép vagy azon futó program, amely hozzáfér egy (távoli) szolgáltatáshoz, amelyet egy számítógép hálózathoz tartozó másik számítógép (a szerver) nyújt.
+
+Bot: Számítógép által vezérelt játékos karakter.
+
+
