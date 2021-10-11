@@ -7,7 +7,7 @@ FröccsÖntők
 
 ## 3. Érintettek és felhasználók
 
-# 3.3 Felhasználói környezet
+### 3.3 Felhasználói környezet
 Az alkalmazás fejlesztése kizárólag Windows operációs rendszerre fog megtörténni és emellett a futtatás követelménye pedig, hogy eleget tegyünk a rendszerkövetelményeknek. A jövőben a szoftverre kiadott frissítések miatt ezek a követelmények minimálisan változhatnak.
 A szoftverben lehetőségünk lesz majd egymás ellen partikat létrehozni mind lokálisan, mind online. Lokálisan egyszerre egymás ellen két felhasználó játszthat majd, azonban a játékban lehetőségünk lesz majd több (különböző nevű) felhasználót is létrehozni ezekalapján pedig a játék lokális ranglistát vezet majd az eddig megadott felhasználók eredményei alapján. A lokálisan 15 felhasználó adatainak a nyilvántartására lesz majd lehetőségünk. Abban az esetben ha online szeretnénk játszani akkor ezt Steam felhasználókkal tudjuk majd megtenni. Várhatóan kezdetben átlagosan 1000-2000 felhasználó fogja majd használni a szoftvert egy időben, és maximálisan 5000-7000 felhasználóra számítunk. 
 A jelenlegi időszakban várhatóan növekedni fog a felhasználók száma, ha a COVID-19 járvány újabb hulláma miatt az emberek újra home office-ba is karantánba kényszerülnek.
