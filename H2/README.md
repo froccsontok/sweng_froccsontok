@@ -35,7 +35,7 @@ Továbbá fontos még a piacon maradáshoz a felhasználóknak tetsző játéké
 A felhasználói kör bővülésének egyik elengedhetetlen és kulcsfontosságú része a már „meghódított” felhasználók érdeklődésének megtartása, mellyel a népszerűség növekedésének léptéke exponenciálisan megnőhet. Ezt egy a játékban található ajándékbolttal szeretnénk megvalósítani, melyben a játékosok a játékok után kapott pontokkal vásárolhatnak majd különféle csupán vizuális hatású kiegészítőket.<br /><br />
 A játék elsősorban Microsoft Windows operációs rendszerre készül, de később szeretnénk bővíteni az elérhetőségét Android, IOS, MacOS és Linux rendszerű számítógépeken és mobil eszközökön is. Így a Steames megjelenést követően meg fog jelenni a Google Playen, az App Storeban és természetesen online felületen is.
 
-
+### 2.3 Termék helye
 Kinek készült (melyik / milyen szervezetnek):
 A majd elkészült Fröccs játék implementációját elsősorban a legjelentősebb és legelterjedtebb online játékáruház keretein belül, a Steam online áruházban tervezzük terjeszteni. Az itteni terjesztés széleskörben képes lesz eljuttatni a kész terméket a felhasználókhoz világszerte.
 
@@ -103,27 +103,3 @@ A rendszerkövetelményeknek nem lesz része semmilyen különleges, egyedi eszk
 ## 9. Kockázat lista
 
 ## 10. Szótár
-
-Eclipse: Egy programozást segítő fejlesztőkörnyezet. Leggyakrabban JAVA-hoz használt fejlesztői környezet. Részei többek között: Java IDE, a Java Development Toolkit (JDT) és fordító (ECJ).
-
-Notepad++: Egy alapvetően windowsra tervezett. Szöveg- illetve forráskódszerkesztő program. Az alkalmazás többek között támogat: Java, C, C++, C#, Python nyelveket is.
-
-VisualStudio code: Egy Microsoft által fejlesztett kódszerkesztő. 
-
-Adobe Photoshop: Az Adobe Systems által kifejlesztett rasztergrafika alapú képszerkesztő program. 
-
-Ableton Live 9 lite: Zene és hangtechnikai szerkesztő program. Szerkesztés mellett hang- és zenefelvételt is támogat.
-
-Software: A szoftver alatt a legszűkebb értelemben elektronikus adatfeldolgozó berendezések memóriájában elhelyezkedő, azokat működtető programokat értünk.
-
-Steam: Egy felhő alapú online számítógépes szoftverek (túlnyomórészt játékok) részére készített könyvtár illetve áruház.
-
-Implementálás: Kivitelezés vagy megvalósítás.
-
-Offline: Hálózathoz nem kapcsolódó. Leggyakrabban az internethez való kapcsolódásra értik.
-
-Online: Hálózathoz kapcsolódó. Leggyakrabban az internethez való kapcsolódásra értik.
-
-Kliens, szerver: A kliens olyan számítógép vagy azon futó program, amely hozzáfér egy (távoli) szolgáltatáshoz, amelyet egy számítógép hálózathoz tartozó másik számítógép (a szerver) nyújt.
-
-Bot: Számítógép által vezérelt játékos karakter.
