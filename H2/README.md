@@ -68,7 +68,7 @@ A rendszerkövetelményeknek nem lesz része semmilyen különleges, egyedi eszk
 
 ## 4. A végtermék áttekintése
 
-<p> <h1> 4.2. A termék használatának előnyei </h1> </p>
+<p> <h3> 4.2. A termék használatának előnyei </h1> </p>
 <p>
     Használati előnyök amit a termék biztosít:
     <ul>
