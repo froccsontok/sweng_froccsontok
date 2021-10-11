@@ -13,10 +13,12 @@
 <p> <h1> Fejlesztői eszközök: </h1> </p>
 <p>
     <ul>
-        <li>Eclipse</li>
+        <li>Eclipse IDE 2021‑09</li>
+        <li>Java SE 16</li>
+        <li>JavaFX 17</li>
         <li>Notepad++ v8.1.5.</li>
         <li>VisualStudio code</li>
-        <li>Photoshop</li>
+        <li>Photoshop 22.5.1</li>
         <li>Ableton Live 10 lite</li>
     </ul>
 </p>
