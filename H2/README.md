@@ -144,7 +144,7 @@ Feltételezzük, hogy a játékos rendelkezik a minimális hardverkövetelménye
 A játékszabályok ismeretét is feltételezzük, a szabályok elérhetőek lesznek a menüben.
 
 ### 4.4 Költségbecslés
-Nincs információ.
+Becsléseink alapján a játék elkészítése nagyjából 6.250.000Ft-ba fog kerülni, amely a tervezett 9.99€-s árral az 1737. vásárlótól profitot termel és ha már a digitális kártyajátékok királyának, az UNO letöltéseinek 1%-át elérjük, akkor is a befektetett pénz ezerszeresét kapjuk vissza profitként, ami az említett 1% azaz 1.800.000 letöltés után, nem más, mint 6.480.000.000Ft.
 
 ### 4.5. Installáció
 Nincs információ.
