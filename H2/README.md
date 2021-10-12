@@ -165,6 +165,7 @@ A jövőben tervezzük a játék portolását IOS és Android operációs rendsz
 
 
 ## 6. Korlátozások
+Nincs információ.
 
 ## <a name="sec_7"></a>7. Minőségi elvárások
 - A játékot első sorban Microsoft Windows operációs rendszerre tervezzük, de mivel a későbbiekben szeretnénk Android és IOS operációs rendszerekre kiadni, így fontos szempont, hogy a játéknak kicsi legyen az erőforrás igénye.
