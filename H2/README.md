@@ -11,7 +11,36 @@ Molnár Balázs|KFIXBJ|molbazsa@gmail.com|játékfejlesztő, dokumentáció
 Takács Bálint|P2GNFT|takacsb39@gmail.com|játékfejlesztő, prezentáló
 Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, játékfejlesztő
 
-## 1. Bevezetés
+## Tartalomjegyzék
+1. [Bevezetés](#sec_1)
+
+2. [Az alkalmazás helye](#sec_2)
+
+    2.2. [A probléma megfogalmazása](#sec_2_2)
+
+    2.3. [Az elkészült termék helye](#sec_2_3)
+
+3. [Érintettek és felhasználók](#sec_3)
+
+    3.3 [Felhasználói környezet](#sec_3_3)
+
+4. [A végtermék áttekintése](#sec_4)
+
+    4.2. [A termék használatának előnyei](#sec_4_2)
+
+    4.3. [Feltételezések és függőségek](#sec_4_3)
+
+5. [A végtermék jellemzői, biztosított szolgáltatások](#sec_5)
+
+<!-- -->
+7. [Minőségi elvárások](#sec_7)
+
+<!-- -->
+9. [Kockázat lista](#sec_9)
+
+10. [Szótár](#sec_10)
+
+## <a name="sec_1"></a>1. Bevezetés
 A projektünk célja a Fröccs nevű kártyajáték megalkotása digitális formában.
 
 A játékmenet a társasjáték szabályait fogja követni, a játékosok különböző karaktereket magukra öltve vesznek majd részt a játékban. A játékosok rendelkezni fognak játékosnévvel, eredményeiket szintjük és egy rangsor fogja nyilvátartani. Játékunk a több játékos (más felhasználók elleni) és az egy játékos (botok elleni) játékmódot is támogatni fogja.
@@ -20,8 +49,12 @@ A több játékos módhoz Internet-kapcsolatra lesz szükség, az egy játékos 
 
 Az alábbiakban részletezzük magát a játékszoftvert, az azzal kapcsolatos minőségi és egyéb elvárásokat és a szoftver képességeit, tulajdonságait. Megvizsgáljuk, hogy a szoftvert ki használná, kik lennének az értintettek és kik tartanák fent a játékot mint szolgáltatást. A projekttel kapcsolatban leírjuk, hogy hol helyezhetnénk el a szoftvert, mire alapozzuk a szoftver életképességét, mik a kockázatok és mik a dokumentációval kapcsolatos elvárások.
 
-## 2. Az alkalmazás helye
-### 2.2. A probléma megfogalmazása
+## <a name="sec_2"></a>2. Az alkalmazás helye
+
+### 2.1 Üzleti lehetőségek
+Nincs információ.
+
+### <a name="sec_2_2"></a>2.2. A probléma megfogalmazása
 A FröccsÖntők csapata a Fröccs nevezetű társasjáték, online verziójával szeretné növelni a már ismert és népszerű társasjáték elérhetőségét felhasználói körökben.<br /> <br />
 #### A játékról röviden: 
 A játékosok - akiknek száma 2-6-ig terjedhet – egymás ellen, különféle fröccsök készítésével és eladásával, karaktereik képességeinek kihasználásával próbálnak a lehető legnagyobb profitra szert tenni. Eközben egymást hátráltatják különféle bűntető lapokkal és az említett lapok kivédésével. A játék végén az nyer, akinek a lehető legtöbb pénzre sikerült szert tennie.<br /><br />
@@ -35,12 +68,12 @@ Továbbá fontos még a piacon maradáshoz a felhasználóknak tetsző játéké
 A felhasználói kör bővülésének egyik elengedhetetlen és kulcsfontosságú része a már „meghódított” felhasználók érdeklődésének megtartása, mellyel a népszerűség növekedésének léptéke exponenciálisan megnőhet. Ezt egy a játékban található ajándékbolttal szeretnénk megvalósítani, melyben a játékosok a játékok után kapott pontokkal vásárolhatnak majd különféle csupán vizuális hatású kiegészítőket.<br /><br />
 A játék elsősorban Microsoft Windows operációs rendszerre készül, de később szeretnénk bővíteni az elérhetőségét Android, IOS, MacOS és Linux rendszerű számítógépeken és mobil eszközökön is. Így a Steames megjelenést követően meg fog jelenni a Google Playen, az App Storeban és természetesen online felületen is.
 
-### 2.3 Termék helye
+### <a name="sec_2_3"></a>2.3 Az elkészült termék helye
 Kinek készült (melyik / milyen szervezetnek):
 A majd elkészült Fröccs játék implementációját elsősorban a legjelentősebb és legelterjedtebb online játékáruház keretein belül, a Steam online áruházban tervezzük terjeszteni. Az itteni terjesztés széleskörben képes lesz eljuttatni a kész terméket a felhasználókhoz világszerte.
 
 Ki fogja használni:
-Az általunk priorizált célközönség a 14 – 40 –es korosztály lenne. Ez a célközönség értékelhetné legjobban a játék humorát és annak egyszerű, de mégis fondorlatos játékélményét. Ebben a korcsoportba beletartozik a 18 – 24 éves korosztály is, ami sok kutatás szerint magába foglalja a videó játékokkal foglalkozó emberek legnagyobb részét. A játék alapvető témája és az alkohol gyakori említése miatt a legfiatalabb korosztálynak nem feltétlenül lesz megfelelő a Fröccs játék használata.
+Az általunk priorizált célközönség a 14 – 40–es korosztály lenne. Ez a célközönség értékelhetné legjobban a játék humorát és annak egyszerű, de mégis fondorlatos játékélményét. Ebben a korcsoportba beletartozik a 18 – 24 éves korosztály is, ami sok kutatás szerint magába foglalja a videó játékokkal foglalkozó emberek legnagyobb részét. A játék alapvető témája és az alkohol gyakori említése miatt a legfiatalabb korosztálynak nem feltétlenül lesz megfelelő a Fröccs játék használata.
 
 Milyen alkalmazás kategóriába tartozik (pl. fejlesztőeszköz, vállalati információs rendszer, stb.):
 Az alkalmazás a játékszoftver kategóriában helyezkedik el. A játékszoftverek piaca folyamatosan növekszik, és rengeteg lehetőséget illetve magas bevételt hordoz magával. 2020-ban a komplett videójáték-piac értékét több, mint 1.59 billió amerikai dollárra becsülték. A Fröccsöntők csapata ezt a piacot tervezi megcélozni az új játékszoftver létrehozásával. 
@@ -54,9 +87,15 @@ Alapvető terjesztési célként a Steam online áruházat céloztuk meg. Ezált
 Miben különbözik alapvetően az elkészült termék az alternatíváktól:
 A Fröccshöz hasonlóan rengeteg online kártya és társasjáték létezik a világon. Gondolhatunk itt Hearthstonera, Yu-gi-ohra vagy az egyszerűbb Uno virtuális változatára is. A Hearthstonehoz hasonló alkalmazások a játékélmény mellett a kártyák megszerzésének is nagy szerepet tulajdonítanak. Ezt a játékban eltöltött idővel vagy gyakrabban online tranzakciókkal próbálják implementálni. A fröccs játéknál viszont fontosnak tartjuk, hogy a felhasználó az alap játék minden részéhez alapból hozzáférjenek, ezáltal már a kezdetektől teljes játékélményben legyen része a felhasználóknak. Illetve a hasonló alternatíváknál gyakori az egy az egy elleni játékmenet használata, viszont mi megpróbáljuk az eredeti társasjátékot minél pontosabban előhozni az implementáció során. Ezáltal egy játékmenet akár 3 – 6 játékos számára is elérhető lesz egyszerre.
 
-## 3. Érintettek és felhasználók
+## <a name="sec_3"></a>3. Érintettek és felhasználók
 
-### 3.3 Felhasználói környezet
+### 3.1. Az érintettek összefoglalása
+Nincs információ.
+
+### 3.2. A felhasználók összefoglalása
+Nincs információ.
+
+### <a name="sec_3_3"></a>3.3 Felhasználói környezet
 Az alkalmazás fejlesztése kizárólag Windows operációs rendszerre fog megtörténni és emellett a futtatás követelménye pedig, hogy eleget tegyünk a rendszerkövetelményeknek. A jövőben a szoftverre kiadott frissítések miatt ezek a követelmények minimálisan változhatnak.
 
 A szoftverben lehetőségünk lesz majd egymás ellen partikat létrehozni mind lokálisan, mind online. Lokálisan egyszerre egymás ellen két felhasználó játszthat majd, azonban a játékban lehetőségünk lesz majd több (különböző nevű) felhasználót is létrehozni ezekalapján pedig a játék lokális ranglistát vezet majd az eddig megadott felhasználók eredményei alapján. A lokálisan 15 felhasználó adatainak a nyilvántartására lesz majd lehetőségünk. Abban az esetben ha online szeretnénk játszani akkor ezt Steam felhasználókkal tudjuk majd megtenni. Várhatóan kezdetben átlagosan 1000-2000 felhasználó fogja majd használni a szoftvert egy időben, és maximálisan 5000-7000 felhasználóra számítunk. 
@@ -66,9 +105,18 @@ Várhatóan egy felhasználó egyszerre nagyjából 1-2 óráig fogja használni
 
 A rendszerkövetelményeknek nem lesz része semmilyen különleges, egyedi eszköz használata. A szoftverben való navigálást és irányítást billenytűzettel és egérrel tudjuk majd végrehajtani. A szoftver aktiválásakor és telepítésekor, valamint online partik esetén is szükségünk lesz aktív internet kapcsolatra. Lokális, offline partik esetén internet kapcsolat nélkül is futtatható lesz majd a szoftver. Mivel a termék a Steam webárúházában lesz majd elérhető ezért szükséges lesz majd a szoftvert a Steam App-al integrálni.
 
-## 4. A végtermék áttekintése
+### 3.4. Illetékesek adatai
+Nincs információ.
 
-<p> <h3> 4.2. A termék használatának előnyei </h1> </p>
+### 3.5. Felhasználók adatai
+Nincs információ.
+
+## <a name="sec_4"></a>4. A végtermék áttekintése
+
+### 4.1 A termék kapcsolatai
+Nincs információ.
+
+### <a name="sec_4_2"></a>4.2. A termék használatának előnyei
 <p>
     Használati előnyök amit a termék biztosít:
     <ul>
@@ -80,7 +128,7 @@ A rendszerkövetelményeknek nem lesz része semmilyen különleges, egyedi eszk
     </ul>
 </p>
 
-### 4.3. Feltételezések és függőségek
+### <a name="sec_4_3"></a>4.3. Feltételezések és függőségek
 
 A több játékos módhoz Internet-kapcsolatra lesz szükség, hogy elérhető legyen a többi játékos. Mivel egy kártyajátékról van szó, rövidebb ideig nem okoz problémát a kapcsolat hiánya. Ha egy kimaradás után visszatér a hálózati kapcsolat, a többi játékos lépéseit könnyedén szinkronizálhatjuk az újra csatlakozott klienssel. Ha egy játékosnak egy adott pillanatban nincs kapcsolata, minden játékos felé egy ikonnal lesz jelezve. Ha a kapcsolat 45 másodperc alatt nem jön újra létre, akkor a többi játékosnak egy felugró ablakban felajánljuk, hogy befejezzék a játékot, vagy tovább várakozzanak. A játékosok természetesen a 45 másodperc alatt is kiléphetnek a menü segítségével.
 
@@ -94,7 +142,13 @@ Feltételezzük, hogy a játékos rendelkezik a minimális hardverkövetelménye
 
 A játékszabályok ismeretét is feltételezzük, a szabályok elérhetőek lesznek a menüben.
 
-## 5. A végtermék jellemzői, biztosított szolgáltatások
+### 4.4 Költségbecslés
+Nincs információ.
+
+### 4.5. Installáció
+Nincs információ.
+
+## <a name="sec_5"></a>5. A végtermék jellemzői, biztosított szolgáltatások
 
 Célunk, hogy a fejlesztés ideje alatt a játékban minden esetleges hibát ki tudjunk küszöbölni és a megjelenéskor hibátlan, teljes és a lehető legjobban optimalizált állapotban bocsátsuk a felhasználók rendelkezésére.
 
@@ -112,7 +166,7 @@ A jövőben tervezzük a játék portolását IOS és Android operációs rendsz
 
 ## 6. Korlátozások
 
-## 7. Minőségi elvárások
+## <a name="sec_7"></a>7. Minőségi elvárások
 - A játékot első sorban Microsoft Windows operációs rendszerre tervezzük, de mivel a későbbiekben szeretnénk Android és IOS operációs rendszerekre kiadni, így fontos szempont, hogy a játéknak kicsi legyen az erőforrás igénye.
 - A játéknak képesnek kell lennie kezelni az operációs rendszer különbségekből adódó problémákat.
 - Fontos szempont még, hogy a játéknak tökéletesen, hibák nélkül kell futnia.
@@ -127,8 +181,9 @@ A jövőben tervezzük a játék portolását IOS és Android operációs rendsz
 
 
 ## 8. Dokumentációkkal kapcsolatos követelmények
+Nincs információ.
 
-## 9. Kockázat lista
+## <a name="sec_9"></a>9. Kockázat lista
 
 ### A főbb kockázatok:
 
@@ -158,30 +213,28 @@ Az elkészült szoftvernél:
 6. Ha a végtermék iránt a vártnál kisebb az érdeklődés, akkor megvan a kockázata, hogy a projektbe fektetett idő, energia, pénz nem térül meg. Ennek megoldása egy előzetes felmérés lehet, ahol megnézzük, hogy jelenleg használatban vannak-e hasonló szoftverek, illetve ha nem létezik hasonló szoftver, akkor mekkora rá az igény.
 7. Ha a végtermék iránt a vártnál nagyobb az érdeklődés, akkor annak van kockázata, hogy nem tud minden játékos csatlakozni a játékhoz (pl. a szerver leterheltsége miatt), vagy ha igen, akkor minden játékos játékminősége romolhat (pl. nagyobb várakozási idő, késleltetés a kapcsolatban a játék közben, "akadozás"). Ennek megoldása nem feltétlenül ütközik problémába (pl. a játék elég bevételt termel további szerverek beüzemeléséhez), de nem mindig triviális (pl. több szerver esetén magukat a szervereket is össze kell kapcsolni; meg kell oldani, hogy a játékosok ugyanazon a szerveren legyenek egy-egy játékmenet alatt). A 5. és a 6. pont kiküszöbölése is tervezést igényel (felmérés, bővítési terv), de az igény felmérése a rengeteg változó és szerencse-faktor miatt sosem oldható meg teljes mértékben.
 
-## 10. Szótár
+## <a name="sec_10"></a>10. Szótár
 
-Eclipse: Egy programozást segítő fejlesztőkörnyezet. Leggyakrabban JAVA-hoz használt fejlesztői környezet. Részei többek között: Java IDE, a Java Development Toolkit (JDT) és fordító (ECJ).
+- Eclipse: Egy programozást segítő fejlesztőkörnyezet. Leggyakrabban JAVA-hoz használt fejlesztői környezet. Részei többek között: Java IDE, a Java Development Toolkit (JDT) és fordító (ECJ).
 
-Notepad++: Egy alapvetően windowsra tervezett. Szöveg- illetve forráskódszerkesztő program. Az alkalmazás többek között támogat: Java, C, C++, C#, Python nyelveket is.
+- Notepad++: Egy alapvetően windowsra tervezett. Szöveg- illetve forráskódszerkesztő program. Az alkalmazás többek között támogat: Java, C, C++, C#, Python nyelveket is.
 
-VisualStudio code: Egy Microsoft által fejlesztett kódszerkesztő. 
+- VisualStudio code: Egy Microsoft által fejlesztett kódszerkesztő. 
 
-Adobe Photoshop: Az Adobe Systems által kifejlesztett rasztergrafika alapú képszerkesztő program. 
+- Adobe Photoshop: Az Adobe Systems által kifejlesztett rasztergrafika alapú képszerkesztő program. 
 
-Ableton Live 9 lite: Zene és hangtechnikai szerkesztő program. Szerkesztés mellett hang- és zenefelvételt is támogat.
+- Ableton Live 10 lite: Zene és hangtechnikai szerkesztő program. Szerkesztés mellett hang- és zenefelvételt is támogat.
 
-Software/szoftver: A  szoftver alatt a legszűkebb értelemben elektronikus adatfeldolgozó berendezések memóriájában elhelyezkedő, azokat működtető programokat értünk.
+- Software/szoftver: A  szoftver alatt a legszűkebb értelemben elektronikus adatfeldolgozó berendezések memóriájában elhelyezkedő, azokat működtető programokat értünk.
 
-Steam: Egy felhő alapú online számítógépes szoftverek (túlnyomórészt játékok) részére készített könyvtár illetve áruház.
+- Steam: Egy felhő alapú online számítógépes szoftverek (túlnyomórészt játékok) részére készített könyvtár illetve áruház.
 
-Implementálás: Kivitelezés vagy megvalósítás.
+- Implementálás: Kivitelezés vagy megvalósítás.
 
-Offline: Hálózathoz nem kapcsolódó. Leggyakrabban az internethez való kapcsolódásra értik.
+- Offline: Hálózathoz nem kapcsolódó. Leggyakrabban az internethez való kapcsolódásra értik.
 
-Online: Hálózathoz kapcsolódó. Leggyakrabban az internethez való kapcsolódásra értik.
+- Online: Hálózathoz kapcsolódó. Leggyakrabban az internethez való kapcsolódásra értik.
 
-Kliens, szerver: A kliens olyan számítógép vagy azon futó program, amely hozzáfér egy (távoli) szolgáltatáshoz, amelyet egy számítógép hálózathoz tartozó másik számítógép (a szerver) nyújt.
+- Kliens, szerver: A kliens olyan számítógép vagy azon futó program, amely hozzáfér egy (távoli) szolgáltatáshoz, amelyet egy számítógép hálózathoz tartozó másik számítógép (a szerver) nyújt.
 
-Bot: Számítógép által vezérelt játékos karakter.
-
-
+- Bot: Számítógép által vezérelt játékos karakter.
