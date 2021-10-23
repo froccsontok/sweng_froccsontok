@@ -25,6 +25,15 @@ Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában m
 ## 4. Program Elindítása
 ## 5. Felhasználó Felület
 ## 6. A Termék Állapotok Jellemzői, Biztosított Szolgáltatások
+#### Kezdő pakli
+Kezdetben minden játékos egy azonos kezdőpaklival rendelkezik. Ez a pakli csak a kocsmahősöket tartalmazza. A játékmenetben szereplő egyéb kártyák száma és összeállítottsága fix.
+##### A pakli tartalma:
+- Löttyintős
+- Vízköpő Karesz
+- Hollósi Elvtárs
+- Sarki Jézus <br />
+###
+Eleinte csak eközül a 4 kocsmahős közül választhat a játékos, ameddig meg nem nyitja a további kocsmahősöket.
 ### 6.1. Megjelenési Állapot
 A játék megjelenési állapotában a felhasználónak képesnek kell lennie új fiókot létrehozni vagy meglévőbe belépni. A menü rendszernek teljesen működnie kell. Működnie kell azó PvP és a botok elleni játékmódoknak is, továbbá a shop működése is elvárt.<br /><br />
 Ebben az állapotban a grafikának el kell érnie a végleges állapotát. A játék inditásakor a bejelentkező vagy regisztráló oldal fogad minket, ahol lehetőségünk van bejelentkezni meglévő fiókunkba vagy létrehozni egy újat. Ezután a főmenüben vagyunk, ahonnan elindíthatjuk a fent említett két játékmód valamelyikét, beléphetünk a beállításokba, ahol grafikai és hang beállításokat találunk, továbbá a fiók beállításai is itt találhatók majd. A főmenüben lesz még található a shop, ahonnan az egyszerűen vizuális hatással rendelkező kiegészítőket és a chatben használható emote-okat vásárolhatjuk majd meg.<br /><br />
