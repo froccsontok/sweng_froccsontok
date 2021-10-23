@@ -35,6 +35,15 @@ Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában m
 ## 4. Program Elindítása
 A játék indítása a felhasználó Steam könyvtárából történhet, vagy a játék asztali parancsikonjával is indítható, ha az rendelkezésre áll. A Steam könyvtárban a „helyileg telepítve” szekció alatt a játék nevével azonos menüpontból indítható. Az itteni menü több információ mellett feltünteti a játékban töltött összes időt, illetve a legutóbbi alkalmat, amikor a játék futtatva volt. A program indítása után, ha a Steam kliensen keresztül történt a belépés, automatikusan csatlakoztatva lesz a felhasználó a Steam fiókjához. Amennyiben asztali alkalmazásként van indítva és a Steam fiók még nincsen bejelentkezve az eszközön, akkor lehetséges, hogy előbb hitelesítést fog kérni a felhasználótól.
 ## 5. Felhasználó Felület
+A játék indítását követően a főmenü tartalma jelenik meg. A menü közepén három nagy almenühöz vezető gyorsgomb található meg. 
+
+Az első, ami a rangsort tartalmazza: ami az eddig megadott felhasználókat (akiket egyedi neveik alapján különböztet meg a program) rangsorolja a program az eddigi eredményeik alapján (maximum 15 felhasználó).
+
+A második, ami a játék áruházához vezet, ahol a felhasználók különböző díszítő tárgyakat és egyéb virtuális tartalmakat vásárolhatnak meg.
+
+Illetve a harmadik és legfontosabb menüpont, ami a különböző játékmódok lehetőségeihez vezet. Opciói: Local Matchmaking, Play with a Friend, Random Matchmaking, Play against Bot. Ezen opciók egyikével juthat el a felhasználó a játékfelületre. A játékfelület letisztult, és egy hétköznapi fizikai társas külsejét fogja utánozni. A kártyákat mintha maga a felhasználó húzná fel és játszaná ki.
+
+A főmenüből elérhető még a beállítások menüpont, ahol a felhasználók többek között a grafikai, audio beállításokat állíthatják be személyes preferenciájuk szerint. A főmenüben még található egy gyorsgomb a játékból való kilépésre, annak bezárására.
 ## 6. A Termék Állapotok Jellemzői, Biztosított Szolgáltatások
 #### Kezdő pakli
 Kezdetben minden játékos egy azonos kezdőpaklival rendelkezik. Ez a pakli csak a kocsmahősöket tartalmazza. A játékmenetben szereplő egyéb kártyák száma és összeállítottsága fix.
