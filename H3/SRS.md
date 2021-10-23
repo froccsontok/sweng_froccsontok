@@ -18,6 +18,19 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 ## 4. Használhatóság
 ## 5. Megbízhatóság
 ## 6. Teljesítmény
+
+Egy kártyajátékról lévén szó, a programunknak nem lesz magas hardverigénye. Mivel a program nem használ 3D grafikát, az 1080p felbontáson 60 fps-sel való futás a kitűzött cél, amely gyenge hardver mellet sem lesz nehezen elérhető.
+
+### A játék hardverigénye
+
+- Processzor: Intel Core 2 Qaud Q9550 | AMD Phenom II X4 945 vagy jobb
+- Memória: 4 GB
+- Grafika: NVIDIA GeForce GTS 450 | AMD Radeon HD 5670 vagy jobb
+- DirectX: 9.0
+- Hálózat: Stabil internetkapcsolat (20 Mbps)
+- Tárhely: 3 GB
+- Támogatott operációs rendszer: Windows 10
+
 ## 7. Támogatottság
 ## 8. Tervezési korlátozások
 ## 9. On-line dokumentáció és Help rendszer
