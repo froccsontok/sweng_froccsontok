@@ -15,7 +15,7 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 ## 2. Rendszerkövetelmények
 ## 3. Bejelentkezés
 ### 3.1. Bejelentkezési lehetőség
-A játék elindítását követően kettő gomb fogad majd minket. Az egyik a már meglévő fiókba való bejelentkezés, a másik pedig a regisztráció, amellyel új fiókot hozhatunk létre.
+A játék elindítását követően kettő gomb fogad majd minket. Az egyik a már meglévő fiókba való bejelentkezés, a másik pedig a regisztráció, amellyel új fiókot hozhatunk létre. Ezt követően a kezdőoldal beállítások, fiók menüpontjában tudjuk majd kezelni a fiókunkat.
 #### 3.1.1. Regisztráció
 #### 3.1.2. Bejelentkezés
 #### 3.1.3. Kijelentkezés
