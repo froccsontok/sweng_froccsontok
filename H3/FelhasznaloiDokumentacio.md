@@ -15,8 +15,11 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 ## 2. Rendszerkövetelmények
 ## 3. Bejelentkezés
 ### 3.1. Bejelentkezési lehetőség
+A játék elindítását követően kettő gomb fogad majd minket. Az egyik a már meglévő fiókba való bejelentkezés, a másik pedig a regisztráció, amellyel új fiókot hozhatunk létre.
 #### 3.1.1. Regisztráció
+A játékhoz a felhasználónak muszáj profillal rendelkeznie. Ezt a regisztráció gomb megnyomásával teheti meg, melyet követően meg kell adnia az email címét, felhasználónevét és jelszavát, amelynek legalább nyolc betűsnek kell lennie és tartalmaznia kell legaláb egy nagybetűt, legalább egy kisbetűt és legalább egy számot. Ezt követően, ha a felhasználó név nem foglalt kap majd egy visszaigazoló emailt és aktívvá válik a fiókja, melybe ezek után be is jelentkezhet és meg is kezdheti a játékot.
 #### 3.1.2. Bejelentkezés
+Ha a felhasználó már rendelkezik aktív fiókkal, az adatok helyes megadásával bejelentkezhet ebbe és megkezdheti a játékot.
 #### 3.1.3. Kijelentkezés
 ## 4. Program Elindítása
 ## 5. Felhasználó Felület
