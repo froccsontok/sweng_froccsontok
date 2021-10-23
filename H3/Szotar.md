@@ -36,3 +36,5 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 - Kliens, szerver: A kliens olyan számítógép vagy azon futó program, amely hozzáfér egy (távoli) szolgáltatáshoz, amelyet egy számítógép hálózathoz tartozó másik számítógép (a szerver) nyújt.
 
 - Bot: Számítógép által vezérelt játékos karakter.
+
+- Bug: Hiba a programban, amely hibás/váratlan eredményeket vagy a tervezettől eltérő viselkedést okoz.
