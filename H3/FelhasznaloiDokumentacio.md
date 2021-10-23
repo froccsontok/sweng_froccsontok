@@ -33,6 +33,7 @@ Ha a felhasználó már rendelkezik aktív fiókkal, az adatok helyes megadásá
 #### 3.1.3. Kijelentkezés
 Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában megjelenik a kijelentkezés gomb, mely megnyomásával a felhasználónak lehetősége nyílik kijeletkezni. A játék bezárása, automatikus kijelentkezést eredményez.
 ## 4. Program Elindítása
+A játék indítása a felhasználó Steam könyvtárából történhet, vagy a játék asztali parancsikonjával is indítható, ha az rendelkezésre áll. A Steam könyvtárban a „helyileg telepítve” szekció alatt a játék nevével azonos menüpontból indítható. Az itteni menü több információ mellett feltünteti a játékban töltött összes időt, illetve a legutóbbi alkalmat, amikor a játék futtatva volt. A program indítása után, ha a Steam kliensen keresztül történt a belépés, automatikusan csatlakoztatva lesz a felhasználó a Steam fiókjához. Amennyiben asztali alkalmazásként van indítva és a Steam fiók még nincsen bejelentkezve az eszközön, akkor lehetséges, hogy előbb hitelesítést fog kérni a felhasználótól.
 ## 5. Felhasználó Felület
 ## 6. A Termék Állapotok Jellemzői, Biztosított Szolgáltatások
 #### Kezdő pakli
