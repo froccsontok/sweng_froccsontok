@@ -16,13 +16,13 @@ Kedves felhasználó! Ön jelenleg a népszerű Fröccs nevű társasjáték, az
 
 A felhasználói kézikönyvben szó lesz a játék használatba állításáról és egyéb alapvető tudnivalókról, ami a program használatához szükséges. Amennyiben a felhasználói kézikönyvben talált információk nem adnak választ az ön kérdéseire, kérem, forduljon emailben vevőszolgálatunkhoz. 
 ## 2. Rendszerkövetelmények
-Operációs rendszer: Windows 10
-Processzor: Intel Core 2 Qaud Q9550 | AMD Phenom II X4 945 vagy jobb
-Memória: 4 GB RAM
-Grafika: NVIDIA GeForce GTS 450 | AMD Radeon HD 5670 vagy jobb
-DirectX: Verzió: 9.0
-Hálózat: Széles sávú internetkapcsolat
-3 GB szabad hely
+- Operációs rendszer: Windows 10
+- Processzor: Intel Core 2 Qaud Q9550 | AMD Phenom II X4 945 vagy jobb
+- Memória: 4 GB RAM
+- Grafika: NVIDIA GeForce GTS 450 | AMD Radeon HD 5670 vagy jobb
+- DirectX: Verzió: 9.0
+- Hálózat: Széles sávú internetkapcsolat
+- 3 GB szabad hely
 ## 3. Bejelentkezés
 ### 3.1. Bejelentkezési lehetőség
 A játék elindítását követően kettő gomb fogad majd minket. Az egyik a már meglévő fiókba való bejelentkezés, a másik pedig a regisztráció, amellyel új fiókot hozhatunk létre. Ezt követően a kezdőoldal beállítások, fiók menüpontjában tudjuk majd kezelni a fiókunkat.
