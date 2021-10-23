@@ -18,6 +18,7 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 #### 3.1.1. Regisztráció
 #### 3.1.2. Bejelentkezés
 #### 3.1.3. Kijelentkezés
+Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában megjelenik a kijelentkezés gomb, mely megnyomásával a felhasználónak lehetősége nyílik kijeletkezni. A játék bezárása, automatikus kijelentkezést eredményez.
 ## 4. Program Elindítása
 ## 5. Felhasználó Felület
 ## 6. A Termék Állapotok Jellemzői, Biztosított Szolgáltatások
