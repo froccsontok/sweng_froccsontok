@@ -21,6 +21,7 @@ A játékhoz a felhasználónak muszáj profillal rendelkeznie. Ezt a regisztrá
 #### 3.1.2. Bejelentkezés
 Ha a felhasználó már rendelkezik aktív fiókkal, az adatok helyes megadásával bejelentkezhet ebbe és megkezdheti a játékot.
 #### 3.1.3. Kijelentkezés
+Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában megjelenik a kijelentkezés gomb, mely megnyomásával a felhasználónak lehetősége nyílik kijeletkezni. A játék bezárása, automatikus kijelentkezést eredményez.
 ## 4. Program Elindítása
 ## 5. Felhasználó Felület
 ## 6. A Termék Állapotok Jellemzői, Biztosított Szolgáltatások
