@@ -13,6 +13,7 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 
 ## 1. Bevezetés
 Kedves felhasználó! Ön jelenleg a népszerű Fröccs nevű társasjáték, azonos névre hallgató digitális változatának felhasználói kézikönyvét olvassa. A játék követni fogja az eredeti társasjáték szabályait és játékrendszerét. Ez a kézikönyv azért jött létre, hogy az ön és más felhasználók leggyakrabban előforduló kérdéseire választ tudjon adni.
+
 A felhasználói kézikönyvben szó lesz a játék használatba állításáról és egyéb alapvető tudnivalókról, ami a program használatához szükséges. Amennyiben a felhasználói kézikönyvben talált információk nem adnak választ az ön kérdéseire, kérem, forduljon emailben vevőszolgálatunkhoz. 
 ## 2. Rendszerkövetelmények
 ## 3. Bejelentkezés
