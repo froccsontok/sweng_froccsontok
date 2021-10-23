@@ -26,6 +26,11 @@ Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában m
 ## 5. Felhasználó Felület
 ## 6. A Termék Állapotok Jellemzői, Biztosított Szolgáltatások
 ### 6.1. Megjelenési Állapot
+A játék megjelenési állapotában a felhasználónak képesnek kell lennie új fiókot létrehozni vagy meglévőbe belépni. A menü rendszernek teljesen működnie kell. Működnie kell azó PvP és a botok elleni játékmódoknak is, továbbá a shop működése is elvárt.<br /><br />
+Ebben az állapotban a grafikának el kell érnie a végleges állapotát. A játék inditásakor a bejelentkező vagy regisztráló oldal fogad minket, ahol lehetőségünk van bejelentkezni meglévő fiókunkba vagy létrehozni egy újat. Ezután a főmenüben vagyunk, ahonnan elindíthatjuk a fent említett két játékmód valamelyikét, beléphetünk a beállításokba, ahol grafikai és hang beállításokat találunk, továbbá a fiók beállításai is itt találhatók majd. A főmenüben lesz még található a shop, ahonnan az egyszerűen vizuális hatással rendelkező kiegészítőket és a chatben használható emote-okat vásárolhatjuk majd meg.<br /><br />
+Ezek után a játékmenetnek már tökéletesen kell működnie, a botoknak is 100%-osan a szabályok szerint kell játszaniuk és a játéknak a játékosokat is ehhez kell tartania. A paklikban minden kártyának megfelelő mennyiségben kell szerepelnie, a csalások kiszűrésére használt rendszereknek már 100% közeli hatásfokkal kell üzemelniük. A játéknak képesnek kell lennie kezelni az internetkapcsolat esetleges megszűnését, és ezt a lehetőségek szerint a lehető leggyorsabban meg kell oldania. <br /><br />
+A játékmenet befejeztét követően a játéknak ki kell osztania a megfelelő mennyiségű pontokat, mind a ranglistán való helyezésre szolgálókat, mind a shopban felhasználhatókat.
+Ezen felül a kilépés gomb megnyomását követően, a játéknak rövid idő alatt el kell mentenie a fiók progress-ét és ki kell jelentkeznie abból, majd bezáródni.
 ## 7. Termék Használatának előnyei
 ### Használati előnyök amit a termék biztosít:
 - Ez a Játék tökéletesen alkalmas arra, ha az embernek van szabad ideje, akkor le játsszon pár meccset. 
