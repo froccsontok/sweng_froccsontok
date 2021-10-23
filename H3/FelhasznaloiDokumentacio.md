@@ -28,10 +28,10 @@ Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában m
 #### Kezdő pakli
 Kezdetben minden játékos egy azonos kezdőpaklival rendelkezik. Ez a pakli csak a kocsmahősöket tartalmazza. A játékmenetben szereplő egyéb kártyák száma és összeállítottsága fix.
 ##### A pakli tartalma:
--Löttyintős
--Vízköpő Karesz
--Hollósi Elvtárs
--Sarki Jézus
+- Löttyintős
+- Vízköpő Karesz
+- Hollósi Elvtárs
+- Sarki Jézus
 Eleinte csak eközül a 4 kocsmahős közül választhat a játékos, ameddig meg nem nyitja a további kocsmahősöket.
 ### 6.1. Megjelenési Állapot
 A játék megjelenési állapotában a felhasználónak képesnek kell lennie új fiókot létrehozni vagy meglévőbe belépni. A menü rendszernek teljesen működnie kell. Működnie kell azó PvP és a botok elleni játékmódoknak is, továbbá a shop működése is elvárt.<br /><br />
