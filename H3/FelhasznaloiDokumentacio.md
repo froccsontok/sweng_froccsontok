@@ -27,6 +27,16 @@ Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában m
 ## 6. A Termék Állapotok Jellemzői, Biztosított Szolgáltatások
 ### 6.1. Megjelenési Állapot
 ## 7. Termék Használatának előnyei
+<p>
+    Használati előnyök amit a termék biztosít:
+    <ul>
+        <li> Ez a Játék tökéletesen alkalmas arra, ha az embernek van szabad ideje, akkor le játsszon pár meccset. </li>
+        <li> Hogyha barátainkkal vagy egyedül szeretnénk játszani, akkor egy tartalmas és mókás elfoglaltság lehet. </li>
+        <li> Amennyiben úgy ülünk le játszani gép elé, hogy nincs sok időnk, ez a játék megfelelő választás hisz a leghosszabb kör is maximum 30 percig tart. </li>
+        <li> A játékot az egyik leghíresebb játék terjesztési platformon a Steam-en lehet elérni. </li>
+        <li> Ezzel a játékkal mindenki tud játszani mivel, nincs nagy hardveres követelménye. </li>
+    </ul>
+</p>
 ## 8. Termék Helye
 ## 9. Használhatóság
 A játék elsősorban számítógépre készül, az belül is Windows operációs rendszerre. Később elérhető lesz, MacOS és Linux operációs rendszerű számítógépeken is, továbbá Android és IOS rendszerő mobil készülékeken is. A alkalmazás kártyajáték létének jóvoltából alacsony lesz a gépigénye, így az imént említett mobil eszközöknek sem jelent majd gondot a futtatása.<br /><br />
