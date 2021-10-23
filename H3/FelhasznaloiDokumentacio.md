@@ -29,5 +29,9 @@ Ha a felhasználó be van jelentkezve, a beállítások, fiók menüpontjában m
 ## 7. Termék Használatának előnyei
 ## 8. Termék Helye
 ## 9. Használhatóság
+A játék elsősorban számítógépre készül, az belül is Windows operációs rendszerre. Később elérhető lesz, MacOS és Linux operációs rendszerű számítógépeken is, továbbá Android és IOS rendszerő mobil készülékeken is. A alkalmazás kártyajáték létének jóvoltából alacsony lesz a gépigénye, így az imént említett mobil eszközöknek sem jelent majd gondot a futtatása.<br /><br />
+A játéknak szüksége lesz internet elérésre a PvP mód miatt. A válaszidő nem élvez prioritást, de egy bizonyos válaszidő felett a játék kilépteti majd a játékost az adott jázékmenetből.<br /><br />
+A felhasználói adatok tárolása magas prioritást élvez, az esetleges támadások és adatlopási kisérletek elhárításának érdekében.<br /><br />
+A játék felülete, egyszerű, könnyen értelmezhető, mégis látványos lesz, hogy senkinek se okozzon gondot az értelmezése, de mégis kiváló élményt nyújtson.
 ## 10. Teljesítmény / Kockázati Lista
 ## 11. Dokumentáció Leírása
