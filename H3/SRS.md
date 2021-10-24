@@ -30,6 +30,44 @@ Miben különbözik alapvetően az elkészült termék az alternatíváktól: A 
 
 ### 2.2 Legfontosabb funkciók
 
+#### Bejelentkezési képernyő:
+Ha a felhasználó rendelkezik Internet-kapcsolattal, akkor meg fog jelenni a bejelentkezési képernyő, ahol beléphet játékos profiljába. Amennyiben első használatkor vagy kijelentkezés után nincs kapcsolat, az egy játékos és lokális multiplayer módok elérhetőek lesznek bejelentkezés nélkül. Ha egy játékos be volt jelentkezve, akkor a legutoljára szinkronizált adatok (pl. szint) elérhetőek lesznek kapcsolat nélkül is, ezenkívül az előbb említett két játékmód is használható lesz.
+
+#### Menü:
+Bejelentkezés után a menüt fogja látni a felhasználó.
+
+A menü a következő menüpontokból fog állni:
+- Játékmódok, azaz:
+    - Local Matchmaking
+    - Play with Friends
+    - Random Matchmaking
+    - Play against Bot
+- Beállítások
+- Profil
+- Áruház
+
+A Local Matchmaking segítségével lokális multiplayer módban játszhatunk, a játékosok ilyenkor külön billentyűkiosztást kapnak és egy számítógépen játszhatnak egymás ellen. A Play with Friends menüpontot választva a Steam-es barátainkkal indíthatunk játékot. A Random Matchmaking más játékosokkal sorsol össze minket. Az egy játékos mód a Play against Bot menüpont segítségével lesz elérhető.
+
+A Profil menüpontban megtekinthetőek lesznek a bejelentkezett játékosok. Látható lesz szintjük, továbbá online módban az online ranglista, offline módban csak a 15 rekordtartó felhasználó eredményét tároló lokális ranglista.
+
+Az Áruházban a partik után szerzett virtuális zsetonokért tudunk majd vizuális kiegészítőket venni a játékhoz.
+
+#### Beállítások:
+
+A következő beállításokat lesz lehetősége módosítani a játékosoknak:
+- Nyelv
+- Hangerő
+- Felbontás
+- Billenytűkiosztás
+
+#### Játékablak:
+
+A játékablakban fog megjelenni a virtuális asztal, illetve a játékosok paklijai, maguk elé helyezett vagy kijátszott lapjaik.
+
+A játékmódtól függően a játékablak a következőképpen változik:
+- Ha több játékos módban játszunk akkor a játékosok nevei is megjelennek. Online multiplayer esetén a Steam fiókhoz tartozó nevek, lokális multiplayer esetén a bejelentkezett felhasználó és a megadott játékosok nevei jelennek meg.
+- Egy játékos mód esetén a bot(ok) fogják kezelni az ellenfél játékosok lapjait.
+
 ### 2.3 Felhasználók
 
 ### 2.4 Feltételezések és függőségek
