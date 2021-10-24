@@ -25,6 +25,8 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 ## 11. Interfészek
 ### 11.1. Felhasználói interfészek
 ### 11.2. Hardware interfészek
+    Az alkalmazásunk fútatásához szükséges egy számítógép, de mivel manapság már majdnem minden háztartásban van legalább egy számítógép.
+    Ezért nem nehéz egy hardware interfészt szerezni. Mivel a játék nem nagy az erőforrás igénye ezért mindenki számára elérhető.
 ### 11.3. Software interfészek
 ### 11.3. Kommunikációs interfészek
 ## 12. Alkalmazott szabványok
