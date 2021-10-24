@@ -70,6 +70,10 @@ A játékmódtól függően a játékablak a következőképpen változik:
 
 ### 2.3 Felhasználók
 
+A felhasználók Steam-fiókkal rendelkező játékosok lesznek, ez alól kivétel, ha első indításkor vagy kijelentkezés után offline módban játszanak, ekkor nem Steam-fiókkal hanem a beírt nevekkel lesznek azonosítva a játékosok.
+
+A jelenlegi időszakban várhatóan növekedni fog a felhasználók száma, ha a COVID-19 járvány újabb hulláma miatt az emberek újra home office-ba és karantánba kényszerülnek. Várhatóan egy felhasználó egyszerre nagyjából 1-2 óráig fogja használni a szoftvert, azonban ez az idő változhat különböző körülmények hatására (pl.: Ha több fős tarsaságban használják a szoftvert és így egymás ellen több partit is lejátszanak a felhasználók). Különböző frissítésekkel arra törekszünk majd, hogy a felhasználók hosszútávon is minél tovább használják a szoftvert.
+
 ### 2.4 Feltételezések és függőségek
 
 A több játékos módhoz Internet-kapcsolatra lesz szükség, hogy elérhető legyen a többi játékos, ez alól kivételt képez a lokális multiplayer mód. Mivel egy kártyajátékról van szó, rövidebb ideig nem okoz problémát a kapcsolat hiánya. Ha egy kimaradás után visszatér a hálózati kapcsolat, a többi játékos lépéseit könnyedén szinkronizálhatjuk az újra csatlakozott klienssel. Ha egy játékosnak egy adott pillanatban nincs kapcsolata, minden játékos felé egy ikonnal lesz jelezve. Ha a kapcsolat 45 másodperc alatt nem jön újra létre, akkor a többi játékosnak egy felugró ablakban felajánljuk, hogy befejezzék a játékot, vagy tovább várakozzanak. A játékosok természetesen a 45 másodperc alatt is kiléphetnek a menü segítségével.
