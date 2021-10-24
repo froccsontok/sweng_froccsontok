@@ -17,7 +17,7 @@ A projektünk célja a Fröccs nevű kártyajáték megalkotása digitális form
 
 A játékmenet a társasjáték szabályait fogja követni, a játékosok különböző karaktereket magukra öltve vesznek majd részt a játékban. A játékosok rendelkezni fognak játékosnévvel, eredményeiket szintjük és egy rangsor fogja nyilvátartani. Játékunk a több játékos (más felhasználók elleni) és az egy játékos (botok elleni) játékmódot is támogatni fogja.
 
-A több játékos módhoz Internet-kapcsolatra lesz szükség, az egy játékos mód offline is használható lesz.
+Az egy játékos módhoz nem lesz szükség Internet-kapcsolatra, a több játékos módhoz sem feltétlenül kell majd (ez lesz a lokális multiplayer mód).
 
 Ez a dokumentum a fejlesztendő játékprogram részletes szoftverspecifikációját tartalmazza.
 
