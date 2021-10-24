@@ -23,6 +23,7 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 ## 9. On-line dokumentáció és Help rendszer
 ## 10. Felhasznált kész komponensek
 ## 11. Interfészek
+    A szoftverünk grafikus felhasználói felülettel fog rendelkezni és csak a szükséges interfacek lesznek definiálva.
 ### 11.1. Felhasználói interfészek
 ### 11.2. Hardware interfészek
 ### 11.3. Software interfészek
