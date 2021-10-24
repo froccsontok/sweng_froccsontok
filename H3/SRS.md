@@ -24,6 +24,13 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 ## 10. Felhasznált kész komponensek
 ## 11. Interfészek
 ### 11.1. Felhasználói interfészek
+    A felhasználói interface az az interface amin keresztül a játékos kommunikál a szoftverrel, és kezeli azt.
+    jellemzői:
+        *Könnyen kezelhető
+        *Egységes téma és stílus
+        *Gyorsan tanulható
+
+    Illetve itt jelenik meg a „Play”, „Invite”, Beállítások, Kilépés, Áruház illetve meg fog jelleni a menüben a felhasználó neve és a profilképe.    
 ### 11.2. Hardware interfészek
 ### 11.3. Software interfészek
 ### 11.3. Kommunikációs interfészek
