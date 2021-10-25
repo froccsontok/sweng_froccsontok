@@ -193,6 +193,7 @@ A fejlesztés az evolúciós modell mentén halad. A kezdeti implementációt k�
 ## 9. On-line dokumentáció és Help rendszer
 ## 10. Felhasznált kész komponensek
 ## 11. Interfészek
+A szoftverünk grafikus felhasználói felülettel fog rendelkezni és csak a szükséges interfacek lesznek definiálva.
 ### 11.1. Felhasználói interfészek
 A felhasználói interface az az interface amin keresztül a játékos kommunikál a szoftverrel, és kezeli azt.
 jellemzői:
