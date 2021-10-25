@@ -20,6 +20,44 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 ## 6. Teljesítmény
 ## 7. Támogatottság
 ## 8. Tervezési korlátozások
+
+### 8.1 Szoftver-architektúra
+
+Mivel szoftverünk egy online játszható, több játékos módot támogató játék, a legkézenfekvőbb architektúrát választottuk, a __kliens-szerver__ architektúrát.
+
+A __szerver oldal__ a következők biztosításáért felel:
+- a játékosok adattárolása
+- a játékosok adatelérése
+<!---->
+- a játékmenetek létrehozása 
+    - játékosok csatlakoztatása
+    - adott esetben játékosok random kiválasztása
+- a játékmenetek fenntartása
+    - lépések szinkronizálása a játékosok között
+    - inaktivitás/kapcsolat hiányának ellenőrzése
+    - a kapcsolat helyreállítása (amennyiben lehetséges)
+- a játékmenet lezárása
+    - eredmény jelzése a résztvevők felé
+    - a ranglista frissítése
+    - a tapasztalati pontok/szintlépések rögzítése
+
+A __kliens oldal__ a következők biztosításáért felel:
+- kapcsolatfelvétel a szerverrel
+    - a kapcsolat helyreállítása (amennyiben lehetséges)
+- vizuális megjelenítés
+    - menü
+    - töltőképernyő
+    - játéktér
+        - ennek szinkronizálása a szerverrel (a játékosok lépéseivel)
+
+### 8.2 Programozási nyelv
+
+### 8.3 Könyvtárak, újrafelhasználható elemek
+
+### 8.4 Fejlesztőeszközök
+
+### 8.5 Fejlesztési módszertan
+
 ## 9. On-line dokumentáció és Help rendszer
 ## 10. Felhasznált kész komponensek
 ## 11. Interfészek
