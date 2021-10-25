@@ -235,3 +235,5 @@ Itt történik a kommunikáció azon része amikor egy regisztrált felhasznál�
 ### 12.1. Kötelezően alkalmazandó szabványok
 ### 12.2. Választás alapján alkalmazott szabványok
 ## 13. Mellékletek
+
+* A Fröccs játékszabályai: http://jatekdij.hu/tartalom/tarsasjatek/Froccs.pdf
