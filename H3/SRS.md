@@ -233,9 +233,9 @@ Ebben a kommunikációban a cliens és az adatokat tároló adatbázis vesz rés
 Itt történik a kommunikáció azon része amikor egy regisztrált felhasználó a cliensbe belépve az adatokat elküldi az adatbázis szervernek azon részére ahol a felhasználók és azok adatai vannak nyilvántartva és ha szerepel a nyilvántartásban akkor a szerver visszaválaszol és belépteti az adott clienst, amennyiben nincs benne az nyilvántartásban akkor egy error üzenttel tér vissza a cliensnek mivel az a felhasználó nincs regisztrálva.
 ## 12. Alkalmazott szabványok
 ### 12.1. Kötelezően alkalmazandó szabványok
-* 1992. évi LXIII. törvény – a személyes adatok védelméről és a közérdekű adatok nyilvánosságáról
-* 2001. évi CVIII. törvény – az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről
-* 2011. évi CXII. törvény - az információs önrendelkezési jogról és az információszabadságról
+1992. évi LXIII. törvény – a személyes adatok védelméről és a közérdekű adatok nyilvánosságáról
+2001. évi CVIII. törvény – az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről
+2011. évi CXII. törvény - az információs önrendelkezési jogról és az információszabadságról
 ### 12.2. Választás alapján alkalmazott szabványok
 ## 13. Mellékletek
 
