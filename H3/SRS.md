@@ -195,6 +195,8 @@ A fejlesztés az evolúciós modell mentén halad. A kezdeti implementációt k�
 ## 11. Interfészek
 ### 11.1. Felhasználói interfészek
 ### 11.2. Hardware interfészek
+Az alkalmazásunk fútatásához szükséges egy számítógép, de mivel manapság már majdnem minden háztartásban van legalább egy számítógép.
+Ezért nem nehéz egy hardware interfészt szerezni. Mivel a játék nem nagy az erőforrás igénye ezért mindenki számára elérhető.
 ### 11.3. Software interfészek
 Ez az az interface ami ahoz szükséges hogy a szoftver más szoftverekkel együtt tudjon működni.
 A fútatáshoz a tervek szerint Java SE 16 fogunk használni. És ezért is lényeges ez az interface a mi esetünkben mivel a szoftver működéséhez kell a JVM.
