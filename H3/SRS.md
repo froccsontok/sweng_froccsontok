@@ -194,6 +194,13 @@ A fejlesztés az evolúciós modell mentén halad. A kezdeti implementációt k�
 ## 10. Felhasznált kész komponensek
 ## 11. Interfészek
 ### 11.1. Felhasználói interfészek
+A felhasználói interface az az interface amin keresztül a játékos kommunikál a szoftverrel, és kezeli azt.
+jellemzői:
+* Könnyen kezelhető
+* Egységes téma és stílus
+* Gyorsan tanulható
+
+Illetve itt jelenik meg a „Play”, „Invite”, Beállítások, Kilépés, Áruház illetve meg fog jelleni a menüben a felhasználó neve és a profilképe.    
 ### 11.2. Hardware interfészek
 Az alkalmazásunk fútatásához szükséges egy számítógép, de mivel manapság már majdnem minden háztartásban van legalább egy számítógép.
 Ezért nem nehéz egy hardware interfészt szerezni. Mivel a játék nem nagy az erőforrás igénye ezért mindenki számára elérhető.
