@@ -234,6 +234,21 @@ Itt történik a kommunikáció azon része amikor egy regisztrált felhasznál�
 ## 12. Alkalmazott szabványok
 ### 12.1. Kötelezően alkalmazandó szabványok
 ### 12.2. Választás alapján alkalmazott szabványok
+**OOP**:
+Az Objektum-Orientált Programozásra azért van szükségünk mivel a program egyszerre több funkciót fog ellátni és átláthatatlanná válna a kód bázisunk, ha megpróbálnak csak egy fájlba megírni az egészet. Másfelől a későbbi fejlesztést is megnehezítené ha nem szednénk szét a kódot mert:
+
+* A meglévő kódunk túl nagy lenne ami kavarodást okozhatna.
+* Funkcionálisan el fogjuk tudni különíteni a program elemeit
+* Ha egy új fejlesztő kapcsolódik a projektbe akkor neki így átláthatóbbá tudjuk tenni és hamarabb meg tudjaérteni a különbőző osztályok müködésének az elvét.
+* Az MVC szabványt nélküle nem tudnánk alkalmazni
+
+**MVC**:
+A programunkat úgy szeretnénk megírni, hogy a felület amit lát a felhasználó és azt ott folyó műveletek csak “részben” férjenek hozzá a felhasznált adatokhoz. Ezért fogjuk alkalmazni a Model-View-Controller Szabványt/Mintát (későbbiekben csak MVC ként fogunk rá hivatkozni) mert szeretnénk biztosítani egy védelmi réteget a programon belül és ezzel a szabvánnyal később egyszerűbben fogjuk tudni szerkeszteni a programunkat.
+
+A View itt a felhasználó által látott felületett értjük, a Controller osztály a felületen végbemenő interakciót hivatott lekzeleni és képes a modell osztállyal kommunikálni de elemeihez csak közvetett módon férhet hozzá. Ez azért hasznos mert a ha valamilyen változás/hiba történik az adatokban azaz a model osztály részben akkor egyszerűen csak a Modell osztályokon kell javítani ezzel pedig azt tudjuk biztosítani, hogy a Controller osztályokban nem kell újra írni a kódot mivel nem ő érte a felelős, hogy adatot biztosítson, ő csak ezt az adatot felhasználja.
+
+Ezen kívül a programon több ember is dolgozik egyszerre és ezzel a szabvánnyal egyszerűbb elkülöníteni a komponenseket, mert amíg a csapat egyik része tud zökkenőmentesen dolgozni a Grafikus felületen (Views), a csapat másik fele képes dolgozni a Hátterét szolgáló kódon (Models) egyazon időben. 
+
 ## 13. Mellékletek
 
 * A Fröccs játékszabályai: http://jatekdij.hu/tartalom/tarsasjatek/Froccs.pdf
