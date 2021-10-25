@@ -36,3 +36,15 @@ Slyízs István Gábor|HVM06X|slyizsistvangabor@gmail.com|csapatkapitány, ját�
 - Kliens, szerver: A kliens olyan számítógép vagy azon futó program, amely hozzáfér egy (távoli) szolgáltatáshoz, amelyet egy számítógép hálózathoz tartozó másik számítógép (a szerver) nyújt.
 
 - Bot: Számítógép által vezérelt játékos karakter.
+
+- Bug: Hiba a programban, amely hibás/váratlan eredményeket vagy a tervezettől eltérő viselkedést okoz.
+
+- Lokális multiplayer mód: Az a játékmód, ahol több játékos helyben, fizikailag egy számítógépen játszik. A játékosok körönként egymás után, különböző billentyűkiosztásokkal kezelik a játékot.
+
+- Matchmaking: Játékosok kiválasztása, majd csatlakoztatása egy adott játékmenethez. A játékosok kiválasztása lehet random, a játékosok által választott vagy lokális (ekkor a helyben résztvevők megadják neveiket).
+
+- 1080p: 1920 × 1080px-es felbontás.
+
+- FPS: Másodpercenkénti képkockaszám mozgókép megjelenítésekor.
+
+- Szoftver életciklus: A szoftver megtervezését, fejlesztését, kiadását és fenntartását magába foglaló időszak.
