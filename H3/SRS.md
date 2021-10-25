@@ -31,6 +31,10 @@ Egy kártyajátékról lévén szó, a programunknak nem lesz magas hardverigén
 - Tárhely: 3 GB
 - Támogatott operációs rendszer: Windows 10
 
+### A szerver erőforrásai
+
+A szerver erőforrásai előre meghatározottak, viszont a játékosszámmal majd arányosan növekednek, az általános túlterhelések és lefagyások elkerülése végett. A szerver saját szerver lesz, viszont szerverparkban lesz elhelyezve az optimális működés, a nagy sávszélesség és a nagy sebességű stabil internetkapcsolat érdekében.
+
 ## 7. Támogatottság
 ## 8. Tervezési korlátozások
 ## 9. On-line dokumentáció és Help rendszer
