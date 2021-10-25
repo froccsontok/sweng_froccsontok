@@ -196,6 +196,8 @@ A fejlesztés az evolúciós modell mentén halad. A kezdeti implementációt k�
 ### 11.1. Felhasználói interfészek
 ### 11.2. Hardware interfészek
 ### 11.3. Software interfészek
+Ez az az interface ami ahoz szükséges hogy a szoftver más szoftverekkel együtt tudjon működni.
+A fútatáshoz a tervek szerint Java SE 16 fogunk használni. És ezért is lényeges ez az interface a mi esetünkben mivel a szoftver működéséhez kell a JVM.
 ### 11.3. Kommunikációs interfészek
 A kommunikációs interface nevéből adódóan a komponensek közötti kommunikációért felel.
 A szoftverünk esetében ez az interface 3 al interfacera bontható:
