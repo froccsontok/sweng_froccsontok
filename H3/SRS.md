@@ -210,6 +210,15 @@ A fejlesztés az evolúciós modell mentén halad. A kezdeti implementációt k�
 
 ## 9. On-line dokumentáció és Help rendszer
 ## 10. Felhasznált kész komponensek
+
+•	Fejlesztés: Eclipse IDE (Java nyelven)
+•	Grafiaki elemek: JavaFX (17) könyvtár, Adobe Photoshop
+•	Adatbázis: MySQL
+•	Hangeffektek: Ableton Live
+•	Dokumentáció : GitHub, Visual Studio Code, Notepad++
+•	A játék forgalmazása és fórum: Steam
+•	Ezekmellett természetesen rengeteg hasznát vettük az intetnetnek azonban SOSEM másolás céljából. Pusztán csak azért hogy ihletet merítsünk, új dolgokat tanuljunk meg és ezáltál       gördülékenyebbé tegyük a fejlesztést.
+
 ## 11. Interfészek
 A szoftverünk grafikus felhasználói felülettel fog rendelkezni és csak a szükséges interfacek lesznek definiálva.
 ### 11.1. Felhasználói interfészek
