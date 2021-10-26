@@ -151,6 +151,14 @@ Egy kártyajátékról lévén szó, a programunknak nem lesz magas hardverigén
 A szerver erőforrásai előre meghatározottak, viszont a játékosszámmal majd arányosan növekednek, az általános túlterhelések és lefagyások elkerülése végett. A szerver saját szerver lesz, viszont szerverparkban lesz elhelyezve az optimális működés, a nagy sávszélesség és a nagy sebességű stabil internetkapcsolat érdekében.
 
 ## 7. Támogatottság
+
+Célunk a szoftver folyamatos fejlesztése és karbantartása.  Ennek érdekében a fejlesztő csapatunk rendszeresen figyelni fogja a játék fórumát és bizonyos időközönként különböző analitikai szoftverekkel fogjuk majd ellenőrizni a programot.
+
+Annak érdekében, hogy az esetleges fellépő hibákat adott esetben a felhasználók is azonosítani tudják, a játék elindulásakor automatikusan létrejön majd egy RuntimeInformation.txt fájl, amely a futásteljesítményt és a játék közben végbemenő folyamatokat fogja majd naplózni, többek között azt is, ha valamilyen hiba lép fel a játék közben. Ebben az esetben a hibáról ezt a fájlt megnyitva tudunk majd információkat gyűjteni, amelyek a felhasználók segítségére is lehetnek majd a hiba megoldásában, de velünk is megoszthatják majd a fórumon, ahol más felhasználók is tudnak nekik segíteni, de természetesen mi is figyelembe vesszük ezeket az üzeneteket és könnyebben ki tudjuk javítani a hibákat. Ezeket a javításokat frissítések alkalmával fogjuk majd alkalmazni a játékban.
+
+A jövőben szeretnénk egy visszajelző rendszerrel is a játékot, amely által a játékosok közvetlenül a játékon belül tudnak majd nekünk visszajelzést küldeni esetleges hibákról, csalókról vagy véleményüket is megoszthatják a játékkal kapcsolatban, ezáltal elősegítve a további fejlesztéseket.
+
+
 ## 8. Tervezési korlátozások
 
 ### 8.1 Szoftver-architektúra
