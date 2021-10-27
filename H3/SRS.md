@@ -209,6 +209,17 @@ A Java fejlesztést az Eclipse IDE-ben végezzük. A dokumentáció GitHub, Visu
 A fejlesztés az evolúciós modell mentén halad. A kezdeti implementációt követően, a csapat tesztelőinek véleményeit meghallgatva, folyamatosan finomítjuk majd a játékot. A szoftver a kiadást követően is fenntartást igényel, a szerverek működtetése és a hibák javítása is beletartozik a szoftver életciklusába.
 
 ## 9. On-line dokumentáció és Help rendszer
+
+A program dokumentációja a korábbi vízió dokumentumban és ebben az SRS dokumentumban találhatók meg. Ezeket a dokumentumokat feltöltöttük GitHubra, ahonnan linken keresztül elérhetőek.
+
+Elsődleges Help rendszerként a fórum fog működni. Felhasználók itt megoszthatják a többi felhasználóval, a játékkal kapcsolatos hibákat, észrevételeiket. Azonban, ha valaki nem szeretne a fórumba írni akkor, akár a korábbi bejegyzések közül is kereshetnek megoldást a problémájukra.
+
+A jövőben a fórumon közzétett bejegyzéseket szeretnénk különböző csoportokba (topic-okba) rendezni ezáltal az elősegítve, hogy az ismétlődő problémákra könnyebben megoldást találjanak a felhasználók, valamint hogyha a megfelelő topic-ba írnak bejegyzést, akkor általában sokkal gyorsabb és sokkal jobb választ kaphatnak.
+
+Természetesen a játék első elindításakor működésbe lép majd egy súgó, ami segít minket a játékon belüli navigálásban és bemutatja a program működését. Miután a „súgó” összes lépését végig néztük, bezárja magát és a következő induláskor már nem fog automatikusan megjelenni. Természetesen a súgó manuálisan is elérhető lesz majd a menüben, így ha valaki azt választja, akkor ismét végig nézheti a lépéseket az elejétől a végéig.
+
+A játékmenet megismerése érdekében külön „Tutorial” opciót adtunk hozzá a játékhoz. Ezen belül a játékos ki tudja majd próbálni a játékmenetet egy előre megírt bot ellen, amely arra törekszik majd, hogy a játékmenet összes lehetséges opcióját, akcióját bemutassa majd és ezek mellett természetesen tanácsokkal lássa el a többi játékost. 
+
 ## 10. Felhasznált kész komponensek
 
 -	Fejlesztés: Eclipse IDE (Java nyelven)
