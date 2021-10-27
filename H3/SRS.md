@@ -218,7 +218,7 @@ A jövőben a fórumon közzétett bejegyzéseket szeretnénk különböző csop
 
 Természetesen a játék első elindításakor működésbe lép majd egy súgó, ami segít minket a játékon belüli navigálásban és bemutatja a program működését. Miután a „súgó” összes lépését végig néztük, bezárja magát és a következő induláskor már nem fog automatikusan megjelenni. Természetesen a súgó manuálisan is elérhető lesz majd a menüben, így ha valaki azt választja, akkor ismét végig nézheti a lépéseket az elejétől a végéig.
 
-A játékmenet megismerése érdekében külön „Tutorial” opciót adtunk hozzá a játékhoz. Ezen belül a játékos ki tudja majd próbálni a játékmenetet egy előre megírt bot ellen, amely arra törekszik majd, hogy a játékmenet összes lehetséges opcióját, akcióját bemutassa majd és ezek mellett természetesen tanácsokkal lássa el a többi játékost. 
+A játékmenet megismerése érdekében külön „Tutorial” opciót adtunk hozzá a játékhoz. Ezen belül a játékos ki tudja majd próbálni a játékmenetet egy előre megírt bot ellen, amely arra törekszik majd, hogy a játékmenet összes lehetséges opcióját, akcióját bemutassa majd és ezek mellett természetesen tanácsokkal lássa el a többi játékost. A "Tutorial" a menüből egyértelműen többször is elérhető lesz majd .
 
 ## 10. Felhasznált kész komponensek
 
