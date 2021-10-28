@@ -260,6 +260,9 @@ Itt történik a kommunikációnak az a része mikor a játékos kijátszik vala
 Ebben a kommunikációban a cliens és az adatokat tároló adatbázis vesz részt. 
 Itt történik a kommunikáció azon része amikor egy regisztrált felhasználó a cliensbe belépve az adatokat elküldi az adatbázis szervernek azon részére ahol a felhasználók és azok adatai vannak nyilvántartva és ha szerepel a nyilvántartásban akkor a szerver visszaválaszol és belépteti az adott clienst, amennyiben nincs benne az nyilvántartásban akkor egy error üzenttel tér vissza a cliensnek mivel az a felhasználó nincs regisztrálva.
 ## 12. Alkalmazott szabványok
+Az alkalmazásunkat 2 betartandó szabványra bontottuk, hogy a programot hosszú távon fejleszthetővé tudjuk tenni. A program Java nyelven íródik emelet pedig az adatokat egy 
+adatbázisból nyerjük ki amit a JavaFX könyvtár segítségével fogjuk megmutatni a felhasználónak és ezzel a felülettel lesz képes interaktálni. Ezeket a kulcs tényeket vettük
+figyelembe mikor kijelöltük a betartandó szabványokat.
 ### 12.1. Kötelezően alkalmazandó szabványok
 1992. évi LXIII. törvény – a személyes adatok védelméről és a közérdekű adatok nyilvánosságáról
 2001. évi CVIII. törvény – az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről
