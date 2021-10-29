@@ -142,7 +142,6 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 -	Az Adminnak áll jogában a játék adatlapjának a szerkesztése és az újdonságok folyamatos közzététele.
 -	Egyedül az Admin ruházhat fel admin jogosultsággal más felhasználókat.
 
-### 3.1. Első követelmény
 ## 4. Használhatóság
 ### 4.1 Különböző tapasztalati szinttel rendelkező felszanálók
 #### 4.1.1 Kezdő felhasználó:
