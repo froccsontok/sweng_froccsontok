@@ -98,6 +98,50 @@ Feltételezzük, hogy a játékos rendelkezik a minimális hardverkövetelménye
 A játékszabályok ismeretét is feltételezzük, a szabályok elérhetőek lesznek a menüben.
 
 ## 3. A rendszer funkciói
+A következő pontokban a játék mindenki számára elérhető funkcióit mutatom be.
+
+#### Steamen elérhető funkciók: 
+-	Játék indítása: A gomb megnyomásával a játék automatikusan elindul vagy ha frissítés érhető el, akkor első sorban feltelepülnek a frissítések és a játék ezután indul el.
+-	Fórum: Itt érhető el a játék hivatalos fórum felülete ahol a játékosok bejegyzéseket tehetnek közzé adott témák. A fórum a játékos közösség létrejöttét szolgálja majd és segíti majd a kapcsolattartást a játékosok és a fejlesztők között.
+-	A játék profilja: Itt tálható a játék leírása különböző tulajdonságokkal és a rendszer követelményekkel együtt.
+-	Barátok: Egy listában láthatjuk azokat a Steam-es barátainkat akik szintén játszanak a játékkal, és a nevük mellet láthatjuk hogy éppen aktívak-e vagy sem.
+-	Jutalmak: Itt tálálhatjuk a játékban elért eredmények után megszerzett jutalmainkat, kitüntetéseinket.
+-	Újdonságok: A készítők ezen a felületen tudják közzétenni a játékba érkező újdonságokat változásokat és további aktualitásokat.
+
+#### A játékban elérhető funkciók:
+-	Bejelentkezés: Steam-en keresztül a Steam fiókunkkal.
+-	Játék Bot ellen: Elindul a játékmenet az általunk kiválasztott számú és nehézségi fokozatú botok ellen. A játékban elért eredményeinkért jutalompontokat és különböző ajándékokat kaphatunk
+-	Lokális parti: Ezen játékmód elindításakor mindegyik játékosnak egyedi nevet kell megadnia, ami alapján a játék meg tudja őket különböztetni. Egyszerre 3-6 személy játszhat. Ezek után indul el a játékmenet, azonban itt a játékosok nem kapnak jutalmakat, csakis pontokat az eredményeik után, amelyek alapján egy rangsort állít fel a játék a partiban résztvevő játékosokról.
+-	Online parti: A parti létrehozásakor először lehetőségünk van megadni, hogy hány embert szeretnénk meghívni a partiba. A Steam-es barátainkat is meg tudjuk hívni a partiba ezután elindíthatjuk a meccskeresést amely addig fut majd ameddig a rendszer nem tál annyi játékost amennyi játékos még szükséges ahhoz hogy meglegyen a meccskeresés elején beállított létszám. A játékmenet a hagyományos és az itt elért eredményeinkért is kapunk jutalompontokat valamint ajándékokat.
+-	Grafikai beállítások: A beállítások menü ponton belül lehetőségünk van a játék megjelenítésén változtatni. Itt beállíthatjuk a felbontást, a képernyőmódot (ablakban/teljesképernyős), a grafika minőségét (alacsony/közepes/magas), valamint beállíthatjuk a képfrissítést is (30 Fps/60 Fps/ Korlátlan).
+-	Nyelvi beállítások: Itt megváltoztathatjuk a játékban használt nyelvet (Magyar/Angol/Német).
+-	Hang beállítások: A játék több fajta hangeffektet is tartalmaz majd, itt lehetőségünk lesz majd ezek hangerejét módosítani. Beállíthatjuk  majd a játék fő hangerejét, a háttérben játszódó zenék hangerejét, valamint a játékmenet közbeni hangeffektek hangerejét.
+-	Irányítások: Ebben a menüpontban személyre szabhatjuk a játék irányítását. Változtathatunk a billentyűkiosztáson és az egér működését is beállíthatjuk. 
+-	Tutorial: Egy próba játékmenet amelyben a felhasználó botok ellen játszik és játék közben üzeneteket kap segítség képpen. Ennek a módnak a célja, a játékmenet teljes bemutatása és segítség nyújtás a játékhoz szükséges tudás elsajátításában. Ennek befejeztével a játékos egy kezdő bónuszt kap.
+-	Rangsor: A felhasználókat a játékban elért eredményeik alapján rangsorolják. Ez a rangsor ebben a menüpontban tekinthető meg.
+
+A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek a felhasználók (játékosok), akik program funkcióinak az élvezői, valamint vannak az adminok akiknek jogosultságuk van a szerver moderációjára is.
+
+#### Felhasználó (játékos) számára elérhető funkciók:
+-	A fent említett Steam-es és játékbeli funkciók teljes körű használata.
+-	Regisztráció a Steam rendszerébe. Ezután lehetséges a játék aktiválása és használata.
+-	Bejelentkezés : A regisztrált adatainkat megadva tudunk belépni a Steam rendszerébe ahonnan elérjük a játékot.
+-	A játék számítógépen elfoglalt helyének pontos megadása a telepítéskor.
+-	Adatok módosítása: A Steam-en belül a felhasználóknak lehetőségük van a profiljuk adatainak a módosítására (Pl.: jelszó, felhasználónév, e-mail cím).
+-	A fórum megtekintése és bejegyzés írása.
+-	Virtuális zsetonok gyűjtése: Minden parti után, különböző mérföldkövek elérése után és a napi bejelentkezések után virtuális zsetonokat kapunk amit a fiókunkon gyűjthetünk, természetesen ezt a program számon tartja.
+-	Áruház használata: Az áruházban a virtuális zsetonjainkat szabadon fel tudjuk használni és vizuális kiegészítőket tudunk vásárolni.
+-	Barátok hozzáadása: Steam felhasználókat tudunk hozzáadni a barát listánkhoz a felhasználónevük alapján.
+-	Jelentés: A játékosok, ha a parti folyamán esetleg csalással, gyűlöletbeszéddel vagy olyan játékossal találkoznak akik mások játékát rontják el akkor azt jelenthetik és ennek a jogosságát az Admin fogja kivizsgálni.
+
+#### Admin számára elérhető funkciók:
+-	Az Admin számára minden funkció elérhető ami a játékos számára is!
+-	Szerver moderáció: Az Admin felelős a szerver stabilitásáért és karbantartásáért, a bejelentkezések kezeléséért, a szoftver frissítéséért, a hibák kijavításáért, adatbázis szinkronizálásáért és a felhasználói jogosultságok beállításáért.
+-	Fórum moderáció: Az Admin lesz a felelős a teljes fórumért. Ő hozhat létre új témákat de el is távolíthatja őket. Az Admin dolga az üzenetek moderálása, tehát az oda nem illő, a közösségi irányelvekkel szembemenő bejegyzéseket is eltávolíthatja és adott esetben a bejegyzés íróját ki is tilthatja a fórumról. A fórumban a fejlesztők felé érkező üzenetekre az Admin válaszol és az itt jelentett hibák kijavításáért is az Admin felel majd
+-	Bannolás: A beérkező jelentéseket az Admin vizsgálja ki, és ha a vádak igaznak bizonyulnak, akkor büntetést szabhat ki feléjük. A jelentett játékos kitilthatja külön csak az online játékmódokból, de a teljes játékból is. Ilyenkor a jelentett játékos nem tud online partit létrehozni vagy már a játékba se tud belépni, ezt egy üzenet formájában jelezzük feléjük. Ezek a büntetések egy adott ideig vannak hatályban, de súlyos vagy rendszeresen visszaeső eseteknél a tiltás végleges is lehet.
+-	Az Adminnak áll jogában a játék adatlapjának a szerkesztése és az újdonságok folyamatos közzététele.
+-	Egyedül az Admin ruházhat fel admin jogosultsággal más felhasználókat.
+
 ### 3.1. Első követelmény
 ## 4. Használhatóság
 ### 4.1 Különböző tapasztalati szinttel rendelkező felszanálók
