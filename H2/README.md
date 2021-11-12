@@ -61,8 +61,8 @@ A játékosok - akiknek száma 2-6-ig terjedhet – egymás ellen, különféle 
 Egy játékmenet kb. 35 percet vesz igénybe, ez egyben, szünet nélkül megy végbe. A játék 14 éves kortól felfelé bárki által játszható. Minde játékmenet végén az első és második helyezet jutalomponntokban részesül és ezekből virtuális kiegészítőket vehetnek az ajándékboltban. Továbbá a folyamotos fejlődés közben új karaktereket nyílnak meg új képességekkel, melyek akár előnyt is jelenthenek bizonyos játékmenetekben. A napiszinten viszatérő játékosokat természetesen különleges napi ajándékokkal jutalmazzuk majd. A játék kizárólag egyéni, de különféle alkukkal nem hivatalos „csapatok” is kialakulhatnak.<br /><br />
 
 #### A játékszabály: 
-Minden játékos egy 2 és egy 3 dl-es pohárral és 5 kártyával kezd, melyeket csak saját maguk látnak. Ezt követően körönként minden játékosnak 2 akciója van. 
-Az akciók lehetnek: 
+Minden játékos egy 2 és egy 3 dl-es pohárral és 5 kártyával kezd, melyeket csak saját maguk látnak. Ezt követően körönként minden játékosnak 2 akciója van. <br />
+##### Az akciók lehetnek: 
 - már kész fröccsök eladása – ezt kizárólag első akcióként lehet 
 - 2 kártya felhúzása – ez akár mind 2 akcióban is használható, így akár egy körben 4 kártyát is felhúzhat egy játékos
 -  2 kártya kijátszása – ez lehet szóda/bor pohárba töltése vagy akár szivatós kártyák lerakása(a bor és szódakártyák 1-1 dl-es egységeket képeznek és deciliterenként 1 kártyának számítanak)
