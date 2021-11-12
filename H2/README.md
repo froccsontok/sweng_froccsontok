@@ -62,7 +62,7 @@ Egy játékmenet kb. 35 percet vesz igénybe, ez egyben, szünet nélkül megy v
 
 #### A játékszabály: 
 Minden játékos egy 2 és egy 3 dl-es pohárral és 5 kártyával kezd, melyeket csak saját maguk látnak. Ezt követően körönként minden játékosnak 2 akciója van. <br />
-##### Az akciók lehetnek: 
+Az akciók lehetnek: 
 - már kész fröccsök eladása – ezt kizárólag első akcióként lehet 
 - 2 kártya felhúzása – ez akár mind 2 akcióban is használható, így akár egy körben 4 kártyát is felhúzhat egy játékos
 -  2 kártya kijátszása – ez lehet szóda/bor pohárba töltése vagy akár szivatós kártyák lerakása(a bor és szódakártyák 1-1 dl-es egységeket képeznek és deciliterenként 1 kártyának számítanak)
