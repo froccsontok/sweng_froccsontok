@@ -433,6 +433,76 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a profil almenü
 
 ## 3.3 Admin számára elérhető funkciók
 
+### 3.3.1 Újdonságok közzététele
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Újdonságok közzététele
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A játék adatlapján, az újdonságok alpontban új tartalom lett közzétéve.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A játék adatlapjának megnyitása után, egy új szövegdoboz megnyitásával, és szerkesztésével új tartalmak felvitele. Majd ezen új tartalmak közzététele a 'Újdonságok' almenüben.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. A játék adatlapjának megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Az adatlap tartalmának betöltése
+</td></tr>
+    
+<tr><td>
+    3. ’Újdonságok közzététele’ opcióra váltás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Új üres szövegdoboz megnyitása szerkesztésre.
+</td></tr>
+    
+ <tr><td>
+    5. A szövegdoboz tartalmának módosítása.
+</td><td></td></tr>
+    
+<tr><td>
+    6. A tartalmak közzététele opció választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. Az adatok mentése és megjelenítése a meglévő bejegyzések mellett az adatlapon
+</td></tr>
+
+#### Exception Path
+
+Az admin felhasználó üresen hagyja a megnyitott szövegdobozt a tartalmak közzétételé előtt: a szövegdoboz tartalma nem kerül közzétételre.
+
 ## 4. Használhatóság
 ### 4.1 Különböző tapasztalati szinttel rendelkező felszanálók
 #### 4.1.1 Kezdő felhasználó:
