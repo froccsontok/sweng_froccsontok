@@ -363,7 +363,73 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a profil almenü
 
 #### Exception Path
 
-A felhasználó üresen hagyja a név szövegdobozát a módosítás alatt: a név tartalma visszatér a szerkesztés előtti állapotára, és a változtatások nem kerülnek mentésre
+A felhasználó üresen hagyja a név szövegdobozát a módosítás alatt: a név tartalma visszatér a szerkesztés előtti állapotára, és a változtatások nem kerülnek mentésre.
+
+### 3.2.3 Profilkép módosítása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Profilkép módosítása
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva, 
+    internethozzáférés, 
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A profil adatok betöltése kerültek és a felhasználó játékon belüli profilképe módosítva lett.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a profil almenüpontot. Itt a jelenlegi profilképre kattintva megjenítheti a alternatív, elérhető profilképeket. A felajánlott profilképekből választva, pedig felülírja az előzőleg beállított profilképet.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Profil menü megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Profil’
+</td></tr>
+    
+<tr><td>
+    3. A profilképre való kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A felhasználónak rendelkezésre álló profilképek felsorolása
+</td></tr>
+    
+ <tr><td>
+    5. Az opciókból való választás. Az egyik felkínált profilképre való kattintással
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Profilkép lecserélése az új választott profilkép képfájljára.
+</td></tr>
+
+</table>
 
 ## 3.3 Admin számára elérhető funkciók
 
