@@ -163,8 +163,8 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 </td></tr>
 
 <tr><td>Pre-condition</td><td>
-    Fröccs játék elindítva
-    Internethozzáférés
+    Fröccs játék elindítva, 
+    internethozzáférés, 
     Steambe való bejelentkezés online módban
 </td></tr>
 
