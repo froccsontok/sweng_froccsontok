@@ -144,6 +144,70 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 
 ## 3.1 Offline felhasználó számára elérhető funkciók
 
+### 3.1.1 Lokális rangsor elérése
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Lokális rangsor megtekintése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A lokális rangsor adatai betöltésre kerültek. Majd a tartalom be lett zárva.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok almenüpontot. Ez alapértelmezetten a lokális rangsort nyitja meg. Miután a program betölti az adatokat, a felhasználó egy görgetősáv használatával tölthet be újabb adatokat.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Rangsor menü megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Lokális rangsor’
+</td></tr>
+    
+ <tr><td>
+    3. Görgetősáv használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Új adatok betöltése
+</td></tr>
+    
+<tr><td>
+    5. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Főmenü betöltése
+</td></tr>
+
+</table>
+
 ## 3.2 Online felhasználó számára elérhető funkciók
 
 ### 3.2.1 Globális rangsor elérése
@@ -176,7 +240,7 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 
 #### Main Success Path (primary flow)
 
-A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok almenüpontot. Ez alapértelmezetten a lokális rangsort nyitja meg, de a rangsor menüpontok váltásával a globális rangsor is elérhető lesz. Miután a program betölti az adatok, a felhasználó egy görgetősáv használatával tölthet be újabb adatokat.
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok almenüpontot. Ez alapértelmezetten a lokális rangsort nyitja meg, de a rangsor menüpontok váltásával a globális rangsor is elérhető lesz. Miután a program betölti az adatokat, a felhasználó egy görgetősáv használatával tölthet be újabb adatokat.
 
 <table>
 
