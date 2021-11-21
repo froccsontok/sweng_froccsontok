@@ -146,6 +146,85 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 
 ## 3.2 Online felhasználó számára elérhető funkciók
 
+### 3.2.1 Globális rangsor elérése
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Globális rangsor megtekintése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva
+    Internethozzáférés
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A globális rangsor adatai betöltésre kerültek. Majd a tartalom be lett zárva.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok almenüpontot. Ez alapértelmezetten a lokális rangsort nyitja meg, de a rangsor menüpontok váltásával a globális rangsor is elérhető lesz. Miután a program betölti az adatok, a felhasználó egy görgetősáv használatával tölthet be újabb adatokat.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Rangsor menü megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Lokális rangsor’
+</td></tr>
+    
+<tr><td>
+    3. Rangsor váltása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Új rangsor adatok betöltése: 'Globális rangsor'
+</td></tr>
+    
+ <tr><td>
+    5. Görgetősáv használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Új adatok betöltése
+</td></tr>
+    
+<tr><td>
+    7. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. Főmenü betöltése
+</td></tr>
+
+</table>
+
+#### Exception Path
+
+A felhasználó nem rendelkezik internet hozzáféréssel: a felhasználó képtelen lesz a lokális rangsorról a globális rangsorra váltani.
+
 ## 3.3 Admin számára elérhető funkciók
 
 ## 4. Használhatóság
