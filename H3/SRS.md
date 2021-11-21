@@ -289,6 +289,82 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 A felhasználó nem rendelkezik internet hozzáféréssel: a felhasználó képtelen lesz a lokális rangsorról a globális rangsorra váltani.
 
+### 3.2.2 Felhasználói név módosítása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Felhasználói név módosítása
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva, 
+    internethozzáférés, 
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A profil adatok betöltése kerültek és a felhasználói névhez tartozó adatok módosítva lettek.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a profil almenüpontot. Itt a felhasználónévhez tartozó szövegdobozra kattintva módosíthatja a felhasznlónevet.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Profil menü megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Profil’
+</td></tr>
+    
+<tr><td>
+    3. A név szövegdobozra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A név szövegdoboz tartalmának szerkeszthetővé tevése
+</td></tr>
+    
+ <tr><td>
+    5. A szövegdoboz tatalmának módosítása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Adatok mentése
+
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    7. A név szövegdoboz tartalmának szerkeszthetetlenné tevése
+</td></tr>
+
+</table>
+
+#### Exception Path
+
+A felhasználó üresen hagyja a név szövegdobozát a módosítás alatt: a név tartalma visszatér a szerkesztés előtti állapotára, és a változtatások nem kerülnek mentésre
+
 ## 3.3 Admin számára elérhető funkciók
 
 ## 4. Használhatóság
