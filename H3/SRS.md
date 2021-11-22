@@ -298,7 +298,7 @@ A telepítő nem engedi a telepítést nem létező szövegesen beírt elérési
 
 <!-- system -->
 <tr><td></td><td>
-    2. Az elérési útvonal aláhúzása
+    3. Az elérési útvonal aláhúzása
 </td></tr>
 
 </table>
