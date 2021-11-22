@@ -146,6 +146,165 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 
 ## 3.2 Online felhasználó számára elérhető funkciók
 
+### 3.2.? Telepítési hely megadása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Telepítési hely megadása: A telepítés során a felhasználó megadhatja, hogy a játék melyik mappába kerüljön telepítésre
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó belépett Steam-re és elíndította a játék telepítőjét
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A telepítési hely megadásra kerül
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A telepítő megjeleníti az alpértelmezett telepítési mappa útvonalát, a felhasználó ezt a tallózás gombbal megváltoztatja.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Telepítő elindítása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Telepítő ablakának megjelenítése
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    3. Telepítési hely kiválasztás megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    4. Tallózás gomb megnyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    5. Az operációs rendszer mappa tallózás ablakának megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. A mappa kiválasztása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    7. Megerősítő gomb lenyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. A megadott mappa elérési útvonalának kiírása a telepítő ablakában
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    9. 'Tovább' gomb lenyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    10. Telepítés elvégzése
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+A telepítő megjeleníti az alpértelmezett telepítési mappa útvonalát, a felhasználó ezt szövegesen átírja.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Telepítő elindítása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Telepítő ablakának megjelenítése
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    3. Telepítési hely kiválasztás megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    4. Az elérési útvonal átírása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    5. 'Tovább' gomb lenyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Telepítés elvégzése
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+A telepítő nem engedi a telepítést nem létező szövegesen beírt elérési útvonalra.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Érvénytelen elérési útvonal megadása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A Tovább gomb deaktiválása és szürkítése
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Az elérési útvonal aláhúzása
+</td></tr>
+
+</table>
+
+Ha ezután a felhasználó érvényes útvonalat ad meg, akkor a telepítő ablak visszaáll a normál állapotba.
+
 ## 3.3 Admin számára elérhető funkciók
 
 ## 4. Használhatóság
