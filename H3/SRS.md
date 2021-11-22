@@ -307,6 +307,94 @@ Ha ezután a felhasználó érvényes útvonalat ad meg, akkor a telepítő abla
 
 ## 3.3 Admin számára elérhető funkciók
 
+### 3.3.? Admin jogosultság adása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Admin jogosultság adása: Az admin további felhasználóknak adhat admin jogosultságot
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Az admin belépett a szerver admin felületére
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    Új admin felhasználó hozzáadásra kerül
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+Az admin felületen a Jogosultságok opció Hozzáadás pontjában adható meg új admin felhasználó email cím alapján, amellyel korábban regisztrált. A hozzáadáshoz egy jelszóval történő megerősítés szükséges.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Admin jogosultságok opció kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Jogosultságok felület megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. Hozzáadás opció kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Felhasználó adatai űrlap megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    5. Felhasználó email címének megadása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. Hozzáadás gomb megnyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. Megerősítési üzenet kiírása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. A hozzáadó jelszavának kérése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    9. A jelszó megadása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    10. Admin jogosultság megadása a beírt felhasználónak
+</td></tr>
+
+</table>
+
 ## 4. Használhatóság
 ### 4.1 Különböző tapasztalati szinttel rendelkező felszanálók
 #### 4.1.1 Kezdő felhasználó:
