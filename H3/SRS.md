@@ -208,6 +208,91 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 </table>
 
+### 3.1.2 Játékmenet indítása botok ellen
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Játék botok ellen: Egy játékmenet indítása, amelyben a felhasználó nem más játékosok, hanem botok ellen játszik. A botok lokálisan futnak, így nem szükséges online állapotban lennie a játéknak.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A botok elleni játékmenet elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválaszthatja a botok elleni játékot. A játékos beállíthatja a botok számát (1-4 között) és a nehézséget (kezdő/normál/haladó/nehéz)
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. Botok elleni játék választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A játék előtti beállítások megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    5. Botok számának megadása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. Nehézségi szint kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. Beléptetés a játékmenetbe
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+A tutorial játékmód is egy speciális (kezdő nehézségű, a szabályok ismertetésével kiegészített) botok elleni játék. A tutorial játékmód a főmenü Tutorial gombja alatt érhető el (ld. Tutorial bekezdés).
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+A játékos a fenti lépések közben nem tud kivételt generálni, mivel a felület csak a megengedett értékeket engedi beállítani a botok számánál és a nehézségnél.
+
 ## 3.2 Online felhasználó számára elérhető funkciók
 
 ### 3.2.1 Globális rangsor elérése
@@ -431,6 +516,390 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a profil almenü
 
 </table>
 
+### 3.2.4 Telepítési hely megadása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Telepítési hely megadása: A telepítés során a felhasználó megadhatja, hogy a játék melyik mappába kerüljön telepítésre
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó belépett Steam-re és elíndította a játék telepítőjét
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A telepítési hely megadásra kerül
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A telepítő megjeleníti az alpértelmezett telepítési mappa útvonalát, a felhasználó ezt a tallózás gombbal megváltoztatja.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Telepítő elindítása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Telepítő ablakának megjelenítése
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    3. Telepítési hely kiválasztás megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    4. Tallózás gomb megnyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    5. Az operációs rendszer mappa tallózás ablakának megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. A mappa kiválasztása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    7. Megerősítő gomb lenyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. A megadott mappa elérési útvonalának kiírása a telepítő ablakában
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    9. 'Tovább' gomb lenyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    10. Telepítés elvégzése
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+A telepítő megjeleníti az alpértelmezett telepítési mappa útvonalát, a felhasználó ezt szövegesen átírja.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Telepítő elindítása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Telepítő ablakának megjelenítése
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    3. Telepítési hely kiválasztás megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    4. Az elérési útvonal átírása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    5. 'Tovább' gomb lenyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Telepítés elvégzése
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+A telepítő nem engedi a telepítést nem létező szövegesen beírt elérési útvonalra.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Érvénytelen elérési útvonal megadása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A Tovább gomb deaktiválása és szürkítése
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    3. Az elérési útvonal aláhúzása
+</td></tr>
+
+</table>
+
+Ha ezután a felhasználó érvényes útvonalat ad meg, akkor a telepítő ablak visszaáll a normál állapotba.
+
+### 3.2.5 Online parti indítása barátokkal
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Online parti indítása barátokkal: A felhasználó a kijelölt Steam-es barátait meghívhatja egy közös játékmenetbe, amelyben csak a kijelölt játékosok vesznek részt. A felhasználó egy ilyen játékmenetre meghívást is kaphat. Ezek a funkciók csak online módban elérhetők.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A barátok elleni játékmenet elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválaszthatja a Barátok meghívása opciót. Ekkor megnyílik a Steam Overlay felülete, ahol meghívhatók a barátok. Ha a felhasználó megerősíti a kijelölt barátokat, akkor a játékmenet elindul.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. Barátok meghívása opció kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A Steam Overlay megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    5. Steam-es barátok meghívása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. Meghívás megerősítése
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. Meghívottak csatlakoztatása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. Játékmenet indítása
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+A játékost meghívják egy online partiba, a meghívást elfogadhatja vagy visszautasíthatja.
+
+##### Elfogadott meghívás:
+
+<table>
+
+<!-- system -->
+<tr><td></td><td>
+    1. A játékos meghívásának fogadása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A Steam Overlay megnyitása
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. A meghívás elfogadása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A meghívott játékos csatlakoztatása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    5. Játékmenet indítása
+</td></tr>
+
+</table>
+
+##### Visszautasított meghívás:
+
+<table>
+
+<!-- system -->
+<tr><td></td><td>
+    1. A játékos meghívásának fogadása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A Steam Overlay megnyitása
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. A meghívás visszautasítása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A Steam Overlay megnyitása
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+Ha a játékos egy játékmenet közben van, akkor a Steam Overlay-en keresztüli meghívást nem engedélyezzük más játékosoknak.
+
+### 3.2.6 Random online parti indítása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Random online parti: Egy játékmenet indítása tetszőleges, a játékos szintjéhez hasonló szintű online játékosokkal. Azok a felhasználók, akik a random parti módba lépnek, egy lobby-ba kerülnek, amit a szerver nyilvántart és a hasonló szintű játékosokat behívja egy játékmenetbe.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A játékmenet elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválasztja a Random játékmódot.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. Random játékmód választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Lobby töltőképernyő megjelenítése
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    5. A játékos hozzáadása a lobby-hoz (szerver API hívás)
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. A szerver válaszának fogadása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. A meghívott játékos csatlakoztatása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. Játékmenet indítása
+</td></tr>
+
+</table>
+
 ## 3.3 Admin számára elérhető funkciók
 
 ### 3.3.1 Újdonságok közzététele
@@ -502,6 +971,94 @@ A játék adatlapjának megnyitása után, egy új szövegdoboz megnyitásával,
 #### Exception Path
 
 Az admin felhasználó üresen hagyja a megnyitott szövegdobozt a tartalmak közzétételé előtt: a szövegdoboz tartalma nem kerül közzétételre.
+
+### 3.3.2 Admin jogosultság adása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Admin jogosultság adása: Az admin további felhasználóknak adhat admin jogosultságot
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Az admin belépett a szerver admin felületére
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    Új admin felhasználó hozzáadásra kerül
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+Az admin felületen a Jogosultságok opció Hozzáadás pontjában adható meg új admin felhasználó email cím alapján, amellyel korábban regisztrált. A hozzáadáshoz egy jelszóval történő megerősítés szükséges.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Admin jogosultságok opció kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Jogosultságok felület megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. Hozzáadás opció kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Felhasználó adatai űrlap megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    5. Felhasználó email címének megadása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. Hozzáadás gomb megnyomása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. Megerősítési üzenet kiírása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. A hozzáadó jelszavának kérése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    9. A jelszó megadása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    10. Admin jogosultság megadása a beírt felhasználónak
+</td></tr>
+
+</table>
 
 ## 4. Használhatóság
 ### 4.1 Különböző tapasztalati szinttel rendelkező felszanálók
