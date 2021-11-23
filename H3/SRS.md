@@ -474,7 +474,7 @@ A játékos a főmenü 'Játék' pontján keresztül a játékmód választó k�
 
 A játékost meghívják egy online partiba, a meghívást elfogadhatja vagy visszautasíthatja.
 
-Elfogadott meghívás:
+##### Elfogadott meghívás:
 
 <table>
 
@@ -505,7 +505,7 @@ Elfogadott meghívás:
 
 </table>
 
-Visszautasított meghívás:
+##### Visszautasított meghívás:
 
 <table>
 
