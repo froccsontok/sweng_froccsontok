@@ -251,35 +251,35 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia az áruházat. E
 <tr><td></td><td>
     2. Új menü megnyitása: ’Áruház’
 </td></tr>
- 
-<tr><td></td><td>
-    4. Termékre kattintás
-</td></tr>
     
 <tr><td>
-    5. Termék megvétele
+    3. Termékre kattintás
 </td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Termék megvétele
+</td></tr>
     
  <tr><td>
-    3. Görgetősáv használata
+    5. Görgetősáv használata
 </td><td></td></tr>
 
 <!-- system -->
 <tr><td></td><td>
-    4. Új adatok betöltése
+    6. Új adatok betöltése
 </td></tr>
     
 <tr><td>
-    5. Visszalépés menüpont használata
+    7. Visszalépés menüpont használata
 </td><td></td></tr>
 
 <!-- system -->
 <tr><td></td><td>
-    6. Főmenü betöltése
+    8. Főmenü betöltése
 </td></tr>
 
 </table>
-
 ### 3.1.? Virtuális zsetonok gyűlytése
 
 <table>
