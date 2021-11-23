@@ -144,6 +144,91 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 
 ## 3.1 Offline felhasználó számára elérhető funkciók
 
+### 3.1.? Játékmenet indítása botok ellen
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Játék botok ellen: Egy játékmenet indítása, amelyben a felhasználó nem más játékosok, hanem botok ellen játszik. A botok lokálisan futnak, így nem szükséges online állapotban lennie a játéknak.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A botok elleni játékmenet elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválaszthatja a botok elleni játékot. A játékos beállíthatja a botok számát (1-4 között) és a nehézséget (kezdő/normál/haladó/nehéz)
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. Botok elleni játék választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A játék előtti beállítások megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    5. Botok számának megadása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. Nehézségi szint kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. Beléptetés a játékmenetbe
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+A tutorial játékmód is egy speciális (kezdő nehézségű, a szabályok ismertetésével kiegészített) botok elleni játék. A tutorial játékmód a főmenü Tutorial gombja alatt érhető el (ld. Tutorial bekezdés).
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+A játékos a fenti lépések közben nem tud kivételt generálni, mivel a felület csak a megengedett értékeket engedi beállítani a botok számánál és a nehézségnél.
+
 ## 3.2 Online felhasználó számára elérhető funkciók
 
 ### 3.2.? Telepítési hely megadása
