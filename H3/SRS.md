@@ -144,7 +144,71 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 
 ## 3.1 Offline felhasználó számára elérhető funkciók
 
-### 3.1.? Játékmenet indítása botok ellen
+### 3.1.1 Lokális rangsor elérése
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Lokális rangsor megtekintése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A lokális rangsor adatai betöltésre kerültek. Majd a tartalom be lett zárva.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok almenüpontot. Ez alapértelmezetten a lokális rangsort nyitja meg. Miután a program betölti az adatokat, a felhasználó egy görgetősáv használatával tölthet be újabb adatokat.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Rangsor menü megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Lokális rangsor’
+</td></tr>
+    
+ <tr><td>
+    3. Görgetősáv használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Új adatok betöltése
+</td></tr>
+    
+<tr><td>
+    5. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Főmenü betöltése
+</td></tr>
+
+</table>
+
+### 3.1.2 Játékmenet indítása botok ellen
 
 <table>
 
@@ -231,7 +295,228 @@ A játékos a fenti lépések közben nem tud kivételt generálni, mivel a fel�
 
 ## 3.2 Online felhasználó számára elérhető funkciók
 
-### 3.2.? Telepítési hely megadása
+### 3.2.1 Globális rangsor elérése
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Globális rangsor megtekintése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva, 
+    internethozzáférés, 
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A globális rangsor adatai betöltésre kerültek. Majd a tartalom be lett zárva.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok almenüpontot. Ez alapértelmezetten a lokális rangsort nyitja meg, de a rangsor menüpontok váltásával a globális rangsor is elérhető lesz. Miután a program betölti az adatokat, a felhasználó egy görgetősáv használatával tölthet be újabb adatokat.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Rangsor menü megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Lokális rangsor’
+</td></tr>
+    
+<tr><td>
+    3. Rangsor váltása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Új rangsor adatok betöltése: 'Globális rangsor'
+</td></tr>
+    
+ <tr><td>
+    5. Görgetősáv használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Új adatok betöltése
+</td></tr>
+    
+<tr><td>
+    7. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. Főmenü betöltése
+</td></tr>
+
+</table>
+
+#### Exception Path
+
+A felhasználó nem rendelkezik internet hozzáféréssel: a felhasználó képtelen lesz a lokális rangsorról a globális rangsorra váltani.
+
+### 3.2.2 Felhasználói név módosítása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Felhasználói név módosítása
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva, 
+    internethozzáférés, 
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A profil adatok betöltése kerültek és a felhasználói névhez tartozó adatok módosítva lettek.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a profil almenüpontot. Itt a felhasználónévhez tartozó szövegdobozra kattintva módosíthatja a felhasznlónevet.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Profil menü megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Profil’
+</td></tr>
+    
+<tr><td>
+    3. A név szövegdobozra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A név szövegdoboz tartalmának szerkeszthetővé tevése
+</td></tr>
+    
+ <tr><td>
+    5. A szövegdoboz tatalmának módosítása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Adatok mentése
+
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    7. A név szövegdoboz tartalmának szerkeszthetetlenné tevése
+</td></tr>
+
+</table>
+
+#### Exception Path
+
+A felhasználó üresen hagyja a név szövegdobozát a módosítás alatt: a név tartalma visszatér a szerkesztés előtti állapotára, és a változtatások nem kerülnek mentésre.
+
+### 3.2.3 Profilkép módosítása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Profilkép módosítása
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva, 
+    internethozzáférés, 
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A profil adatok betöltése kerültek és a felhasználó játékon belüli profilképe módosítva lett.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia a profil almenüpontot. Itt a jelenlegi profilképre kattintva megjenítheti a alternatív, elérhető profilképeket. A felajánlott profilképekből választva, pedig felülírja az előzőleg beállított profilképet.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Profil menü megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Profil’
+</td></tr>
+    
+<tr><td>
+    3. A profilképre való kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A felhasználónak rendelkezésre álló profilképek felsorolása
+</td></tr>
+    
+ <tr><td>
+    5. Az opciókból való választás. Az egyik felkínált profilképre való kattintással
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Profilkép lecserélése az új választott profilkép képfájljára.
+</td></tr>
+
+</table>
+
+### 3.2.4 Telepítési hely megadása
 
 <table>
 
@@ -390,7 +675,7 @@ A telepítő nem engedi a telepítést nem létező szövegesen beírt elérési
 
 Ha ezután a felhasználó érvényes útvonalat ad meg, akkor a telepítő ablak visszaáll a normál állapotba.
 
-### 3.2.? Online parti indítása barátokkal
+### 3.2.5 Online parti indítása barátokkal
 
 <table>
 
@@ -537,7 +822,7 @@ A játékost meghívják egy online partiba, a meghívást elfogadhatja vagy vis
 
 Ha a játékos egy játékmenet közben van, akkor a Steam Overlay-en keresztüli meghívást nem engedélyezzük más játékosoknak.
 
-### 3.1.? Random online parti indítása
+### 3.2.6 Random online parti indítása
 
 <table>
 
@@ -617,7 +902,77 @@ A játékos a főmenü 'Játék' pontján keresztül a játékmód választó k�
 
 ## 3.3 Admin számára elérhető funkciók
 
-### 3.3.? Admin jogosultság adása
+### 3.3.1 Újdonságok közzététele
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Újdonságok közzététele
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A játék adatlapján, az újdonságok alpontban új tartalom lett közzétéve.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A játék adatlapjának megnyitása után, egy új szövegdoboz megnyitásával, és szerkesztésével új tartalmak felvitele. Majd ezen új tartalmak közzététele a 'Újdonságok' almenüben.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. A játék adatlapjának megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Az adatlap tartalmának betöltése
+</td></tr>
+    
+<tr><td>
+    3. ’Újdonságok közzététele’ opcióra váltás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Új üres szövegdoboz megnyitása szerkesztésre.
+</td></tr>
+    
+ <tr><td>
+    5. A szövegdoboz tartalmának módosítása.
+</td><td></td></tr>
+    
+<tr><td>
+    6. A tartalmak közzététele opció választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. Az adatok mentése és megjelenítése a meglévő bejegyzések mellett az adatlapon
+</td></tr>
+
+#### Exception Path
+
+Az admin felhasználó üresen hagyja a megnyitott szövegdobozt a tartalmak közzétételé előtt: a szövegdoboz tartalma nem kerül közzétételre.
+
+### 3.3.2 Admin jogosultság adása
 
 <table>
 
