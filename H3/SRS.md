@@ -208,6 +208,78 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 </table>
 
+### 3.1.1 Áruház használata
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Áruház használata
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    Az áruházban vétel történt.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia az áruházat. Ekkor az aktuálisan elérhető termékeket látja a felhasználó. A görgősáv használatával új termékek töltődnek be.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Áruház megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Áruház’
+</td></tr>
+ <!-- system -->
+<tr><td></td><td>
+    4. Termékre kattintás
+</td></tr>
+    
+<tr><td>
+    5. Termék megvétele
+</td><td></td></tr>
+    
+ <tr><td>
+    3. Görgetősáv használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Új adatok betöltése
+</td></tr>
+    
+<tr><td>
+    5. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Főmenü betöltése
+</td></tr>
+
+</table>
+
 ### 3.1.? Virtuális zsetonok gyűlytése
 
 <table>
