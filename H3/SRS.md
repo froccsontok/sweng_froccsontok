@@ -537,6 +537,84 @@ A játékost meghívják egy online partiba, a meghívást elfogadhatja vagy vis
 
 Ha a játékos egy játékmenet közben van, akkor a Steam Overlay-en keresztüli meghívást nem engedélyezzük más játékosoknak.
 
+### 3.1.? Random online parti indítása
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Random online parti: Egy játékmenet indítása tetszőleges, a játékos szintjéhez hasonló szintű online játékosokkal. Azok a felhasználók, akik a random parti módba lépnek, egy lobby-ba kerülnek, amit a szerver nyilvántart és a hasonló szintű játékosokat behívja egy játékmenetbe.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A játékmenet elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválasztja a Random játékmódot.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. Random játékmód választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Lobby töltőképernyő megjelenítése
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    5. A játékos hozzáadása a lobby-hoz (szerver API hívás)
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. A szerver válaszának fogadása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. A meghívott játékos csatlakoztatása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. Játékmenet indítása
+</td></tr>
+
+</table>
+
 ## 3.3 Admin számára elérhető funkciók
 
 ### 3.3.? Admin jogosultság adása
