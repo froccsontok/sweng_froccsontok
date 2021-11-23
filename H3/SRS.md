@@ -280,6 +280,11 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia az áruházat. E
 </td></tr>
 
 </table>
+
+#### Exception Path
+
+Amennyiben a játékos nem rendelkezik elég zsetonnal vagy már rendelkezik a megvenni kívánt termékkel, akkor egy hibaüzenetet kap.
+
 ### 3.1.? Virtuális zsetonok gyűlytése
 
 <table>
