@@ -208,6 +208,37 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 </table>
 
+### 3.1.? Virtuális zsetonok gyűlytése
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Virtuális zsetonok gyűlytése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Játékmenetben 1. vagy 2. helyen végez a felhasználó
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A felhasználó zsetonokat kap
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak az 1. vagy 2. helyen kell befejeznie egy játékmenetet, ezt követően automatikus megkapja a neki járó zsetonokat.
+
+
 ### 3.1.2 Játékmenet indítása botok ellen
 
 <table>
