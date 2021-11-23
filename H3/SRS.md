@@ -251,7 +251,7 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia az áruházat. E
 <tr><td></td><td>
     2. Új menü megnyitása: ’Áruház’
 </td></tr>
- <!-- system -->
+ 
 <tr><td></td><td>
     4. Termékre kattintás
 </td></tr>
