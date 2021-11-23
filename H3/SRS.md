@@ -390,6 +390,153 @@ A telepítő nem engedi a telepítést nem létező szövegesen beírt elérési
 
 Ha ezután a felhasználó érvényes útvonalat ad meg, akkor a telepítő ablak visszaáll a normál állapotba.
 
+### 3.2.? Online parti indítása barátokkal
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Online parti indítása barátokkal: A felhasználó a kijelölt Steam-es barátait meghívhatja egy közös játékmenetbe, amelyben csak a kijelölt játékosok vesznek részt. A felhasználó egy ilyen játékmenetre meghívást is kaphat. Ezek a funkciók csak online módban elérhetők.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A barátok elleni játékmenet elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválaszthatja a Barátok meghívása opciót. Ekkor megnyílik a Steam Overlay felülete, ahol meghívhatók a barátok. Ha a felhasználó megerősíti a kijelölt barátokat, akkor a játékmenet elindul.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. Barátok meghívása opció kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A Steam Overlay megjelenítése
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    5. Steam-es barátok meghívása
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. Meghívás megerősítése
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    7. Meghívottak csatlakoztatása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. Játékmenet indítása
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+A játékost meghívják egy online partiba, a meghívást elfogadhatja vagy visszautasíthatja.
+
+Elfogadott meghívás:
+
+<table>
+
+<!-- system -->
+<tr><td></td><td>
+    1. A játékos meghívásának fogadása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A Steam Overlay megnyitása
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. A meghívás elfogadása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A meghívott játékos csatlakoztatása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    5. Játékmenet indítása
+</td></tr>
+
+</table>
+
+Visszautasított meghívás:
+
+<table>
+
+<!-- system -->
+<tr><td></td><td>
+    1. A játékos meghívásának fogadása
+</td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A Steam Overlay megnyitása
+</td></tr>
+
+<!-- actor -->
+<tr><td>
+    3. A meghívás visszautasítása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. A Steam Overlay megnyitása
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+Ha a játékos egy játékmenet közben van, akkor a Steam Overlay-en keresztüli meghívást nem engedélyezzük más játékosoknak.
+
 ## 3.3 Admin számára elérhető funkciók
 
 ### 3.3.? Admin jogosultság adása
