@@ -293,7 +293,7 @@ A tutorial játékmód is egy speciális (kezdő nehézségű, a szabályok isme
 
 A játékos a fenti lépések közben nem tud kivételt generálni, mivel a felület csak a megengedett értékeket engedi beállítani a botok számánál és a nehézségnél.
 
-#### 3.1.2 Lokális parti
+### 3.1.2 Lokális parti
 
 <table>
 
@@ -359,14 +359,19 @@ A játékos a főmenü 'Játék' pontján keresztül a játékmód választó k�
     6. A már létező nevek betöltése a lokális adatbázisból
 </td></tr>
     
+<!-- system -->
+<tr><td></td><td>
+    7. 'Új név hozzáadása' gomb betöltése
+</td></tr>
+    
 <!-- actor -->    
 <tr><td>
-    7. Játékos nevek kiválasztása
+    8. Játékos nevek kiválasztása
 </td><td></td></tr>
     
 <!-- system -->
 <tr><td></td><td>
-    8. Játékmenet indítása
+    9. Játékmenet indítása
 </td></tr>
 
 </table>
@@ -375,7 +380,7 @@ A játékos a főmenü 'Játék' pontján keresztül a játékmód választó k�
 
 #### Alternate Path
 
-Description of the sequence of activities in the most commonly completed path or flow. The main flow is the most routine path from the pre- to the post-conditions.
+A játékosok nem a már létező nevek közül választanak, hanem új nevet hoznak létre és azt rögzítik a lokális adatbázisban.
 
 <table>
 
@@ -383,56 +388,103 @@ Description of the sequence of activities in the most commonly completed path or
 
 <!-- actor -->
 <tr><td>
-    1. Step
+    1. Játék menüpont választása
 </td><td></td></tr>
 
 <!-- system -->
 <tr><td></td><td>
-    2. Step
+    2. Játékmód választó képernyő megjelenítése
 </td></tr>
-
+    
+<!-- actor -->
+<tr><td>
+    3. Lokális parti játékmód kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. A játék előtti beállítások megjelenítése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    5. Játékosok számának megadása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A már létező nevek betöltése a lokális adatbázisból
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    7. 'Új név hozzáadása' gomb betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    8. 'Új név hozzáadása' gombra kattintás
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    9. Szövegdoboz betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    10. Új név beírása a szövegdobozba
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    11. Új név mentése a lokális adatbázisba
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    12. Játékmenet indítása
+</td></tr>
+    
 </table>
 
 <!-- *********************************************** -->
 
 #### Exception Path
 
-Description of the sequence of activities in the most commonly completed path or flow. The main flow is the most routine path from the pre- to the post-conditions.
-
+A játék már létező vagy érvénytelen karaktereket tartalmazó neveket nem tud menteni a lokális adatbázisba
 <table>
 
 <tr><td>Actor Actions</td><td>System Responses</td></tr>
 
-<!-- actor -->
+<!-- actor -->    
 <tr><td>
-    1. Step
+    1. 'Új név hozzáadása' gombra kattintás
 </td><td></td></tr>
-
+    
 <!-- system -->
 <tr><td></td><td>
-    2. Step
+    2. Szövegdoboz betöltése
 </td></tr>
-
-</table>
-
-<!-- *********************************************** -->
-
-#### Scenarios (Insert additional rows for each scenario)
-
-<table>
-
-<tr><td>Scenario</td><td>Post-Conditions</td><td>Flow</td></tr>
-
+    
+<!-- actor -->    
 <tr><td>
-  Scenario 1
-</td><td>
-  Post-Conditions 1
-</td><td>
-  Flow 1
+    3. Már létező vagy érvénytelen karaktereket tartalmazó név beírása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. "Hibás név! Kérlek próbáld újra!" -felirat kíírása 
 </td></tr>
-
+    
+<!-- system -->
+<tr><td></td><td>
+    5. Szövegdoboz ismételt betöltése üresen
+</td></tr>
+    
 </table>
 
+Ha ezután a játékos új és érvényes nevet ad meg akkor többi játékos is nevet választhat és a játékmenet elindul.
 
 ## 3.2 Online felhasználó számára elérhető funkciók
 
