@@ -293,7 +293,7 @@ A tutorial játékmód is egy speciális (kezdő nehézségű, a szabályok isme
 
 A játékos a fenti lépések közben nem tud kivételt generálni, mivel a felület csak a megengedett értékeket engedi beállítani a botok számánál és a nehézségnél.
 
-### 3.1.2 Lokális parti
+### 3.1.3 Lokális parti
 
 <table>
 
