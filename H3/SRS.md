@@ -293,6 +293,147 @@ A tutorial játékmód is egy speciális (kezdő nehézségű, a szabályok isme
 
 A játékos a fenti lépések közben nem tud kivételt generálni, mivel a felület csak a megengedett értékeket engedi beállítani a botok számánál és a nehézségnél.
 
+#### 3.1.2 Lokális parti
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Lokális parti: Ezen játékmód elindításakor mindegyik játékosnak egyedi nevet kell megadnia, ami alapján a játék meg tudja őket különböztetni. Egyszerre 3-6 személy játszhat.      Ezek után indul el a játékmenet, azonban itt a játékosok nem kapnak jutalmakat, csakis pontokat az eredményeik után, amelyek alapján egy rangsort állít fel a                        játék a partiban résztvevő játékosokról.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A lokális parti elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválaszthatja a lokális parti játékmódot. Ezután beállíthajuk hogy hányan szerertnénk játszani (3-7 fő), majd pedig a beállított számú játékosnak vagy választania kell a már meadott nevek közül.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. Lokális parti játékmód kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. A játék előtti beállítások megjelenítése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    5. Játékosok számának megadása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A már létező nevek betöltése a lokális adatbázisból
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    7. Játékos nevek kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    8. Játékmenet indítása
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+Description of the sequence of activities in the most commonly completed path or flow. The main flow is the most routine path from the pre- to the post-conditions.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Step
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Step
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+Description of the sequence of activities in the most commonly completed path or flow. The main flow is the most routine path from the pre- to the post-conditions.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Step
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Step
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Scenarios (Insert additional rows for each scenario)
+
+<table>
+
+<tr><td>Scenario</td><td>Post-Conditions</td><td>Flow</td></tr>
+
+<tr><td>
+  Scenario 1
+</td><td>
+  Post-Conditions 1
+</td><td>
+  Flow 1
+</td></tr>
+
+</table>
+
+
 ## 3.2 Online felhasználó számára elérhető funkciók
 
 ### 3.2.1 Globális rangsor elérése
