@@ -482,6 +482,63 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 A felhasználó nem rendelkezik internet hozzáféréssel: a felhasználó képtelen lesz a lokális rangsorról a globális rangsorra váltani.
 
+### 3.2.1 Jelentés
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Játékosok jelentése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva, 
+    internethozzáférés, 
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A jelentés elküldésre került, és elbírálásra vár
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+Csalás észlelése esetén a játékosoknak módukban áll más játékosokat jelenti. Ez a másik játékosok profiljára történő kattnintás után, a felugró jelentés gombbal tehető meg. Ezt követően ez a jelentés elküldésre kerül az adminoknak, akik eldöntik, hogy igazak-e a vádak. Amennyiben a csalás bebizonyítható,  a játékost bannolják.
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Profilra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Profil megnyitása
+</td></tr>
+    
+<tr><td>
+    3. Jelentés gombra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Jelentés elküldése
+</td></tr>
+    
+</table>
+
+
 ### 3.2.2 Felhasználói név módosítása
 
 <table>
