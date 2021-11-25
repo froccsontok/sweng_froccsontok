@@ -1252,6 +1252,85 @@ Az admin felületen a Jogosultságok opció Hozzáadás pontjában adható meg �
 </td></tr>
 
 </table>
+    
+### 3.3.3 Fórum bannolás
+    
+<table>
+
+<tr><td>Name, description</td><td>
+    Fórum bannolás: Az admin felhasználó a közösségi irányelvekkel szembemenő bejegyzések íróit letilthatja a fórumról.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    -
+</td></tr>
+    A fórum megnyitása
+<tr><td>Post-condition</td><td>
+    A szabálysértő felhasználó tiltásra került a fórumról és bejegyzései eltűntek
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+Miután az admin felhasználó a fórumon az irányelvekkel szembemenő bejegyzést talált, megnyitja a bejegyzést író felhasználónak a profilját és az "Opciók" gombra kattintva, kiválasztja a "Játékos letiltása" lehetőséget, ezáltal a felhasználó tiltásra került.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. A letiltandó felhasználó profiljára való kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A felhasználó profiljának betöltése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. Az "Opciók" gombra való kattintás
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. A lehetséges opciók betöltése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    5. "Játékos letiltása" lehetőség kiválasztása
+</td><td></td></tr> 
+    
+<!-- system -->
+<tr><td></td><td>
+    6. "Biztosan le szeretné tiltani ezt a felhasználót?"- üzenet megjelenítése a képernyőn
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    7. A döntés megerősítése
+</td><td></td></tr> 
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A felhasználó ki lett tiltva a fórumról
+</td></tr>
+
+</table>
+
 
 ## 4. Használhatóság
 ### 4.1 Különböző tapasztalati szinttel rendelkező felszanálók
