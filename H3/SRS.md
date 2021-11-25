@@ -1065,23 +1065,23 @@ Az admin felületen a Jogosultságok opció Hozzáadás pontjában adható meg �
 <table>
 
 <tr><td>Name, description</td><td>
-    Brief description...
+    Fórum bannolás: Az admin felhasználó a közösségi irányelvekkel szembemenő bejegyzések íróit letilthatja a fórumról.
 </td></tr>
 
 <tr><td>Primary Actor</td><td>
-    The name of the primary actor...
+    Admin felhasználó
 </td></tr>
 
 <tr><td>Secondary Actors</td><td>
-    The name of the secondary actors...
+    -
 </td></tr>
 
 <tr><td>Pre-condition</td><td>
-    Description of the pre-conditions...
+    -
 </td></tr>
-
+    A fórum megnyitása
 <tr><td>Post-condition</td><td>
-    Description of the post-conditions...
+    A szabálysértő felhasználó tiltásra került a fórumról és bejegyzései eltűntek
 </td></tr>
 
 </table>
@@ -1090,7 +1090,7 @@ Az admin felületen a Jogosultságok opció Hozzáadás pontjában adható meg �
 
 #### Main Success Path (primary flow)
 
-Description of the sequence of activities in the most commonly completed path or flow. The main flow is the most routine path from the pre- to the post-conditions.
+Miután az admin felhasználó a fórumon az irányelvekkel szembemenő bejegyzést talált, megnyitja a bejegyzést író felhasználónak a profilját és az "Opciók" gombra kattintva, kiválasztja a "Játékos letiltása" lehetőséget, ezáltal a felhasználó tiltásra került.
 
 <table>
 
@@ -1098,74 +1098,42 @@ Description of the sequence of activities in the most commonly completed path or
 
 <!-- actor -->
 <tr><td>
-    1. Step
+    1. A letiltandó felhasználó profiljára való kattintás
 </td><td></td></tr>
 
 <!-- system -->
 <tr><td></td><td>
-    2. Step
+    2. A felhasználó profiljának betöltése
 </td></tr>
-
-</table>
-
-<!-- *********************************************** -->
-
-#### Alternate Path
-
-Description of the sequence of activities in the most commonly completed path or flow. The main flow is the most routine path from the pre- to the post-conditions.
-
-<table>
-
-<tr><td>Actor Actions</td><td>System Responses</td></tr>
-
+    
 <!-- actor -->
 <tr><td>
-    1. Step
+    3. Az "Opciók" gombra való kattintás
 </td><td></td></tr>
-
+    
 <!-- system -->
 <tr><td></td><td>
-    2. Step
+    4. A lehetséges opciók betöltése
 </td></tr>
-
-</table>
-
-<!-- *********************************************** -->
-
-#### Exception Path
-
-Description of the sequence of activities in the most commonly completed path or flow. The main flow is the most routine path from the pre- to the post-conditions.
-
-<table>
-
-<tr><td>Actor Actions</td><td>System Responses</td></tr>
-
+    
 <!-- actor -->
 <tr><td>
-    1. Step
-</td><td></td></tr>
-
+    5. "Játékos letiltása" lehetőség kiválasztása
+</td><td></td></tr> 
+    
 <!-- system -->
 <tr><td></td><td>
-    2. Step
+    6. "Biztosan le szeretné tiltani ezt a felhasználót?"- üzenet megjelenítése a képernyőn
 </td></tr>
-
-</table>
-
-<!-- *********************************************** -->
-
-#### Scenarios (Insert additional rows for each scenario)
-
-<table>
-
-<tr><td>Scenario</td><td>Post-Conditions</td><td>Flow</td></tr>
-
+    
+<!-- actor -->
 <tr><td>
-  Scenario 1
-</td><td>
-  Post-Conditions 1
-</td><td>
-  Flow 1
+    7. A döntés megerősítése
+</td><td></td></tr> 
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A felhasználó ki lett tiltva a fórumról
 </td></tr>
 
 </table>
