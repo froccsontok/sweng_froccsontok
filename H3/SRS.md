@@ -482,7 +482,7 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 A felhasználó nem rendelkezik internet hozzáféréssel: a felhasználó képtelen lesz a lokális rangsorról a globális rangsorra váltani.
 
-### 3.2.1 Jelentés
+### 3.2.? Jelentés
 
 <table>
 
