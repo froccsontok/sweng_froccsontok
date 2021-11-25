@@ -293,6 +293,199 @@ A tutorial játékmód is egy speciális (kezdő nehézségű, a szabályok isme
 
 A játékos a fenti lépések közben nem tud kivételt generálni, mivel a felület csak a megengedett értékeket engedi beállítani a botok számánál és a nehézségnél.
 
+### 3.1.3 Lokális parti
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Lokális parti: Ezen játékmód elindításakor mindegyik játékosnak egyedi nevet kell megadnia, ami alapján a játék meg tudja őket különböztetni. Egyszerre 3-6 személy játszhat.      Ezek után indul el a játékmenet, azonban itt a játékosok nem kapnak jutalmakat, csakis pontokat az eredményeik után, amelyek alapján egy rangsort állít fel a                        játék a partiban résztvevő játékosokról.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A lokális parti elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválaszthatja a lokális parti játékmódot. Ezután beállíthajuk hogy hányan szerertnénk játszani (3-7 fő), majd pedig a beállított számú játékosnak vagy választania kell a már meadott nevek közül.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. Lokális parti játékmód kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. A játék előtti beállítások megjelenítése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    5. Játékosok számának megadása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A már létező nevek betöltése a lokális adatbázisból
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    7. 'Új név hozzáadása' gomb betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    8. Játékos nevek kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    9. Játékmenet indítása
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+A játékosok nem a már létező nevek közül választanak, hanem új nevet hoznak létre és azt rögzítik a lokális adatbázisban.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. Lokális parti játékmód kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. A játék előtti beállítások megjelenítése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    5. Játékosok számának megadása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A már létező nevek betöltése a lokális adatbázisból
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    7. 'Új név hozzáadása' gomb betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    8. 'Új név hozzáadása' gombra kattintás
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    9. Szövegdoboz betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    10. Új név beírása a szövegdobozba
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    11. Új név mentése a lokális adatbázisba
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    12. Játékmenet indítása
+</td></tr>
+    
+</table>
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+A játék már létező vagy érvénytelen karaktereket tartalmazó neveket nem tud menteni a lokális adatbázisba
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->    
+<tr><td>
+    1. 'Új név hozzáadása' gombra kattintás
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    2. Szövegdoboz betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    3. Már létező vagy érvénytelen karaktereket tartalmazó név beírása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. "Hibás név! Kérlek próbáld újra!" -felirat kíírása 
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    5. Szövegdoboz ismételt betöltése üresen
+</td></tr>
+    
+</table>
+
+Ha ezután a játékos új és érvényes nevet ad meg akkor többi játékos is nevet választhat és a játékmenet elindul.
+
 ## 3.2 Online felhasználó számára elérhető funkciók
 
 ### 3.2.1 Globális rangsor elérése
