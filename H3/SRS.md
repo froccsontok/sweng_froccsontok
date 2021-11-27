@@ -134,6 +134,8 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 -	Barátok hozzáadása: Steam felhasználókat tudunk hozzáadni a barát listánkhoz a felhasználónevük alapján.
 -	Jelentés: A játékosok, ha a parti folyamán esetleg csalással, gyűlöletbeszéddel vagy olyan játékossal találkoznak akik mások játékát rontják el akkor azt jelenthetik és ennek a jogosságát az Admin fogja kivizsgálni.
 
+![Játékos usecase](UML/usecaseUser.png "Játékos usecase")
+
 #### Admin számára elérhető funkciók:
 -	Az Admin számára minden funkció elérhető ami a játékos számára is!
 -	Szerver moderáció: Az Admin felelős a szerver stabilitásáért és karbantartásáért, a bejelentkezések kezeléséért, a szoftver frissítéséért, a hibák kijavításáért, adatbázis szinkronizálásáért és a felhasználói jogosultságok beállításáért.
@@ -141,6 +143,8 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 -	Bannolás: A beérkező jelentéseket az Admin vizsgálja ki, és ha a vádak igaznak bizonyulnak, akkor büntetést szabhat ki feléjük. A jelentett játékos kitilthatja külön csak az online játékmódokból, de a teljes játékból is. Ilyenkor a jelentett játékos nem tud online partit létrehozni vagy már a játékba se tud belépni, ezt egy üzenet formájában jelezzük feléjük. Ezek a büntetések egy adott ideig vannak hatályban, de súlyos vagy rendszeresen visszaeső eseteknél a tiltás végleges is lehet.
 -	Az Adminnak áll jogában a játék adatlapjának a szerkesztése és az újdonságok folyamatos közzététele.
 -	Egyedül az Admin ruházhat fel admin jogosultsággal más felhasználókat.
+
+![Admin usecase](UML/usecaseAdmin.png "Admin usecase")
 
 ## 3.1 Offline felhasználó számára elérhető funkciók
 
