@@ -208,7 +208,7 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 </table>
 
-### 3.1.1 Áruház használata
+### 3.1.5 Áruház használata
 
 <table>
 
@@ -285,7 +285,7 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia az áruházat. E
 
 Amennyiben a játékos nem rendelkezik elég zsetonnal vagy már rendelkezik a megvenni kívánt termékkel, akkor egy hibaüzenetet kap.
 
-### 3.1.? Virtuális zsetonok gyűlytése
+### 3.1.4 Virtuális zsetonok gyűlytése
 
 <table>
 
@@ -482,7 +482,7 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 A felhasználó nem rendelkezik internet hozzáféréssel: a felhasználó képtelen lesz a lokális rangsorról a globális rangsorra váltani.
 
-### 3.2.? Jelentés
+### 3.2.7 Jelentés
 
 <table>
 
@@ -1067,7 +1067,7 @@ A játékos a főmenü 'Játék' pontján keresztül a játékmód választó k�
 
 ## 3.3 Admin számára elérhető funkciók
 
-### 3.3.? Szerverről bannolás
+### 3.3.4 Szerverről bannolás
 
 <table>
 
