@@ -212,6 +212,114 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 
 </table>
 
+### 3.1.5 Áruház használata
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Áruház használata
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    Az áruházban vétel történt.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia az áruházat. Ekkor az aktuálisan elérhető termékeket látja a felhasználó. A görgősáv használatával új termékek töltődnek be.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Áruház megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Áruház’
+</td></tr>
+    
+<tr><td>
+    3. Termékre kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Termék megvétele
+</td></tr>
+    
+ <tr><td>
+    5. Görgetősáv használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Új adatok betöltése
+</td></tr>
+    
+<tr><td>
+    7. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. Főmenü betöltése
+</td></tr>
+
+</table>
+
+#### Exception Path
+
+Amennyiben a játékos nem rendelkezik elég zsetonnal vagy már rendelkezik a megvenni kívánt termékkel, akkor egy hibaüzenetet kap.
+
+### 3.1.4 Virtuális zsetonok gyűlytése
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Virtuális zsetonok gyűlytése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Játékmenetben 1. vagy 2. helyen végez a felhasználó
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A felhasználó zsetonokat kap
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak az 1. vagy 2. helyen kell befejeznie egy játékmenetet, ezt követően automatikus megkapja a neki járó zsetonokat.
+
+
 ### 3.1.2 Játékmenet indítása botok ellen
 
 <table>
@@ -570,6 +678,63 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 #### Exception Path
 
 A felhasználó nem rendelkezik internet hozzáféréssel: a felhasználó képtelen lesz a lokális rangsorról a globális rangsorra váltani.
+
+### 3.2.7 Jelentés
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Játékosok jelentése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva, 
+    internethozzáférés, 
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A jelentés elküldésre került, és elbírálásra vár
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+Csalás észlelése esetén a játékosoknak módukban áll más játékosokat jelenti. Ez a másik játékosok profiljára történő kattnintás után, a felugró jelentés gombbal tehető meg. Ezt követően ez a jelentés elküldésre kerül az adminoknak, akik eldöntik, hogy igazak-e a vádak. Amennyiben a csalás bebizonyítható,  a játékost bannolják.
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Profilra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Profil megnyitása
+</td></tr>
+    
+<tr><td>
+    3. Jelentés gombra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Jelentés elküldése
+</td></tr>
+    
+</table>
+
 
 ### 3.2.2 Felhasználói név módosítása
 
@@ -1098,6 +1263,71 @@ A játékos a főmenü 'Játék' pontján keresztül a játékmód választó k�
 </table>
 
 ## 3.3 Admin számára elérhető funkciók
+
+### 3.3.4 Szerverről bannolás
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Szerverről bannolás
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Beérkezett, elbírált játékos jelentés
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    Adott játékos bannolása a szerverről
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A beérkezett jelentés elbírálásra került. Az admin bannolja a szerverről a játékost, aki ezek után ezen a szerveren nem játszhat többet.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+
+
+<!-- system -->
+<tr><td></td><td>
+    1. Jelentés beérkezése
+</td></tr>
+    
+<tr><td>
+    2. Kérelem elbírálása, 'Játékos bannolása a szerverről' gombra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    3. a játékos bannolásra kerül fiók alapján
+</td></tr>
+    
+ <tr><td>
+    4. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    5. Visszalépés a főmenübe
+</td></tr>
+
+</table>
+
+#### Exception Path
+
+Az admin internet hozzáférése megszakad. Nem lesz képes bannolni a játékos, de a jelentés ettől függetlenül megmarad és újboli internetre való csatlakozáskor bannolhatja a játékost.
 
 ### 3.3.1 Újdonságok közzététele
 
