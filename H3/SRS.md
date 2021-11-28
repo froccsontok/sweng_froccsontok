@@ -598,6 +598,276 @@ A játék már létező vagy érvénytelen karaktereket tartalmazó neveket nem 
 
 Ha ezután a játékos új és érvényes nevet ad meg akkor többi játékos is nevet választhat és a játékmenet elindul.
 
+### 3.1.4 Grafikai beállítások
+
+<table>
+    <tr>
+        <td>Name, description</td>
+        <td>Grafikus beállítások elvégzése</td>
+    </tr>
+    <tr>
+        <td>Primary Actor</td>
+        <td>Offline felhasználó</td>
+    </tr>
+    <tr>
+        <td>Secondary Actor</td>
+        <td>Online felhasználó</td>
+    </tr>
+    <tr>
+        <td>Pre-condition</td>
+        <td>Fröcs játék elindítása</td>
+    </tr>
+    <tr>
+        <td>Post-condition</td>
+        <td>Meg lévő beállítások betöltése</td>
+    </tr>
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállításokat. Ekkor a program a már lementett grafikai beállításokat töltibe.
+
+<table>
+    <tr>
+        <td>Actor Actions</td>
+        <td>System Responses</td>
+    </tr>
+    <tr>
+        <td>1. Beállítások menü megnyitása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Beállítások pontok megnyitása</td>
+    </tr>
+    <tr>
+        <td>3. Grafikai beállítások kiválasztása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Aktuális grafikai beállítások megjelenítése</td>
+    </tr>
+    <tr>
+        <td>5. Grafikai beállítások modosítása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Módosítások mentése</td>
+    </tr>
+    <tr>
+        <td>7. Viszalépési menüpont használata</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>8. Főmenü betöltése</td>
+    </tr>
+</table>
+
+### 3.1.5 Nyelvi beállítások
+
+<table>
+    <tr>
+        <td>Name, description</td>
+        <td>Nyelvi beállítások elvégzése</td>
+    </tr>
+    <tr>
+        <td>Primary Actor</td>
+        <td>Offline felhasználó</td>
+    </tr>
+    <tr>
+        <td>Secondary Actor</td>
+        <td>Online felhasználó</td>
+    </tr>
+    <tr>
+        <td>Pre-condition</td>
+        <td>Fröcs játék elindítása</td>
+    </tr>
+    <tr>
+        <td>Post-condition</td>
+        <td>Meg lévő beállítások betöltése</td>
+    </tr>
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállításokat. Ekkor a program a már lementett nyelvi beállításokat töltibe.
+
+<table>
+    <tr>
+        <td>Actor Actions</td>
+        <td>System Responses</td>
+    </tr>
+    <tr>
+        <td>1. Beállítások menü megnyitása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Beállítások pontok megnyitása</td>
+    </tr>
+    <tr>
+        <td>3. Nyelvi beállítások kiválasztása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Aktuális Nyelvi beállítások megjelenítése</td>
+    </tr>
+    <tr>
+        <td>5. Nyelvi beállítások modosítása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Módosítások mentése</td>
+    </tr>
+    <tr>
+        <td>7. Viszalépési menüpont használata</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>8. Főmenü betöltése</td>
+    </tr>
+</table>
+
+### 3.1.6 Hang beállítások
+
+<table>
+    <tr>
+        <td>Name, description</td>
+        <td>Hang beállítások elvégzése</td>
+    </tr>
+    <tr>
+        <td>Primary Actor</td>
+        <td>Offline felhasználó</td>
+    </tr>
+    <tr>
+        <td>Secondary Actor</td>
+        <td>Online felhasználó</td>
+    </tr>
+    <tr>
+        <td>Pre-condition</td>
+        <td>Fröcs játék elindítása</td>
+    </tr>
+    <tr>
+        <td>Post-condition</td>
+        <td>Meg lévő beállítások betöltése</td>
+    </tr>
+
+#### Main Success Path (primary flow)
+
+A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállításokat. Ekkor a program a már lementett hang beállításokat töltibe.
+
+<table>
+    <tr>
+        <td>Actor Actions</td>
+        <td>System Responses</td>
+    </tr>
+    <tr>
+        <td>1. Beállítások menü megnyitása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Beállítások pontok megnyitása</td>
+    </tr>
+    <tr>
+        <td>3. Hang beállítások kiválasztása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Aktuális hang beállítások megjelenítése</td>
+    </tr>
+    <tr>
+        <td>5. Hang beállítások modosítása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Módosítások mentése</td>
+    </tr>
+    <tr>
+        <td>7. Viszalépési menüpont használata</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>8. Főmenü betöltése</td>
+    </tr>
+</table>
+
+### 3.1.7 Irányítások
+
+<table>
+    <tr>
+        <td>Name, description</td>
+        <td>Irányítási és gomb kombinációs beállítások elvégzése</td>
+    </tr>
+    <tr>
+        <td>Primary Actor</td>
+        <td>Offline felhasználó</td>
+    </tr>
+    <tr>
+        <td>Secondary Actor</td>
+        <td>Online felhasználó</td>
+    </tr>
+    <tr>
+        <td>Pre-condition</td>
+        <td>Fröcs játék elindítása</td>
+    </tr>
+    <tr>
+        <td>Post-condition</td>
+        <td>Meg lévő beállítások betöltése</td>
+    </tr>
+
+#### Main Success Path (primary flow)
+
+A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállításokat. Ekkor a program a már lementett hang beállításokat töltibe.
+
+<table>
+    <tr>
+        <td>Actor Actions</td>
+        <td>System Responses</td>
+    </tr>
+    <tr>
+        <td>1. Beállítások menü megnyitása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Beállítások pontok megnyitása</td>
+    </tr>
+    <tr>
+        <td>3. Irányítási és gomb kombinációs beállítások kiválasztása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Aktuális irányítási és gomb kombinációs beállítások megjelenítése</td>
+    </tr>
+    <tr>
+        <td>5. Irányítási és gomb kombinációs beállítások modosítása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Módosítások mentése</td>
+    </tr>
+    <tr>
+        <td>7. Viszalépési menüpont használata</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>8. Főmenü betöltése</td>
+    </tr>
+</table>
+
 ## 3.2 Online felhasználó számára elérhető funkciók
 
 ### 3.2.1 Globális rangsor elérése
