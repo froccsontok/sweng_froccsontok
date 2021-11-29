@@ -1830,7 +1830,7 @@ Miután az admin felhasználó a fórumon az irányelvekkel szembemenő bejegyz�
     
 <!-- system -->
 <tr><td></td><td>
-    6. A felhasználó ki lett tiltva a fórumról
+    8. A felhasználó ki lett tiltva a fórumról
 </td></tr>
 
 </table>
@@ -1963,7 +1963,120 @@ Egy felhasználó letiltása esetén a bejegyzései automatikusan törlődnek a 
 </td></tr>
 
 </table>
+
+### 3.3.6 Játék adatlapjának szerkesztése
     
+<table>
+
+<tr><td>Name, description</td><td>
+    Játék adatlapjának szerkesztése : Az admin felhasználónak lehetősége van a játék adatlapját szerkeszteni és ezeket a változásokat közzétenni.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A játék adatlapjának megnyitása
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A változások közzé lettek téve
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+Az admin felhasználónak lehetősége van szerkeszteni a játék adatlapját. Ezt azután teheti meg hogy megnyitotta a játék adatlapját és szerkesztés opciót választja, ekkor az adatlap szerkeszthetővé válik. A változásokat a "Mentés" gombra kattintva tudjuk közzétenni.
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Az adatlap megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Az adatlap betöltése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. "Szerkesztés" opció kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. Az adatlap szerkeszthetővé válik
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    5. Az adatlap szerkesztése
+</td><td></td></tr>
+
+<!-- actor -->
+<tr><td>
+    6. "Mentés" opció kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    7. Változások mentése és közzététele
+</td></tr>
+    
+</table>
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+Amennyiben az admin felhasználó a szerkesztés következtében az adatlapot üresen kívánja hagyni, akkor a "Mentés" opció elérhetetlenné válik és csak abban az esetben lesz elérhető, ha nem hagyja üresen az adatlapot.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Az adatlap megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Az adatlap betöltése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. "Szerkesztés" opció kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. Az adatlap szerkeszthetővé válik
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    5. A már meglévő adatok törlése
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A "Mentés" opció elérhetetlenné válik
+</td></tr>
+
+</table>    
     
 ## 4. Használhatóság
 ### 4.1 Különböző tapasztalati szinttel rendelkező felszanálók
