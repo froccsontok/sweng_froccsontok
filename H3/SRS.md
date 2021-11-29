@@ -134,6 +134,8 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 -	Barátok hozzáadása: Steam felhasználókat tudunk hozzáadni a barát listánkhoz a felhasználónevük alapján.
 -	Jelentés: A játékosok, ha a parti folyamán esetleg csalással, gyűlöletbeszéddel vagy olyan játékossal találkoznak akik mások játékát rontják el akkor azt jelenthetik és ennek a jogosságát az Admin fogja kivizsgálni.
 
+![Játékos usecase](UML/usecaseUser.png "Játékos usecase")
+
 #### Admin számára elérhető funkciók:
 -	Az Admin számára minden funkció elérhető ami a játékos számára is!
 -	Szerver moderáció: Az Admin felelős a szerver stabilitásáért és karbantartásáért, a bejelentkezések kezeléséért, a szoftver frissítéséért, a hibák kijavításáért, adatbázis szinkronizálásáért és a felhasználói jogosultságok beállításáért.
@@ -141,6 +143,8 @@ A játékot használó személyeket alapvetően két csoportra oszthatók. Ezek 
 -	Bannolás: A beérkező jelentéseket az Admin vizsgálja ki, és ha a vádak igaznak bizonyulnak, akkor büntetést szabhat ki feléjük. A jelentett játékos kitilthatja külön csak az online játékmódokból, de a teljes játékból is. Ilyenkor a jelentett játékos nem tud online partit létrehozni vagy már a játékba se tud belépni, ezt egy üzenet formájában jelezzük feléjük. Ezek a büntetések egy adott ideig vannak hatályban, de súlyos vagy rendszeresen visszaeső eseteknél a tiltás végleges is lehet.
 -	Az Adminnak áll jogában a játék adatlapjának a szerkesztése és az újdonságok folyamatos közzététele.
 -	Egyedül az Admin ruházhat fel admin jogosultsággal más felhasználókat.
+
+![Admin usecase](UML/usecaseAdmin.png "Admin usecase")
 
 ## 3.1 Offline felhasználó számára elérhető funkciók
 
@@ -207,6 +211,114 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 </td></tr>
 
 </table>
+
+### 3.1.5 Áruház használata
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Áruház használata
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    Az áruházban vétel történt.
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak a főmenüből elérhetően meg kell nyitnia az áruházat. Ekkor az aktuálisan elérhető termékeket látja a felhasználó. A görgősáv használatával új termékek töltődnek be.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Áruház megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Új menü megnyitása: ’Áruház’
+</td></tr>
+    
+<tr><td>
+    3. Termékre kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Termék megvétele
+</td></tr>
+    
+ <tr><td>
+    5. Görgetősáv használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    6. Új adatok betöltése
+</td></tr>
+    
+<tr><td>
+    7. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    8. Főmenü betöltése
+</td></tr>
+
+</table>
+
+#### Exception Path
+
+Amennyiben a játékos nem rendelkezik elég zsetonnal vagy már rendelkezik a megvenni kívánt termékkel, akkor egy hibaüzenetet kap.
+
+### 3.1.4 Virtuális zsetonok gyűlytése
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Virtuális zsetonok gyűlytése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Játékmenetben 1. vagy 2. helyen végez a felhasználó
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A felhasználó zsetonokat kap
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználónak az 1. vagy 2. helyen kell befejeznie egy játékmenetet, ezt követően automatikus megkapja a neki járó zsetonokat.
+
 
 ### 3.1.2 Játékmenet indítása botok ellen
 
@@ -293,6 +405,469 @@ A tutorial játékmód is egy speciális (kezdő nehézségű, a szabályok isme
 
 A játékos a fenti lépések közben nem tud kivételt generálni, mivel a felület csak a megengedett értékeket engedi beállítani a botok számánál és a nehézségnél.
 
+### 3.1.3 Lokális parti
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Lokális parti: Ezen játékmód elindításakor mindegyik játékosnak egyedi nevet kell megadnia, ami alapján a játék meg tudja őket különböztetni. Egyszerre 3-6 személy játszhat.      Ezek után indul el a játékmenet, azonban itt a játékosok nem kapnak jutalmakat, csakis pontokat az eredményeik után, amelyek alapján egy rangsort állít fel a                        játék a partiban résztvevő játékosokról.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A lokális parti elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A játékos a főmenü 'Játék' pontján keresztül a játékmód választó képernyőre kerül, ahol kiválaszthatja a lokális parti játékmódot. Ezután beállíthajuk hogy hányan szerertnénk játszani (3-7 fő), majd pedig a beállított számú játékosnak vagy választania kell a már meadott nevek közül.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. Lokális parti játékmód kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. A játék előtti beállítások megjelenítése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    5. Játékosok számának megadása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A már létező nevek betöltése a lokális adatbázisból
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    7. 'Új név hozzáadása' gomb betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    8. Játékos nevek kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    9. Játékmenet indítása
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+A játékosok nem a már létező nevek közül választanak, hanem új nevet hoznak létre és azt rögzítik a lokális adatbázisban.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Játék menüpont választása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Játékmód választó képernyő megjelenítése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. Lokális parti játékmód kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. A játék előtti beállítások megjelenítése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    5. Játékosok számának megadása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A már létező nevek betöltése a lokális adatbázisból
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    7. 'Új név hozzáadása' gomb betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    8. 'Új név hozzáadása' gombra kattintás
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    9. Szövegdoboz betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    10. Új név beírása a szövegdobozba
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    11. Új név mentése a lokális adatbázisba
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    12. Játékmenet indítása
+</td></tr>
+    
+</table>
+
+<!-- *********************************************** -->
+
+#### Exception Path
+
+A játék már létező vagy érvénytelen karaktereket tartalmazó neveket nem tud menteni a lokális adatbázisba
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->    
+<tr><td>
+    1. 'Új név hozzáadása' gombra kattintás
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    2. Szövegdoboz betöltése
+</td></tr>
+    
+<!-- actor -->    
+<tr><td>
+    3. Már létező vagy érvénytelen karaktereket tartalmazó név beírása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. "Hibás név! Kérlek próbáld újra!" -felirat kíírása 
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    5. Szövegdoboz ismételt betöltése üresen
+</td></tr>
+    
+</table>
+
+Ha ezután a játékos új és érvényes nevet ad meg akkor többi játékos is nevet választhat és a játékmenet elindul.
+
+### 3.1.4 Grafikai beállítások
+
+<table>
+    <tr>
+        <td>Name, description</td>
+        <td>Grafikus beállítások elvégzése</td>
+    </tr>
+    <tr>
+        <td>Primary Actor</td>
+        <td>Offline felhasználó</td>
+    </tr>
+    <tr>
+        <td>Secondary Actor</td>
+        <td>Online felhasználó</td>
+    </tr>
+    <tr>
+        <td>Pre-condition</td>
+        <td>Fröcs játék elindítása</td>
+    </tr>
+    <tr>
+        <td>Post-condition</td>
+        <td>Meg lévő beállítások betöltése</td>
+    </tr>
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállításokat. Ekkor a program a már lementett grafikai beállításokat töltibe.
+
+<table>
+    <tr>
+        <td>Actor Actions</td>
+        <td>System Responses</td>
+    </tr>
+    <tr>
+        <td>1. Beállítások menü megnyitása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Beállítások pontok megnyitása</td>
+    </tr>
+    <tr>
+        <td>3. Grafikai beállítások kiválasztása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Aktuális grafikai beállítások megjelenítése</td>
+    </tr>
+    <tr>
+        <td>5. Grafikai beállítások modosítása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Módosítások mentése</td>
+    </tr>
+    <tr>
+        <td>7. Viszalépési menüpont használata</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>8. Főmenü betöltése</td>
+    </tr>
+</table>
+
+### 3.1.5 Nyelvi beállítások
+
+<table>
+    <tr>
+        <td>Name, description</td>
+        <td>Nyelvi beállítások elvégzése</td>
+    </tr>
+    <tr>
+        <td>Primary Actor</td>
+        <td>Offline felhasználó</td>
+    </tr>
+    <tr>
+        <td>Secondary Actor</td>
+        <td>Online felhasználó</td>
+    </tr>
+    <tr>
+        <td>Pre-condition</td>
+        <td>Fröcs játék elindítása</td>
+    </tr>
+    <tr>
+        <td>Post-condition</td>
+        <td>Meg lévő beállítások betöltése</td>
+    </tr>
+</table>
+
+#### Main Success Path (primary flow)
+
+A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállításokat. Ekkor a program a már lementett nyelvi beállításokat töltibe.
+
+<table>
+    <tr>
+        <td>Actor Actions</td>
+        <td>System Responses</td>
+    </tr>
+    <tr>
+        <td>1. Beállítások menü megnyitása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Beállítások pontok megnyitása</td>
+    </tr>
+    <tr>
+        <td>3. Nyelvi beállítások kiválasztása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Aktuális Nyelvi beállítások megjelenítése</td>
+    </tr>
+    <tr>
+        <td>5. Nyelvi beállítások modosítása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Módosítások mentése</td>
+    </tr>
+    <tr>
+        <td>7. Viszalépési menüpont használata</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>8. Főmenü betöltése</td>
+    </tr>
+</table>
+
+### 3.1.6 Hang beállítások
+
+<table>
+    <tr>
+        <td>Name, description</td>
+        <td>Hang beállítások elvégzése</td>
+    </tr>
+    <tr>
+        <td>Primary Actor</td>
+        <td>Offline felhasználó</td>
+    </tr>
+    <tr>
+        <td>Secondary Actor</td>
+        <td>Online felhasználó</td>
+    </tr>
+    <tr>
+        <td>Pre-condition</td>
+        <td>Fröcs játék elindítása</td>
+    </tr>
+    <tr>
+        <td>Post-condition</td>
+        <td>Meg lévő beállítások betöltése</td>
+    </tr>
+
+#### Main Success Path (primary flow)
+
+A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállításokat. Ekkor a program a már lementett hang beállításokat töltibe.
+
+<table>
+    <tr>
+        <td>Actor Actions</td>
+        <td>System Responses</td>
+    </tr>
+    <tr>
+        <td>1. Beállítások menü megnyitása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Beállítások pontok megnyitása</td>
+    </tr>
+    <tr>
+        <td>3. Hang beállítások kiválasztása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Aktuális hang beállítások megjelenítése</td>
+    </tr>
+    <tr>
+        <td>5. Hang beállítások modosítása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Módosítások mentése</td>
+    </tr>
+    <tr>
+        <td>7. Viszalépési menüpont használata</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>8. Főmenü betöltése</td>
+    </tr>
+</table>
+
+### 3.1.7 Irányítások
+
+<table>
+    <tr>
+        <td>Name, description</td>
+        <td>Irányítási és gomb kombinációs beállítások elvégzése</td>
+    </tr>
+    <tr>
+        <td>Primary Actor</td>
+        <td>Offline felhasználó</td>
+    </tr>
+    <tr>
+        <td>Secondary Actor</td>
+        <td>Online felhasználó</td>
+    </tr>
+    <tr>
+        <td>Pre-condition</td>
+        <td>Fröcs játék elindítása</td>
+    </tr>
+    <tr>
+        <td>Post-condition</td>
+        <td>Meg lévő beállítások betöltése</td>
+    </tr>
+
+#### Main Success Path (primary flow)
+
+A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállításokat. Ekkor a program a már lementett hang beállításokat töltibe.
+
+<table>
+    <tr>
+        <td>Actor Actions</td>
+        <td>System Responses</td>
+    </tr>
+    <tr>
+        <td>1. Beállítások menü megnyitása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>2. Beállítások pontok megnyitása</td>
+    </tr>
+    <tr>
+        <td>3. Irányítási és gomb kombinációs beállítások kiválasztása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4. Aktuális irányítási és gomb kombinációs beállítások megjelenítése</td>
+    </tr>
+    <tr>
+        <td>5. Irányítási és gomb kombinációs beállítások modosítása</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>6. Módosítások mentése</td>
+    </tr>
+    <tr>
+        <td>7. Viszalépési menüpont használata</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>8. Főmenü betöltése</td>
+    </tr>
+</table>
+
 ## 3.2 Online felhasználó számára elérhető funkciók
 
 ### 3.2.1 Globális rangsor elérése
@@ -373,6 +948,63 @@ A felhasználónak a főmenüből elérhetően meg kell nyitnia a rangsorok alme
 #### Exception Path
 
 A felhasználó nem rendelkezik internet hozzáféréssel: a felhasználó képtelen lesz a lokális rangsorról a globális rangsorra váltani.
+
+### 3.2.7 Jelentés
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Játékosok jelentése
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fröccs játék elindítva, 
+    internethozzáférés, 
+    Steambe való bejelentkezés online módban
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A jelentés elküldésre került, és elbírálásra vár
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+Csalás észlelése esetén a játékosoknak módukban áll más játékosokat jelenti. Ez a másik játékosok profiljára történő kattnintás után, a felugró jelentés gombbal tehető meg. Ezt követően ez a jelentés elküldésre kerül az adminoknak, akik eldöntik, hogy igazak-e a vádak. Amennyiben a csalás bebizonyítható,  a játékost bannolják.
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. Profilra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. Profil megnyitása
+</td></tr>
+    
+<tr><td>
+    3. Jelentés gombra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Jelentés elküldése
+</td></tr>
+    
+</table>
+
 
 ### 3.2.2 Felhasználói név módosítása
 
@@ -901,6 +1533,71 @@ A játékos a főmenü 'Játék' pontján keresztül a játékmód választó k�
 </table>
 
 ## 3.3 Admin számára elérhető funkciók
+
+### 3.3.4 Szerverről bannolás
+
+<table>
+
+<tr><td>Name, description</td><td>
+    Szerverről bannolás
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+   
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Beérkezett, elbírált játékos jelentés
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    Adott játékos bannolása a szerverről
+</td></tr>
+
+</table>
+
+#### Main Success Path (primary flow)
+
+A beérkezett jelentés elbírálásra került. Az admin bannolja a szerverről a játékost, aki ezek után ezen a szerveren nem játszhat többet.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+
+
+<!-- system -->
+<tr><td></td><td>
+    1. Jelentés beérkezése
+</td></tr>
+    
+<tr><td>
+    2. Kérelem elbírálása, 'Játékos bannolása a szerverről' gombra kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    3. a játékos bannolásra kerül fiók alapján
+</td></tr>
+    
+ <tr><td>
+    4. Visszalépés menüpont használata
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    5. Visszalépés a főmenübe
+</td></tr>
+
+</table>
+
+#### Exception Path
+
+Az admin internet hozzáférése megszakad. Nem lesz képes bannolni a játékos, de a jelentés ettől függetlenül megmarad és újboli internetre való csatlakozáskor bannolhatja a játékost.
 
 ### 3.3.1 Újdonságok közzététele
 
