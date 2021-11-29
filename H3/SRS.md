@@ -1835,7 +1835,7 @@ Miután az admin felhasználó a fórumon az irányelvekkel szembemenő bejegyz�
 
 </table>
     
-### 3.3.4 Bejegyzés törlése a fórumról
+### 3.3.5 Bejegyzés törlése a fórumról
 
 <table>
 
