@@ -867,6 +867,79 @@ A felhasználó a főmenüből egy gomb megnyomásával elérheti a beállítás
         <td>8. Főmenü betöltése</td>
     </tr>
 </table>
+ 
+### 3.1.8 Tutorial
+    
+<table>
+
+<tr><td>Name, description</td><td>
+    Tutorial: A játék tartalmaz egy tutorial játékmódot amelyet első sorban az új felhasználóknak ajánlunk. A tutorial játékmód egy kezdő szintű bot elleni játékmód amely közben a játék tippeket és segítségeket mutat a játékos számára, hogy segítse a játékszabályok, az irányítások és az egész játékmenet elsajátítását.
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Offline felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    Online felhasználó
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    A felhasználó megnyitotta a játékot
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A tutorial elindult
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+A tutorial a főmenüből közvetlen elérhető. Miután kiválasztottuk a játék betölti a "kezdő" nehézségifokozatú bot-ot és a segítő tippeket a játékos számára. A tippeket a játék mindig egy adott pontján mutatja meg amikor a tipp a játék soron következő lépésére vonatkozik. Miután a játékos minden lépést elsajátított végig kell játszania a partit amiért szintén minimális jutalmat kap, azonban csak a tutorial legelső elvégzése után.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. "Tutorial" menüpont kiválasztása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. "Kezdő" bot betöltése és játékmenet indítása
+</td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    3. Tipp megjelenítése a játékos számára 
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    4. Továbblépés a tippen
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    3. Következő tipp megjelenítése a játékos számára 
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    5. Továbblépés a tippen
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. Utolsó tipp esetén a játékmenet folytatása 
+</td></tr>
+
+</table>
 
 ## 3.2 Online felhasználó számára elérhető funkciók
 
