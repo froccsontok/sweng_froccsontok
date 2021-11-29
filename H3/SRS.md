@@ -1834,8 +1834,137 @@ Miután az admin felhasználó a fórumon az irányelvekkel szembemenő bejegyz�
 </td></tr>
 
 </table>
+    
+### 3.3.4 Bejegyzés törlése a fórumról
 
+<table>
 
+<tr><td>Name, description</td><td>
+    Bejegyzés törlése a fórumról: Az admin felhasználónak jogában áll olyan bejegyzéseket törölni a fórumról amelyek sértik a közösségi irányelveket vagy spamnek, nem oda illőnek bizonyulnak
+</td></tr>
+
+<tr><td>Primary Actor</td><td>
+    Admin felhasználó
+</td></tr>
+
+<tr><td>Secondary Actors</td><td>
+    -
+</td></tr>
+
+<tr><td>Pre-condition</td><td>
+    Fórum megnyitása
+</td></tr>
+
+<tr><td>Post-condition</td><td>
+    A törölt bejegyzések eltűntek a fórumról
+</td></tr>
+
+</table>
+
+<!-- *********************************************** -->
+
+#### Main Success Path (primary flow)
+
+Amennyiben az admin felhasználó olyan bejegyzést talál a fórumon amely nem oda illő, sérti a közösségi irányelveket vagy spamnek bizonyul, akkor az adminnak lehetősége van ezt a bejegyzést törölni.
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. A fórum megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A fórum betöltése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. A törölni kívánt bejegyzésnél az opciók megnyitása
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    4. Az opciók betöltése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    5. "Bejegyzés törlése" -  lehetőség kiválasztása
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. "Biztosan törölni kívánja ezt a bejegyzést?" - üzenet megjelenítése a képernyőn
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    7. A törlés megerősítése
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A bejegyzés törlésre került a fórumról
+</td></tr>
+    
+</table>
+
+<!-- *********************************************** -->
+
+#### Alternate Path
+
+Egy felhasználó letiltása esetén a bejegyzései automatikusan törlődnek a fórumról.
+
+<table>
+
+<tr><td>Actor Actions</td><td>System Responses</td></tr>
+
+<!-- actor -->
+<tr><td>
+    1. A letiltandó felhasználó profiljára való kattintás
+</td><td></td></tr>
+
+<!-- system -->
+<tr><td></td><td>
+    2. A felhasználó profiljának betöltése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    3. Az "Opciók" gombra való kattintás
+</td><td></td></tr>
+    
+<!-- system -->
+<tr><td></td><td>
+    4. A lehetséges opciók betöltése
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    5. "Játékos letiltása" lehetőség kiválasztása
+</td><td></td></tr> 
+    
+<!-- system -->
+<tr><td></td><td>
+    6. "Biztosan le szeretné tiltani ezt a felhasználót?"- üzenet megjelenítése a képernyőn
+</td></tr>
+    
+<!-- actor -->
+<tr><td>
+    7. A döntés megerősítése
+</td><td></td></tr> 
+    
+<!-- system -->
+<tr><td></td><td>
+    6. A felhasználó ki lett tiltva a fórumról és a bejegyzései törlődtek
+</td></tr>
+
+</table>
+    
+    
 ## 4. Használhatóság
 ### 4.1 Különböző tapasztalati szinttel rendelkező felszanálók
 #### 4.1.1 Kezdő felhasználó:
