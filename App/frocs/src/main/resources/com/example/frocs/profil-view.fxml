@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Fröccs" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.example.frocs.MenuController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="256.0" layoutY="14.0" prefHeight="53.0" prefWidth="99.0" text="Profil" textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="335.0" mnemonicParsing="false" text="Vissza" />
+            <ImageView fitHeight="160.0" fitWidth="173.0" layoutX="48.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unknown.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="256.0" layoutY="93.0" text="Kispista123" />
+            <Label layoutX="256.0" layoutY="137.0" text="Globális Helyezés:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="187.0" text="Lokális helyezés:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="427.0" layoutY="137.0" text="1234">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="427.0" layoutY="187.0" text="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
