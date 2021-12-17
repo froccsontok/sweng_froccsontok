@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frocs.MenuController">
+   <children>
+      <Region prefHeight="200.0" prefWidth="200.0" />
+      <Button mnemonicParsing="false" text="Játék" />
+      <Button mnemonicParsing="false" text="Áruház" />
+      <Button mnemonicParsing="false" text="Rangsor" />
+      <Region prefHeight="200.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="124.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" text="Kilépés" />
+            <Button mnemonicParsing="false" text="Beállítások" />
+            <Button mnemonicParsing="false" text="Felhasználó" onAction="#switchProfil"/>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" text="Tutorial" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
