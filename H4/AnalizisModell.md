@@ -20,8 +20,7 @@ Meghívok három barátot és elindítunk egy játékot.
 	-> hívottak
 
 
-Bejelentkezés:
-==============
+## Bejelentkezés:
 
 A websocket kapcsolat a kliens indításakor létrejön, ezen keresztül kommunikál a szerverrel, az üzenet JSON formátumban van elküldve, a type tag tartalmazza az üzenet típusát.
 
@@ -43,11 +42,10 @@ A login típusú üzenetet a kliens a Steam-re való bejelentkezés után küldi
 A szerver minden websocket kapcsolathoz rendel egy PlayerInfo objektumot, amely a csatlakozott játékos adatait tárolja.
 
 
-Meghívás:
-=========
+## Meghívás:
 
 	Client 1:
-		{ "type": "invite", "players": [ "0002", "0003", "0004" ] } -> 
+		{ "type": "invite", "players": [ "0002", "0003", "0004" ] } -> Server
 		
 A leader játékos a barátai közül választ játékosokat, akiket meghív. A meghívást az invite típusú üzenetben elküldi a szervernek.
 
@@ -64,8 +62,7 @@ A szerver meghíváskor létrehoz egy Game objektumot, ahol az adott játék ada
 Minden meghívott játékosnak küld egy inviteToGame üzenetet. Az üzenetet akkor tudja elküldeni, ha a játékos be van jelentkezve, ezt a PlayerInfo objektumokból tudja meghatározni. Ha megtalálja az adott játékost, akkor a hozzá tartozó Session objektumon keresztül elküldi az üzenetet.
 
 
-Meghívás elfogadása:
-====================
+## Meghívás elfogadása:
 
 	Client 2-4:
 		{ "type": "respondToInvite", "response": "accept" } -> Server
@@ -78,23 +75,20 @@ A meghívott játékosok respondToInvite üzenetben tudják elfogadni vagy eluta
 A leader és a meghívást elfogadó játékosok egy töltőképernyőre kerülnek, ahol láthatják, hogy ki fogadta el a meghívást, ezért a szerver minden elfogadáskor elküldi az aktuálisan várakozó játékosok azonosítóját.
 
 
-Meghívás elutasítása:
-=====================
+## Meghívás elutasítása:
 
 	Client 2-4:
 		{ "type": "respondToInvite", "response": "reject" } -> Server
 
 
-Válaszok összesítése:
-=====================
+## Válaszok összesítése:
 
 	Server:
 		Game [ status: GameStatus.Inactive, leader: "0001", players: [ "0001", "0002", "0003", "0004" ], accepted: [ "0002", ... ] ]
 
 Ha egy játékos elfogadja a meghívást, akkor a Game objektumban az azonosítója eltárolásra kerül az accepted listában.
 
-Játék indítása:
-===============
+## Játék indítása:
 
 Client 1 indíthatja a játékot, ha elegendő játékos (1 db) elfogadja a meghívást.
 
@@ -105,3 +99,94 @@ A szerver a meghívott játékosoknak elküldi egy gameWasStarted üzentben, hog
 
 	Server:
 		{ "type": "gameWasStarted" } -> Client 2-4
+
+Usecase 2:
+==========
+
+A húzópakli elfogy és a játék véget ér, a pontok összeszámolása és a játékosok kiléptetése.
+
+## Húzópakli ellenőrzése:
+
+	Server:
+		FroccsDeck [ froccsCards ]
+
+A froccsCards a lapokat tároló lista, ha nincs benne elem, akkor a lapok elfogytak és a játék véget ér.
+
+		deck.getFroccsCards().length == 0
+
+## Pontok összeszámolása:
+
+	Game [ status: GameStatus.Active, leader: "0001",
+		players: [ "0001", "0002", "0003", "0004" ], accepted: [],
+		coins: [ "0001" -> 12, "0002" -> 13, "0003" -> 14, "0004" -> 15 ] ]
+
+A coins mező típusa Map<String, int> és az adott játékos coin mennyiségét tárolja. A játék során a szerver folyamatosan frissíti a mennyiséget, amikor egy játékos elad egy fröccsöt. A játék végén ez alapján határozza meg a helyezéseket. Az 1. és 2. helyezett a szerzett pontokat megkapja és elköltheti az áruházban. Ha holtverseny alakul ki, akkor csak az 1. helyezettek kapnak pontot.
+
+	Game game
+	GameDbContext gameDb
+
+	gameDb.addCoinAmount("0004", game.getCoins().get("0004"));
+	gameDb.addCoinAmount("0003", game.getCoins().get("0003"));
+
+A nyertes játékosokat úgy határozza meg a szerver, hogy a coins alapján sorbaállítja a játékosokat. Jelen esetben a 0003 és 0004 azonosítójú játékosok kapnak pontot.
+
+	Server:
+		{ "type": "coinsGained", "amount": 14, "total": ... } -> Client 3
+		{ "type": "coinsGained", "amount": 15, "total": ... } -> Client 4
+
+A játék végén a játékosok láthatják, hogy hány coin-t szereztek és ezzel mennyi van összesen.
+
+## Játék befejezése:
+
+Ha a szerver eltárolta a gyűjtött pontokat, akkor befejezi a játékot. A szerver a játékosoknak elküldi egy gameEnded üzentben, hogy a játék véget ért.
+
+	Server:
+		{ "type": "gameEnded" } -> Client 1-4
+
+A szerver elküldi a helyezéseket is, hogy a kliens megjeleníthesse az endscreen-t.
+
+	Server:
+		{ "type": "results", "place": 1 } -> Client 4
+		{ "type": "results", "place": 2 } -> Client 3
+		...
+
+Usecase 3:
+==========
+
+A Profil menüben megváltoztatni a játékosnevet.
+
+## Játékosnév megváltoztatása:
+
+Az alkalmazás tartalmaz egy playerName nevű mezőt, a beírt szöveg a getPlayerName() metódussal lekérdezhető a beírt játékosnév.
+
+	public class Froccs extends Application {
+
+		private static TextField playerName;
+
+		public void start(Stage s) {
+			ProfileDbContext profileDb = new ProfileDbContext();
+			playerName = new TextField(profileDb.loadName());
+			...
+		}
+
+		...
+
+		static String getPlayerName() {
+			return playerName.getText();
+		}
+	
+	}
+
+A Profil menü kezelője a ProfileController osztály lesz, ennek a saveChanges() metódusa kerül meghívásra a Mentés gomb megnyomásakor.
+
+	public class MenuController {
+		@FXML
+		protected void saveChanges() {
+			ProfileDbContext profileDb = new ProfileDbContext();
+			profileDb.changeName(Froccs.getPlayerName());
+		}
+	}
+
+A ProfileDbContext changeName() metódusa a websocket kapcsolaton keresztül üzenetet küld a szervernek a névváltozásról.
+
+	{ "type": "nameChange", "name": ... } -> Server
