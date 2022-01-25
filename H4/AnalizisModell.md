@@ -1,3 +1,125 @@
+# Osztálydiagram
+
+## Menü
+
+![Menü osztálydiagram](AnalizisModell/Menu.drawio.png "Menü osztálydiagram")
+
+### SteamLogin
+
+### MenuView
+
+### OptionsView
+
+### Localization
+
+### SoundSettings
+
+### ScreenSettings
+
+### KeyBindings
+
+### StoreView
+
+### StoreDbContext
+
+### ProfileView
+
+### LeaderBoardView
+
+### OnlineLeaderBoard
+
+### LeaderBoardContext
+
+### LocalLeaderBoard
+
+### LeaderBoardManager
+
+### Playview
+
+### TutorialView
+
+### ProfileDbContext
+
+## Játék
+
+![Játék osztálydiagram](AnalizisModell/Game.drawio.png "Játék osztálydiagram")
+
+### MenuView
+
+### Tutorialview
+
+### PlayView
+
+### GameContext
+
+### Bot
+
+### Player
+
+### TutorialGameContext
+
+### DrunkHero
+
+### PlayerArea
+
+### Deck
+
+### FroccsDeck
+
+### DiscardDeck
+
+### GlassDeck
+
+### Glass
+
+### Hand
+
+### Card
+
+### FroccsCard
+
+### GlassCard
+
+## JavaFX
+
+![JavaFX osztálydiagram](AnalizisModell/JavaFX.drawio.png "JavaFX osztálydiagram")
+
+### javafx.application.Application
+
+### Froccs
+
+### javafx.scene.Scene
+
+### javafx.scene.Node
+
+### MenuView (fxml)
+
+### MenuController
+
+### OptionsView (fxml)
+
+### OptionsController
+
+### StoreView (fxml)
+
+### StoreController
+
+### LeaderboardView (fxml)
+
+### LeaderboardController
+
+### ProfileView (fxml)
+
+### ProfileController
+
+### PlayView (fxml)
+
+### PlayController
+
+### TutorialView (fxml)
+
+### TutorialController
+
 Usecase 1:
 ==========
 
