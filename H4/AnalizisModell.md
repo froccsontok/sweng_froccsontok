@@ -222,6 +222,8 @@ A szerver a meghívott játékosoknak elküldi egy gameWasStarted üzentben, hog
 	Server:
 		{ "type": "gameWasStarted" } -> Client 2-4
 
+![Usecase 1 szekvencia diagram](SzekvenciaDiagram/Usecase1.png "Usecase 1 szekvencia diagram")
+
 Usecase 2:
 ==========
 
@@ -272,6 +274,8 @@ A szerver elküldi a helyezéseket is, hogy a kliens megjeleníthesse az endscre
 		{ "type": "results", "place": 2 } -> Client 3
 		...
 
+![Usecase 2 szekvencia diagram](SzekvenciaDiagram/Usecase2.png "Usecase 2 szekvencia diagram")
+
 Usecase 3:
 ==========
 
@@ -312,3 +316,5 @@ A Profil menü kezelője a ProfileController osztály lesz, ennek a saveChanges(
 A ProfileDbContext changeName() metódusa a websocket kapcsolaton keresztül üzenetet küld a szervernek a névváltozásról.
 
 	{ "type": "nameChange", "name": ... } -> Server
+
+![Usecase 3 szekvencia diagram](SzekvenciaDiagram/Usecase3.png "Usecase 3 szekvencia diagram")
