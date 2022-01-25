@@ -6,7 +6,11 @@
 
 ### SteamLogin
 
+A steambe való sikeres bejelentkezés után, a játékoshoz tartozó steam azonosító (másnéven steam ID) lekérdezéséért felelős osztály.
+
 ### MenuView
+
+A főmenüből kiinduló almenük eléréséért felelős osztály. Menük kiválasztásával eljuthatunk a beállításokhoz, játékmenühöz, toturialhoz, áruházhoz, ranglistákhoz és a játékos profiljához.
 
 ### OptionsView
 
@@ -20,9 +24,15 @@
 
 ### StoreView
 
+Az applikáción belüli áruház termékeinek kezeléséért felelős osztály. Mutatja az eladásra kínált tárgyakat és a játékos által birtokolt tárgyakat is, illetve kezeli azok megvételét.
+
 ### StoreDbContext
 
+A játékosok által vásárolt, illetve a még nem birtokolt tárgyak adatainak tárolásáért felelős osztály. A játékos zsetonjainak számának illetve az újonnan vett tárgyainak elmentéséért felelős.
+
 ### ProfileView
+
+A játékosokhoz tartozó profil menüben lévő adatok megjelenítéséért felelős osztály. Megjeleníti a játékos profilképét, nevét, helyezését a ranglistákon és játékos szintjét.
 
 ### LeaderBoardView
 
@@ -36,9 +46,15 @@
 
 ### Playview
 
+A ’játék’ almenü megjelenítése. Kiválasztható benne a játékmód, és elindítható segítségével a lobbi.
+
 ### TutorialView
 
+A toturial elindítását megjelenítő almenüért felelős.
+
 ### ProfileDbContext
+
+A játékoshoz tartozó profil adatainak tárolásáért és lekérdezéséért felelős osztály. Tárolt adatok: játékosnév, játékosazonosító, profilkép és a ranglistákon elért helyezés. A profilkép módosítása is ennek az osztálynak a segítségével történik.
 
 ## Játék
 
