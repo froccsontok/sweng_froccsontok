@@ -68,6 +68,8 @@ A játékoshoz tartozó profil adatainak tárolásáért és lekérdezéséért 
 
 ### GameContext
 
+Ez az osztály a játékmódot, a játékosokat/botokat, és a játékosok szintjét tartalmazza.
+
 ### Bot
 
 A játékos ellen játszó, rendszer által vezérelt ellenféllel kapcsolatos adatokat kezeli. Többet között a bot nevét, illetve következő lépéseit.
@@ -82,27 +84,47 @@ A toturialban mutatott felugró játéktippekért ért segítségekért felelős
 
 ### DrunkHero
 
+Ez az osztály a kocsmahősök nevét és képességét tárolja, továbbá itt állítódik be az adott játékoshoz tartozó kocsmahős is.
+
 ### PlayerArea
 
 A játékosok előtt lévő lapok, pontok, választott karakterét játék közben egy saját „területen” mutatja a játékfelület. A playerarea tárolja ennek a tartalmát, és kezeli, hogy éppen melyik játékosé aktív, ahogy haladunk a játékosok között a körben.
 
 ### Deck
 
+Ez az osztály tartalmazza az összes kártyát. Ebből válik ki a FroccsDeck és a GlassDeck is.
+
 ### FroccsDeck
+
+Ez az osztály a húzópakli, a még fel nem húzott bor, szóda, szivatós és "Ezt neked" kártyákat tartalmazza.
 
 ### DiscardDeck
 
+Ez a dobópakli osztálya. Ide kerül minden eladott fröccs és elhasznált "Ezt neked", illetve szivatós kártya.
+
 ### GlassDeck
+
+Ez az osztály a még fel nem húzott pohár kártyákat tartalmazza.
 
 ### Glass
 
+Ez az osztály a játékos előtti pohárhoz tartozik. Ez tartja számon, hogy a pohár ne csorduljon túl és megfelelő arányban tartalmazzon bor és szóda kártyákat.
+
 ### Hand
+
+A játékos kezében lévő lapokat tárolja. Ebben csak a bor, szóda, szivatós és az "Ezt neked" lapok vannak benne.
 
 ### Card
 
+Ez az osztály a kártyák kinézetéért fele. A FroccsCard és GlassCard osztályok ebből tudják meghívni a hozzájuk tartozó kinézeteket.
+
 ### FroccsCard
 
+Ez az osztály az adott nem pohár kártyák típusát tárolja. Megmutatja hogy az adott kártya milyen bor, szóda, vagy éppen más szivatós kártya.
+
 ### GlassCard
+
+Ez az osztály a pohár kártyákhoz kapcsolódik. A pohár méretekhez tartozó árakat tárolja.
 
 ## JavaFX
 
