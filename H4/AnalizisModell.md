@@ -70,13 +70,21 @@ A játékoshoz tartozó profil adatainak tárolásáért és lekérdezéséért 
 
 ### Bot
 
+A játékos ellen játszó, rendszer által vezérelt ellenféllel kapcsolatos adatokat kezeli. Többet között a bot nevét, illetve következő lépéseit.
+
 ### Player
 
+A játékos meccs közbeni adatait tárolásáért és kezelésért felelős. Közvetlenül tartalmazza a játékos megjelenítendő nevét, illetve az általa választott drunkenherot.
+
 ### TutorialGameContext
+
+A toturialban mutatott felugró játéktippekért ért segítségekért felelős.
 
 ### DrunkHero
 
 ### PlayerArea
+
+A játékosok előtt lévő lapok, pontok, választott karakterét játék közben egy saját „területen” mutatja a játékfelület. A playerarea tárolja ennek a tartalmát, és kezeli, hogy éppen melyik játékosé aktív, ahogy haladunk a játékosok között a körben.
 
 ### Deck
 
