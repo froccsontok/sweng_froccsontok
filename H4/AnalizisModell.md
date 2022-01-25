@@ -86,27 +86,80 @@
 
 ### javafx.application.Application
 
+Absztrakt osztály, a JavaFX környezet része. A JavaFX alkalmazást ebből az osztályból kell leszármaztatni. A start(Stage) metódust kötelező megvalósítani, hogy az alkalmazás futtatható legyen.
+
 ### Froccs
+
+Az Application osztály leszármazottja. A JavaFX környezet az alkalmazás indításakor a következőképpen jár el:
+
+1. Példányosítja az Applicationből leszármazó osztályt
+2. Meghívja az init() metódust
+3. Meghívja a start(Stage) metódust
+4. Ha minden ablak bezárul, akkor meghívja a stop() metódust
+
+A statikus scene adattag tartalmazza az éppen aktív nézetet, a Controller osztályok a nézetet a setRoot(String) metóduson keresztül módosíthatják (az adott elérésű fxml fájl kerül betöltésre).
 
 ### javafx.scene.Scene
 
+Az aktuális nézetet tartalmazó osztály. Tartalmaz egy root Node-ot, amely a képernyőn látható elemek szülője. A root Node a setRoot(Node) metódus segítségével beállítható, ezzel tud az alkalmazásunk nézetet váltani.
+
 ### javafx.scene.Node
+
+Az FXMLLoader a különböző nézeteket tartalmazó fxml fájlokat betölti a load() metódus segítségével és visszaad egy Node objektumot, amely a UI elemek szülője.
 
 ### MenuView (fxml)
 
+Egy deklaratív fxml fájl, amely egy Node objektumnak felel meg. A főmenü UI elemeit tartalmazza hierarchikus formában.
+
 ### MenuController
+
+A menüben történő események kezelőit tartalmazó osztály, az adott kezelőket az fxml-ben az elem (általában Button) onAction tulajdonságaként adjuk meg.
+
+Az események a gombok a lenyomásai lehetnek:
+
+- Kilépés
+- Játék / tutorial indítása
+- Beállítások megnyitása
+- Profil megnyitása
+- Rangsor megnyitása
+- Áruház megnyitása
 
 ### OptionsView (fxml)
 
+Egy deklaratív fxml fájl, amely egy Node objektumnak felel meg. A beállítások menüpont UI elemeit tartalmazza hierarchikus formában.
+
 ### OptionsController
+
+A beállítások menüpontban történő események kezelőit tartalmazó osztály.
+
+Kezeli a legördülő menük és a hangerő csúszka eseményeit, a kilépés gomb lenyomását.
 
 ### StoreView (fxml)
 
+Egy deklaratív fxml fájl, amely egy Node objektumnak felel meg. Az áruház nézet UI elemeit tartalmazza hierarchikus formában.
+
 ### StoreController
+
+Az áruház menüpontban történő események kezelőit tartalmazó osztály.
+
+Lehetséges események:
+
+- Kilépés
+- Termék kiválasztása
+- Termék megvásárlása
 
 ### LeaderboardView (fxml)
 
+Egy deklaratív fxml fájl, amely egy Node objektumnak felel meg. A ranglista UI elemeit tartalmazza hierarchikus formában.
+
 ### LeaderboardController
+
+A ranglista menüpontban történő események kezelőit tartalmazó osztály.
+
+Lehetséges események:
+
+- Kilépés
+- Lokális / globális ranglista váltása
 
 ### ProfileView (fxml)
 
