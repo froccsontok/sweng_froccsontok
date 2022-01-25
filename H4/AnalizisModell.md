@@ -187,15 +187,42 @@ Lehetséges események:
 
 ### ProfileView (fxml)
 
+A ProfileView fxml fájl tartamaza a prorif menü UI elemeit hierarchikus formában.
+
 ### ProfileController
+
+A profillal történő változások kezelőit tartalmazó osztály.
+
+Lehetséges események:
+- Szint változás
+- Névváltozás
+- Globális / Lokális helyezés változása
+- Profil kép változás
 
 ### PlayView (fxml)
 
+A PlayView fxml fájl tartalmazza a játéktér UI elemeit hierarchikus formában.
+
 ### PlayController
+
+A PlayController a játék közbeni változásokat lekezelő osztály.
+
+Lehetséges események:
+- laphúzása
+- Coin növekedése / csökenése
+- pohárral történő változások
 
 ### TutorialView (fxml)
 
+A TutorialView fxml fájl tartalmazza a tudoriul UI elemeit hierarchikus formában.
+
 ### TutorialController
+
+A TutorialController a tutorial elvégzése közben fellépő változásokat lekezelő osztály.
+
+Lehetséges események:
+- A tutorial elkezdése / befejezése
+- A tutorial következő lépése
 
 Usecase 1:
 ==========
