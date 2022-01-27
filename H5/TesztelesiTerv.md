@@ -65,7 +65,11 @@ StoreView Tesztek|listOwnedItems()|Véletlenszerű megvásárolt termékek kül�
 
 ## 5. A tesztelés költségei:
 ### Időigény:
+Az alkalmazás elkészítésének időigénye nagyban függ a tesztelés kimenetelétől. Ez előreláthatóan egy 2 hónapos folyamatot jelent, mely nagyban függ a tesztelés alatt felmerülő esetleges problémáktól és a fejlesztő csapat összedolgozási képességeitől. A tervezett kiadási dátum pontosítása is ebben a fázisban történik, de ennek megvátoztatására a jogot fenntartjuk.
 
 ### Munkaerő igény:
+A tesztelés első fázisát az 5 fős fejlesztő csapatz fogja végezni. Később tesztelőket fogunk alkalmazni, hogy a játék menet közben, mindenre kiterjedő tesztelést folytassanak. A tesztelők egy nagyjából 100 fős brigád, akik önkéntes alapon jelentkezhetnek, cserébe korai hozzáférést és játékbeli ajándékokat kapnak majd.
 
 ## 6. Program validálása:
+
+A Béta verzió már korlátozott számban elérhető lesz a felhasználóknak, akik a letöltéssel kezdetét is vehetik a hibák feltárásának. Nekik semmi dolguk nem lesz azon kívül, hogy játszanak a játékkal, ezzel fontos információkat szolgáltatva az esetleges hibákról.
