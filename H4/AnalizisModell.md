@@ -14,13 +14,23 @@ A főmenüből kiinduló almenük eléréséért felelős osztály. Menük kivá
 
 ### OptionsView
 
+Megjeleníti a „Beállítások” almenüt. Ez az osztály a beállítási opciók megjelenítéséért felel. Innen lehetőségünk van visszalépni a menübe.
+
 ### Localization
+
+Ez az osztály a játékban beállítható nyelveket tárolja. A felhasználónak ezek közül kell választania egy nyelvet, amelyet beállít a játékban.
 
 ### SoundSettings
 
+Ez az osztály tárolja a játék lehetséges hangi beállításait. A játékos itt módosíthatja a játék hangerejét.
+
 ### ScreenSettings
 
+Ez az osztály a játék lehetséges képernyő beállításait tárolja. A játékosnak itt van lehetősége módosítani a megjelenő játék felbontását.
+
 ### KeyBindings
+
+Ez az osztály tárolja a játék irányításának lehetséges beállításait. A játékosnak lehetősége van a játékban végrehajtható akciókhoz egy billentyűt rendelni, amelyeket alkalmazva az adott akció végrehajtódik.
 
 ### StoreView
 
@@ -36,13 +46,23 @@ A játékosokhoz tartozó profil menüben lévő adatok megjelenítéséért fel
 
 ### LeaderBoardView
 
+Megjeleníti a „Rangsor” almenüt. Innen elérhető a lokális és online rangsor is, valamint lehetőségünk van visszalépni a menübe. 
+
 ### OnlineLeaderBoard
+
+Megjeleníti az online adatbázisban eltárolt játékosokat és azokat a játékban elért sikereik alapján rangsorolja.
 
 ### LeaderBoardContext
 
+Az online rangosorban megjelenő játékosok felhasználóneveinek és pontjaiknak a tárolásáért felelős osztály.
+
 ### LocalLeaderBoard
 
+A lokális rangsor megjelenítéséért felelős osztály. Megjeleníti a lokálisan eltárolt összes felhasználó nevét és pontjaikat.
+
 ### LeaderBoardManager
+
+A játékba lokálisan hozzáadott játékosok neveit és pontjaikat tárolja. A játékosokat a pontjaik alapján állítja rangsorba és jeleníti meg ezeket az adatok a lokális rangsorban.
 
 ### Playview
 
