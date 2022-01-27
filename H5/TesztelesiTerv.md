@@ -12,6 +12,6 @@ Tesztelésre azért van szükség, hogy megbizonyosodhatjunk a program zökkenő
 ## 5. A tesztelés költségei:
 ### Időigény:
 
-## Munkaerő igény:
+### Munkaerő igény:
 
 ## 6. Program validálása:
