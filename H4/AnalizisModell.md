@@ -62,9 +62,15 @@ A játékoshoz tartozó profil adatainak tárolásáért és lekérdezéséért 
 
 ### MenuView
 
+A főmenüből kiinduló almenük eléréséért felelős osztály. Menük kiválasztásával eljuthatunk a beállításokhoz, játékmenühöz, toturialhoz, áruházhoz, ranglistákhoz és a játékos profiljához.
+
 ### Tutorialview
 
+A toturial elindítását megjelenítő almenüért felelős.
+
 ### PlayView
+
+A ’játék’ almenü megjelenítése. Kiválasztható benne a játékmód, és elindítható segítségével a lobbi.
 
 ### GameContext
 
