@@ -51,9 +51,6 @@ Az alábbiakban részletezzük magát a játékszoftvert, az azzal kapcsolatos m
 
 ## <a name="sec_2"></a>2. Az alkalmazás helye
 
-### 2.1 Üzleti lehetőségek
-Nincs információ.
-
 ### <a name="sec_2_2"></a>2.2. A probléma megfogalmazása
 A FröccsÖntők csapata a Fröccs nevezetű társasjáték, online verziójával szeretné növelni a már ismert és népszerű társasjáték elérhetőségét felhasználói körökben.<br /> <br />
 #### A játékról röviden: 
@@ -99,12 +96,6 @@ Ez mind a kinézetükkel kapcsolatos dizájnjukon, mind az általuk nyújtott j�
 
 ## <a name="sec_3"></a>3. Érintettek és felhasználók
 
-### 3.1. Az érintettek összefoglalása
-Nincs információ.
-
-### 3.2. A felhasználók összefoglalása
-Nincs információ.
-
 ### <a name="sec_3_3"></a>3.3 Felhasználói környezet
 Az alkalmazás fejlesztése kizárólag Windows operációs rendszerre fog megtörténni és emellett a futtatás követelménye pedig, hogy eleget tegyünk a rendszerkövetelményeknek. A jövőben a szoftverre kiadott frissítések miatt ezek a követelmények minimálisan változhatnak.
 
@@ -115,16 +106,7 @@ Várhatóan egy felhasználó egyszerre nagyjából 1-2 óráig fogja használni
 
 A rendszerkövetelményeknek nem lesz része semmilyen különleges, egyedi eszköz használata. A szoftverben való navigálást és irányítást billenytűzettel és egérrel tudjuk majd végrehajtani. A szoftver aktiválásakor és telepítésekor, valamint online partik esetén is szükségünk lesz aktív internet kapcsolatra. Lokális, offline partik esetén internet kapcsolat nélkül is futtatható lesz majd a szoftver. Mivel a termék a Steam webárúházában lesz majd elérhető ezért szükséges lesz majd a szoftvert a Steam App-al integrálni.
 
-### 3.4. Illetékesek adatai
-Nincs információ.
-
-### 3.5. Felhasználók adatai
-Nincs információ.
-
 ## <a name="sec_4"></a>4. A végtermék áttekintése
-
-### 4.1 A termék kapcsolatai
-Nincs információ.
 
 ### <a name="sec_4_2"></a>4.2. A termék használatának előnyei
 <p>
@@ -155,9 +137,6 @@ A játékszabályok ismeretét is feltételezzük, a szabályok elérhetőek les
 ### 4.4 Költségbecslés
 A játékon 5-en fogunk dolgozni 2 hónapon keresztül. 500.000 Ft-os bérrel számolva, plusz a beszerzendő alkalmazások költségével a becsléseink alapján a játék elkészítése nagyjából 5.150.000 Ft-ba fog kerülni, amely a tervezett 9.99€-s árral az 1.406. vásárlótól profitot termel és ha már a digitális kártyajátékok királyának, az UNO letöltéseinek 1%-át elérjük, akkor is a befektetett pénz ezerszeresét kapjuk vissza profitként, ami az említett 1% azaz 1.800.000 letöltés után, nem más, mint 6.480.000.000 Ft.
 
-### 4.5. Installáció
-Nincs információ.
-
 ## <a name="sec_5"></a>5. A végtermék jellemzői, biztosított szolgáltatások
 
 Célunk, hogy a fejlesztés ideje alatt a játékban minden esetleges hibát ki tudjunk küszöbölni és a megjelenéskor hibátlan, teljes és a lehető legjobban optimalizált állapotban bocsátsuk a felhasználók rendelkezésére.
@@ -174,9 +153,6 @@ A jövőben érkező frissítéseket, javításokat szintén a Steam-en kereszt�
 A jövőben tervezzük a játék portolását IOS és Android operációs rendszerekre is. Ezek a verziók valószínűleg AppStore-ból és a Google Play-ből lesznek majd elérhetőek.
 
 
-## 6. Korlátozások
-Nincs információ.
-
 ## <a name="sec_7"></a>7. Minőségi elvárások
 - A játékot első sorban Microsoft Windows operációs rendszerre tervezzük, de mivel a későbbiekben szeretnénk Android és IOS operációs rendszerekre kiadni, így fontos szempont, hogy a játéknak kicsi legyen az erőforrás igénye.
 - A játéknak képesnek kell lennie kezelni az operációs rendszer különbségekből adódó problémákat.
@@ -190,9 +166,6 @@ Nincs információ.
 - Legyen képes használni és megjeleníteni a felhasználó által vásárolt vizuális termékeket.
 - A játéknak a lehető legkisebb adatforgalommal kell a legjobb teljesítményt nyújtania.
 
-
-## 8. Dokumentációkkal kapcsolatos követelmények
-Nincs információ.
 
 ## <a name="sec_9"></a>9. Kockázat lista
 
